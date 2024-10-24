@@ -74,7 +74,7 @@ const ContactContent = () => {
                 width={28}
                 height={28}
               />
-              <p>Email: <a href="mailto:Info@Drpathcares.com">dr.pathcare@gmail.com</a></p>
+              <p>Email: <a href="mailto:Info@Drpathcares.com">Info@Drpathcares.com</a></p>
             </div>
             <div className="flex items-center gap-3">
               <Image

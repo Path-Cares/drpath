@@ -59,7 +59,7 @@ const Footer = () => {
                             <p className="text-lg font-medium pb-3">Contact Us</p>
                             <div className="flex flex-col space-y-3 text-sm">
                                 <p>+91 89290 62906</p>
-                                <p>dr.pathcare@gmail.com</p>
+                                <p>Info@Drpathcares.com</p>
                                 <p>E-30, Sec-3 Noida, Uttar Pradesh, 201301</p>
                             </div>
                         </div>

@@ -25,28 +25,42 @@ const Nav: React.FC = () => {
   return (
     <>
       <header className="xl:px-24 sticky top-0 z-50 bg-white shadow-xl">
-        <div className="flex items-center lg:items-start rounded-b-xl">
+        <div className="flex items-center justify-between lg:items-start rounded-b-xl">
           {/* Logo */}
-          <div className="p-4 sm:p-8 flex justify-center items-center lg:shadow-lg h-full shadow-[#00b7ab7d] rounded-b-xl">
+          {/* <div className="p-4 sm:p-8 flex justify-center items-center lg:shadow-lg h-full shadow-[#00b7ab7d] rounded-b-xl">
             <Link href="/">
               <Image
-                src="/images/logo.png"
-                alt="alt"
-                width={350}
-                height={350}
-                className="h-full"
-                priority={false}
+                src="/images/logo.png" // Ensure this path is correct
+                alt="Logo"
+                width={150} // Adjust the width and height proportionally
+                height={150}
+                className=" h-auto w-auto" // Ensure it scales correctly
+                priority={true} // Load it with priority
               />
             </Link>
-          </div>
+          </div> */}
+          {/* <div className="p-4 sm:p-8 flex justify-center items-center mx-auto lg:shadow-lg h-full shadow-[#00b7ab7d] rounded-b-xl">
+            <Image
+              src="/images/logo.png"
+              alt="new"
+              width={150}
+              height={150}
+            />
+          </div> */}
 
           <div className="flex-grow w-full">
             {/* Contact Info for Desktop */}
             <div className="hidden lg:flex justify-end pr-4 xl:pr-8 gap-6 bg-[#00B7AB] text-white py-4">
+              <Image
+                src="/images/logo.png"
+                alt="new"
+                width={150}
+                height={150}
+              />
               <a href="tel:+0120 4157 233" className="flex items-center gap-2">
                 <Image
                   src="/images/phone.svg"
-                  alt="alt"
+                  alt="Phone"
                   width={30}
                   height={30}
                 />
@@ -55,28 +69,32 @@ const Nav: React.FC = () => {
               <a href="tel:+91 89290 62906" className="flex items-center gap-2">
                 <Image
                   src="/images/phone.svg"
-                  alt="alt"
+                  alt="Phone"
                   width={30}
                   height={30}
                 />
                 +91 89290 62906
               </a>
-              <a href="mailto:dr.pathcare@gmail.com" className="flex items-center gap-2">
+              <a
+                href="mailto:dr.pathcare@gmail.com"
+                className="flex items-center gap-2"
+              >
                 <Image
                   src="/images/mail.svg"
-                  alt="alt"
+                  alt="Email"
                   width={30}
                   height={30}
                 />
-                dr.pathcare@gmail.com
+                Info@Drpathcares.com
               </a>
+
               <a
                 href="tel:+91 89290 62906"
                 className="flex items-center bg-white py-2 px-4 rounded-lg text-[#00B7AB] shadow"
               >
                 <Image
                   src="/images/phone-call.svg"
-                  alt="alt"
+                  alt="Call"
                   width={16}
                   height={16}
                 />
@@ -88,7 +106,7 @@ const Nav: React.FC = () => {
               >
                 <Image
                   src="/images/Whatsapp.svg"
-                  alt="alt"
+                  alt="WhatsApp"
                   width={16}
                   height={16}
                 />
@@ -97,8 +115,8 @@ const Nav: React.FC = () => {
             </div>
 
             {/* Main Navigation */}
-            <div className="flex items-center justify-end py-4 gap-6 xl:gap-12 pr-6 xl:pr-20">
-              <nav className="relative">
+            <div className="flex items-center justify-center py-4 gap-6 xl:gap-12 px-6 max-w-screen-lg mx-auto">
+              <nav className="relative w-full">
                 {/* Mobile Menu Toggle */}
                 <button
                   onClick={toggleNavMenu}
@@ -127,34 +145,52 @@ const Nav: React.FC = () => {
                     isNavMenuVisible ? "block" : "hidden"
                   } md:block w-full md:w-auto duration-100 transition-all`}
                 >
-                  <ul className="absolute md:static right-0 w-1/2 lg:w-full flex flex-col p-4 md:p-0 mt-4 bg-gray-50 md:flex-row md:space-x-8">
+                  <ul className="absolute md:static right-0 w-full flex flex-col p-4 md:p-0 mt-4 bg-gray-50 md:flex-row md:justify-center md:space-x-8">
                     <li>
-                      <Link href="/" className="py-2 px-3 text-gray-900">
+                      <Link
+                        href="/"
+                        className="py-2 px-3 text-gray-900 whitespace-nowrap"
+                      >
                         Home
                       </Link>
                     </li>
                     <li>
-                      <Link href="/aboutus" className="py-2 px-3 text-gray-900">
+                      <Link
+                        href="/aboutus"
+                        className="py-2 px-3 text-gray-900 whitespace-nowrap"
+                      >
                         About Us
                       </Link>
                     </li>
                     <li>
-                      <Link href="/socialActivity" className="py-2 px-3 text-gray-900">
+                      <Link
+                        href="/socialActivity"
+                        className="py-2 px-3 text-gray-900 whitespace-nowrap"
+                      >
                         Social Activity
                       </Link>
                     </li>
                     <li>
-                      <Link href="/healthPackage" className="py-2 px-3 text-gray-900">
+                      <Link
+                        href="/healthPackage"
+                        className="py-2 px-3 text-gray-900 whitespace-nowrap"
+                      >
                         Health Package
                       </Link>
                     </li>
                     <li>
-                      <Link href="/awards" className="py-2 px-3 text-gray-900">
+                      <Link
+                        href="/awards"
+                        className="py-2 px-3 text-gray-900 whitespace-nowrap"
+                      >
                         Awards
                       </Link>
                     </li>
                     <li>
-                      <Link href="/contact" className="py-2 px-3 text-gray-900">
+                      <Link
+                        href="/contact"
+                        className="py-2 px-3 text-gray-900 whitespace-nowrap"
+                      >
                         Contact Us
                       </Link>
                     </li>
@@ -167,12 +203,12 @@ const Nav: React.FC = () => {
                 href="/test"
                 className="hidden lg:flex items-center bg-white py-2 px-5 rounded-lg text-[#00B7AB] shadow"
               >
-                <Image
+                {/* <Image
                   src="/images/microscope.svg"
-                  alt="alt"
+                  alt="Test"
                   width={18}
                   height={18}
-                />
+                /> */}
                 Test
               </a>
 
@@ -180,12 +216,12 @@ const Nav: React.FC = () => {
                 onClick={openAppointmentModal}
                 className="hidden lg:flex items-center bg-white py-2 px-5 rounded-lg text-[#00B7AB] shadow"
               >
-                <Image
+                {/* <Image
                   src="/images/statoscope.svg"
-                  alt="alt"
+                  alt="Book Appointment"
                   width={18}
                   height={18}
-                />
+                /> */}
                 Book Appointment
               </button>
 
@@ -208,7 +244,8 @@ const Nav: React.FC = () => {
             >
               ✕
             </button>
-            <AppointmentContent closeModal={closeAppointmentModal} /> {/* Include the Appointment Form here */}
+            <AppointmentContent closeModal={closeAppointmentModal} />{" "}
+            {/* Include the Appointment Form here */}
           </div>
         </div>
       )}

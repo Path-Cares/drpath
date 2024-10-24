@@ -10,7 +10,7 @@ function page() {
       <Nav />
       <main className="">
         <Contents />
-        <Cities />
+        {/* <Cities /> */}
       </main>
       <Footer />
     </div>

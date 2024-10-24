@@ -88,7 +88,35 @@ const HealthCheckup = () => {
               price: "₹2999",
               originalPrice: "₹4999",
               link: "#"
-            }
+            },
+            {
+              img: "/images/test-banners.webp",
+              title: "Throid",
+              price: "₹899",
+              originalPrice: "₹1499",
+              link: "/thyroid"
+            },
+            {
+              img: "/images/test-banners.webp",
+              title: "Diabetic",
+              price: "₹899",
+              originalPrice: "₹1499",
+              link: "/diabetic"
+            },
+            {
+              img: "/images/test-banners.webp",
+              title: "Fit India",
+              price: "₹599",
+              originalPrice: "₹999",
+              link: "/fit-india"
+            },
+            {
+              img: "/images/test-banners.webp",
+              title: "Thyroid & Diabetic",
+              price: "₹999",
+              originalPrice: "₹1599",
+              link: "/thyroid&diabetic"
+            },
           ].map((item, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full w-full">
               <div className="h-48 w-full relative">
