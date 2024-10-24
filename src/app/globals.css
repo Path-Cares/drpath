@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+html {
+  font-family: var(--font-inter);
+}
+ 
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-roboto);
+}
+
+.swiper-button-prev, .swiper-button-next{
+  background-image: linear-gradient(to right, #00514C, #00B7AB);
+  width: 40px!important;
+  height: 40px!important;
+  border-radius: 100%;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+font-size: 12px;
+color: white;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 27px !important;
+  color: white;
+  font-weight: 600;
+}
+
+.swiper-slide-active {
+  filter: grayscale(0)!important;
+}
+
+@media (max-width: 1024px) {
+  .oerlium {
+      background-image: none !important;
+  }
+}
+/* custom */
+/* src/styles/globals.css */
+.bg-dots-pattern {
+  background-image: radial-gradient(#00B7AB 1px, transparent 1px);
+  background-size: 10px 10px;
+}
+.heading {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.heading.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.section {
+  margin: 50px 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+}
+/* globals.css */
+.glass-effect {
+  position: relative;
+  background: rgba(197, 237, 234, 0.109); /* Light white background for glass effect */
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.glass-effect::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  background-color: #00B7AB;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 
+    0 0 130px 32px #00B7AB, 
+    0 0 20px 4px #00B7AB, 
+    0 0 30px 6px #00B7AB, 
+    0 0 40px 8px #00B7AB; /* Adjust positions and spread as needed */
+}
+
+.glass-effect .dot-1 {
+  top: 10%;
+  left: 20%;
+  box-shadow: 0 0 10px 2px #00B7AB;
+}
