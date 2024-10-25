@@ -1,10 +1,12 @@
 import Footer from '@/components/Footer';
+import Nav from '@/components/Nav';
 import React from 'react';
 
 const Disclaimer: React.FC = () => {
   return (
     <>
-      <div className="p-6 bg-white">
+    <Nav/>
+      <div className="px-28 pt-10 bg-white">
         {/* Section 1: Disclaimer for DrPathCares */}
         <section className="mb-8">
           <h1 className="text-2xl font-bold text-black mb-4">1. Disclaimer For DrPathCares</h1>
@@ -34,10 +36,10 @@ const Disclaimer: React.FC = () => {
           <p className="text-lg mb-4">
             By Using Our Website, You Hereby Consent To Our Disclaimer And Agree To Its Terms.
           </p>
-          <div className="flex space-x-4">
+          {/* <div className="flex space-x-4">
             <button className="bg-[#00B7AB] text-white px-6 py-2 hover:bg-red-700">Accept</button>
             <button className="bg-[#00B7AB] text-white px-6 py-2 hover:bg-gray-800">Close</button>
-          </div>
+          </div> */}
         </section>
       </div>
       <Footer />

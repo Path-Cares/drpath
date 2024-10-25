@@ -27,91 +27,91 @@ const HealthCheckup = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-8 max-w-7xl mx-auto">
           {[
             {
-              img: "/images/standardcheckup.webp",
+              img: "/images/p13.jpg",
               title: "Basic Package",
               price: "₹1150",
               originalPrice: "₹3499",
               link: "/basic-package"
             },
             {
-              img: "/images/whychooseus.webp",
+              img: "/images/p12.jpg",
               title: "Standard Package",
               price: "₹1650",
               originalPrice: "₹4500",
               link: "/standard-package"
             },
             {
-              img: "/images/test-banners.webp",
+              img: "/images/p11.jpg",
               title: "Classic Package Men",
               price: "₹2250",
               originalPrice: "₹4999",
               link: "/classic-men-package"
             },
             {
-              img: "/images/standardcheckup.webp",
+              img: "/images/p10.jpg",
               title: "Classic Package Women",
               price: "₹2250",
               originalPrice: "₹4500",
               link: "/classic-women-package"
             },
             {
-              img: "/images/whychooseus.webp",
+              img: "/images/p9.jpg",
               title: "Senior Citizen Package",
               price: "₹2999",
               originalPrice: "₹6500",
               link: "/senior-citizens-package"
             },
             {
-              img: "/images/test-banners.webp",
+              img: "/images/p8.jpg",
               title: "Platinum Package",
               price: "₹3999",
               originalPrice: "₹7500",
               link: "/platinum-package"
             },
             {
-              img: "/images/standardcheckup.webp",
+              img: "/images/p7.jpg",
               title: "Platinum Healthcare Package",
               price: "₹3499",
               originalPrice: "₹7999",
               link: "/platinum-package"
             },
             {
-              img: "/images/whychooseus.webp",
+              img: "/images/p6.jpg",
               title: "Full Body Checkup With IGG Antibody",
               price: "₹1749",
               originalPrice: "₹3499",
               link: "#"
             },
             {
-              img: "/images/test-banners.webp",
+              img: "/images/p5.jpg",
               title: "Health Checkup Special Combo Package",
               price: "₹2999",
               originalPrice: "₹4999",
               link: "#"
             },
             {
-              img: "/images/test-banners.webp",
-              title: "Throid",
+              img: "/images/p4.jpg",
+              title: "Thyroid",
               price: "₹899",
               originalPrice: "₹1499",
               link: "/thyroid"
             },
             {
-              img: "/images/test-banners.webp",
+              img: "/images/p3.jpg",
               title: "Diabetic",
               price: "₹899",
               originalPrice: "₹1499",
               link: "/diabetic"
             },
             {
-              img: "/images/test-banners.webp",
+              img: "/images/p2.jpg",
               title: "Fit India",
               price: "₹599",
               originalPrice: "₹999",
               link: "/fit-india"
             },
             {
-              img: "/images/test-banners.webp",
+              img: "/images/p1.jpg",
               title: "Thyroid & Diabetic",
               price: "₹999",
               originalPrice: "₹1599",
