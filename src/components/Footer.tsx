@@ -50,7 +50,7 @@ const Footer = () => {
                                 <a href="https://www.facebook.com/people/DrPathcares/100089185585238/?mibextid=LQQJ4d"><FaFacebook /></a>
                                 <a href="https://www.instagram.com/drpathcares/"><FaInstagram /></a>
                                 <a href="https://www.linkedin.com/company/dr-path-cares"><FaLinkedin /></a>
-                                <a href="https://www.youtube.com/"><FaYoutube /></a>
+                                <a href="https://www.youtube.com/@dr.pathcares"><FaYoutube /></a>
                             </div>
                         </div>
 

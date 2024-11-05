@@ -2,7 +2,7 @@ const Cities = () => {
     return (
         <section className="px-5 lg:px-20 xl:px-24 2xl:px-56 py-20">
             <h2 className="mb-8 font-bold text-3xl xl:text-4xl text-center text-[#1F2259]">Our Presence in 60+ Cities Across India</h2>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5  gap-5">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 ">
                 <div className="">
                     <h3 className="text-[#1F2259] font-semibold text-2xl">Delhi</h3>
                     <ul className="list-disc list-inside mb-4">
@@ -86,6 +86,15 @@ const Cities = () => {
                         <li>Panchkula</li>
                         <li>Zirakpur</li>
                         <li>Khanna</li>
+                    </ul>
+                </div>
+                <div className="">
+                    <h3 className="text-[#1F2259] font-semibold text-2xl">Utarakhand</h3>
+                    <ul className="list-disc list-inside mb-4 text-gray-900">
+                        <li>Roorki</li>
+                        <li>Dehradun</li>
+                        <li>Haridwar</li>
+                        
                     </ul>
                 </div>
 

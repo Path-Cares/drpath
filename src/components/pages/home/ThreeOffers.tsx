@@ -19,7 +19,7 @@ const ThreeOffers = () => {
               alt="Guarantee"
             />
             <p className="text-lg font-semibold">
-              NABL & ICMR <br />
+             
               <span className="font-normal">Certified Lab</span>
             </p>
           </div>

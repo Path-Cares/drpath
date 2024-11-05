@@ -70,16 +70,17 @@ const Plans = () => {
           totaltest={"90 parameters included"}
           originalprice={"₹4500"}
           saleprice={"₹1650"}
-          estimatetime={"Report Within 6 Hours"}
+          estimatetime={"Report Within 24 Hours"}
           url={"/standard-package"}
         />
 
         <TestView
           testname={"Classic Package"}
-          totaltest={"90 parameters included"}
+          // totaltest={"95+ Tests"}
+          totaltest={"95+ parameters included"}
           originalprice={"₹5500"}
           saleprice={"₹2250"}
-          estimatetime={"Report Within 6 Hours"}
+          estimatetime={"Report Within 24 Hours"}
           url={"/classic-package"}
         />
 
@@ -88,7 +89,7 @@ const Plans = () => {
           totaltest={"102 parameters included"}
           originalprice={"₹7500"}
           saleprice={"₹3999"}
-          estimatetime={"Report Within 6 Hours"}
+          estimatetime={"Report Within 24 Hours"}
           url={"/platinum-package"}
         />
       </div>

@@ -180,10 +180,10 @@ const Nav: React.FC = () => {
                     </li>
                     <li>
                       <Link
-                        href="/awards"
+                        href="/certificates"
                         className="py-2 px-3 text-gray-900 whitespace-nowrap"
                       >
-                        Awards
+                        All Certificate 
                       </Link>
                     </li>
                     <li>
@@ -191,7 +191,7 @@ const Nav: React.FC = () => {
                         href="/contact"
                         className="py-2 px-3 text-gray-900 whitespace-nowrap"
                       >
-                        Contact Us
+                        All Details
                       </Link>
                     </li>
                   </ul>

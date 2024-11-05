@@ -41,49 +41,78 @@ const ContactContent = () => {
   return (
     <section className="px-5 lg:px-20 xl:px-24 2xl:px-56 pb-20 lg:my-12 py-10">
       <Toaster />
-      
+
       {/* Contact Information */}
       <div className="bg-gray-100 p-10 rounded-lg shadow-md">
-        <h1 className="text-3xl font-bold text-center pb-5">Contact Information</h1>
-        <div className="grid md:grid-cols-2 gap-10 text-lg cursor-pointer">
-          <div className="space-y-5">
-            <div className="flex items-center gap-3">
+        <h1 className="text-3xl font-bold text-center pb-5">Registered Labs</h1>
+        <div className="grid gap-6 text-lg">
+          <div className="text-center space-y-4">
+            <p className="font-semibold">
+              DrPathCares Wellness Care Laboratory
+            </p>
+            <p>A Unit Of Biolife Wellness Care Pvt. Ltd.</p>
+            <div className="flex items-center justify-center gap-2">
               <Image
-                src="/images/phone-number.webp"
-                alt="Emergency Number"
+                src="/images/address.webp"
+                alt="Office Location"
                 width={28}
                 height={28}
               />
-              <p>Emergency Number: <a href="tel:+0120 4157 233">+0120 4157 233</a></p>
+              <p>
+                Find Office: E-30, Noida Sector 3, Noida, 201301, Uttar Pradesh
+              </p>
             </div>
-            <div className="flex items-center gap-3">
+
+            <div className="flex items-center justify-center gap-2">
               <Image
                 src="/images/phone-number.webp"
-                alt="Contact Number"
+                alt="Customer Care"
                 width={28}
                 height={28}
               />
-              <p>Contact Number: <a href="tel:+918929062906">+91 89290 62906</a></p>
+              <p>
+                Customer Care: <a href="tel:+01204157233">+0120-4157-233</a>
+              </p>
             </div>
-          </div>
-          <div className="space-y-5">
-            <div className="flex items-center gap-3">
+
+            <div className="flex items-center justify-center gap-2">
+              <Image
+                src="/images/phone-number.webp"
+                alt="Our Team"
+                width={28}
+                height={28}
+              />
+              <p>
+                Our Team: <a href="tel:+918929062906">+91 89290 62906</a>
+              </p>
+            </div>
+
+            <div className="flex items-center justify-center gap-2">
               <Image
                 src="/images/email-address.webp"
                 alt="Email"
                 width={28}
                 height={28}
               />
-              <p>Email: <a href="mailto:Info@Drpathcares.com">Info@Drpathcares.com</a></p>
+              <p>
+                Email:{" "}
+                <a href="mailto:Info@Drpathcares.com">Info@Drpathcares.com</a>
+              </p>
             </div>
-            <div className="flex items-center gap-3">
-              <Image
-                src="/images/address.webp"
-                alt="Address"
-                width={28}
-                height={28}
-              />
-              <p>Address: E-30, Sec-3 Noida, Uttar Pradesh, 201301</p>
+
+            {/* Working Hours */}
+            <div className="flex items-center justify-center gap-2">
+              <div className="flex items-center gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-7 h-7 text-[#00B7AB]"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M12 1a11 11 0 1 0 11 11A11.012 11.012 0 0 0 12 1Zm4.95 12.28-4-2.5a.75.75 0 0 1-.35-.65V6.75a.75.75 0 0 1 1.5 0v3.1l3.65 2.28a.75.75 0 1 1-.8 1.3Z" />
+                </svg>
+                <p>Working Hours: 24/7, Sunday Open</p>
+              </div>
             </div>
           </div>
         </div>
@@ -91,7 +120,9 @@ const ContactContent = () => {
 
       {/* Request a Call Back Form */}
       <div className="mt-12 bg-white p-10 rounded-lg shadow-md">
-        <h1 className="text-3xl font-bold text-center pb-5">Request a Call Back</h1>
+        <h1 className="text-3xl font-bold text-center pb-5">
+          Request a Call Back
+        </h1>
         <form method="POST" onSubmit={handleSubmit} className="grid gap-5">
           <input
             type="text"
@@ -138,3 +169,51 @@ const ContactContent = () => {
 };
 
 export default ContactContent;
+
+{
+  /* <div className="bg-gray-100 p-10 rounded-lg shadow-md">
+        <h1 className="text-3xl font-bold text-center pb-5">Contact Information</h1>
+        <div className="grid md:grid-cols-2 gap-10 text-lg cursor-pointer">
+          <div className="space-y-5">
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/phone-number.webp"
+                alt="Emergency Number"
+                width={28}
+                height={28}
+              />
+              <p>Emergency Number: <a href="tel:+0120 4157 233">+0120 4157 233</a></p>
+            </div>
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/phone-number.webp"
+                alt="Contact Number"
+                width={28}
+                height={28}
+              />
+              <p>Contact Number: <a href="tel:+918929062906">+91 89290 62906</a></p>
+            </div>
+          </div>
+          <div className="space-y-5">
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/email-address.webp"
+                alt="Email"
+                width={28}
+                height={28}
+              />
+              <p>Email: <a href="mailto:Info@Drpathcares.com">Info@Drpathcares.com</a></p>
+            </div>
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/address.webp"
+                alt="Address"
+                width={28}
+                height={28}
+              />
+              <p>Address: E-30, Sec-3 Noida, Uttar Pradesh, 201301</p>
+            </div>
+          </div>
+        </div>
+      </div> */
+}
