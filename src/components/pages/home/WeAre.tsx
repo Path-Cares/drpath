@@ -20,13 +20,13 @@ const WeAre = () => {
             Process Is Quick, Painless And Of High Quality.
           </p>
         </div>
-        <div className="lg:w-[30%] flex justify-center">
+        <div className=" lg:w-[30%] flex justify-center  ">
           <Image 
-            src="/images/certified-doctors.webp" 
+            src="/images/certified-doctors-new.png" 
             alt="Certified doctors" 
             width={300} // Adjust width as necessary
             height={300} // Adjust height as necessary
-            className="object-cover" 
+            className=" object-cover " 
           />
         </div>
       </div>

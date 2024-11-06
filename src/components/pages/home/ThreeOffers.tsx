@@ -25,10 +25,11 @@ const ThreeOffers = () => {
           </div>
           <div className="flex justify-center">
             <Image 
-              src="/images/health.webp" 
+              src="/images/health-new.png"
               width={307} 
               height={200} 
               alt="Health" 
+              className="my-2"
             />
           </div>
           <p>
@@ -57,7 +58,8 @@ const ThreeOffers = () => {
           </div>
           <div className="flex justify-center">
             <Image 
-              src="/images/fasat-delivery.webp" 
+              src="/images/fast-delivery-tick-new1.png" 
+              className="my-2"
               width={307} 
               height={200} 
               alt="Fast Delivery" 
@@ -89,7 +91,8 @@ const ThreeOffers = () => {
           </div>
           <div className="flex justify-end">
             <Image 
-              src="/images/home-checkup.webp" 
+              src="/images/home-checkup-new1.png"
+              className="my-2" 
               width={307} 
               height={200} 
               alt="Home Checkup" 

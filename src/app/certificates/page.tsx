@@ -5,14 +5,13 @@ import Nav from "@/components/Nav";
 import { FaAward } from "react-icons/fa";
 
 const Certificates = () => {
-  // list of certificates
   const certificates = [
     { name: "Certificate MC-Augomentum.pdf", url: "/images/Certificate MC-Augomentum.pdf" },
     { name: "Certificate RDPL.pdf", url: "/images/Certificate RDPL.pdf" },
     { name: "ISO 14001 DR PATHCARES.pdf", url: "/images/ISO 14001 DR PATHCARES.pdf" },
     { name: "ISO 45001 DR PATH CARE.pdf", url: "/images/ISO 45001 DR PATH CARE.pdf" },
     { name: "Lucknow Certificate.pdf", url: "/images/Lucknow Certificate.pdf" },
-    { name: "Print _ Udyam Registration Certificate.pdf", url: "/images/Print _ Udyam Registration Certificate (1).pdf" },
+    { name: "Udyam Registration Certificate.pdf", url: "/images/Print _ Udyam Registration Certificate (1).pdf" },
   ];
 
   return (
@@ -35,27 +34,6 @@ const Certificates = () => {
             </div>
           </div>
 
-          {/* Address Section */}
-          <div className="bg-white p-8 rounded-lg shadow-lg mb-10">
-            <h2 className="text-3xl font-bold mb-6">Our Lab Addresses</h2>
-            <div className="text-lg text-gray-700 space-y-4">
-              <p><strong>DrPathCares+Our Associate Labs AUGMENTUM DIAGNOSTICS</strong></p>
-              <p><strong>Delhi Lab Address:</strong></p>
-              <ul className="ml-4 list-disc">
-                <li>2nd Floor, RZ-4, Dabri - Palam Rd, opp. Dada Dev Hospital, Dabri Village, Dabri, New Delhi, Delhi, 110045</li>
-                <li>Dr PathCares Wellnesscare Laboratory, Plot no. B-295 HV Complex 1st Floor New Ashok Nagar, Delhi 110096</li>
-              </ul>
-
-              <p><strong>Dr PathCares+Our Associate Labs RDPL ROYAL DIAGNOSTICS PVT. LTD.</strong></p>
-              <p><strong>Rajasthan Lab Address:</strong></p>
-              <p>17-18-19 Ajmer Road, Near ICICI Bank, Purani Chungi, Vidhyut Nagar, Jaipur - 302021</p>
-
-              <p><strong>Dr PathCares+Our Associate Labs Wellness Diagnostic Private Limited.</strong></p>
-              <p><strong>Lucknow Lab Address:</strong></p>
-              <p>E2, 25, Kanpur Rd, Sector H, LDA Colony, Lucknow, Uttar Pradesh 226012</p>
-            </div>
-          </div>
-
           {/* Certificates List Section */}
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold mb-6">Our Certificates</h2>
@@ -69,6 +47,8 @@ const Certificates = () => {
                     className="text-blue-600 hover:underline"
                   >
                     <div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                    
+                      <embed src={cert.url} type="application/pdf" className="w-full h-64 object-cover mb-4 rounded-lg" />
                       <p className="text-lg font-semibold">{cert.name}</p>
                     </div>
                   </a>
@@ -84,6 +64,7 @@ const Certificates = () => {
 };
 
 export default Certificates;
+
 
 
 

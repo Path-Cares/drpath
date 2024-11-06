@@ -14,7 +14,7 @@ const Plans = () => {
             className="bg-[#C7FDF9] rounded-2xl"
           />
           <p className="text-lg sm:text-xl md:text-2xl font-semibold">
-            NABL certified
+            Certified Lab
           </p>
         </div>
         <div className="flex items-center gap-4">

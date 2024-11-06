@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import footerlogo from '@/../public/images/logo.png';
+import footerlogo from '@/../public/images/mainlogo.png';
 import Link from 'next/link';
 import Cities from './pages/Cities';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";

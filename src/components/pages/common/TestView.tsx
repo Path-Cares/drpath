@@ -39,7 +39,7 @@ const TestView: React.FC<TestViewProps> = ({ testname, totaltest, originalprice,
         >
           <div className=" text-end flex justify-end">
             <span className=" text-white pb-1 rounded-b text-lg px-3  bg-gradient-to-tr from-[#00514C] to-[#00B7AB]">
-              Checkup
+            Package
             </span>
           </div>
           <div className="flex text-white items-baseline pb-8 gap-2">

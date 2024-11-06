@@ -34,7 +34,7 @@ const SwiperDeals = () => {
       >
         <SwiperSlide>
           <div className="lg:flex items-center justify-center">
-            <div className="bg-gradient-to-tr from-[#00B7AB] h-fit to-[#1F2259] text-white p-6 lg:rounded-l-xl lg:rounded-tr-none rounded-t-xl lg:w-[60%]">
+            <div className="bg-gradient-to-tr from-[#00B7AB] h-fit to-[#1F2259] pl-16 text-white p-6 lg:rounded-l-xl lg:rounded-tr-none rounded-t-xl lg:w-[60%]">
               <h2 className="font-semibold text-xl">
                 Add a family member <span className="text-3xl">GET 30% OFF</span>
               </h2>
@@ -56,8 +56,8 @@ const SwiperDeals = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="lg:flex items-center justify-center">
-            <div className="bg-gradient-to-tr from-[#00B7AB] h-fit to-[#1F2259] text-white p-6 lg:rounded-l-xl lg:rounded-tr-none rounded-t-xl lg:w-[60%]">
+          <div className="lg:flex items-center justify-center ">
+            <div className="bg-gradient-to-tr from-[#00B7AB] h-fit to-[#1F2259] pl-16 text-white p-6 lg:rounded-l-xl lg:rounded-tr-none rounded-t-xl lg:w-[60%]">
               <h2 className="font-semibold text-xl">
                 Add a family member <span className="text-3xl">GET 30% OFF</span>
               </h2>
@@ -70,7 +70,7 @@ const SwiperDeals = () => {
 
             <div className="flex items-center justify-center">
               <Image width={500}
-                src="/images/family (1).jpg"
+                src="/images/family2.jpeg"
                 className="rounded-b-xl lg:rounded-xl"
                 height={253}
                 alt=""
@@ -80,7 +80,7 @@ const SwiperDeals = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="lg:flex items-center justify-center">
-            <div className="bg-gradient-to-tr from-[#00B7AB] h-fit to-[#1F2259] text-white p-6 lg:rounded-l-xl lg:rounded-tr-none rounded-t-xl lg:w-[60%]">
+            <div className="bg-gradient-to-tr from-[#00B7AB] h-fit to-[#1F2259] pl-16 text-white p-6 lg:rounded-l-xl lg:rounded-tr-none rounded-t-xl lg:w-[60%]">
               <h2 className="font-semibold text-xl">
                 Add a family member <span className="text-3xl">GET 30% OFFER</span>
               </h2>
@@ -93,8 +93,8 @@ const SwiperDeals = () => {
 
             <div className="flex items-center justify-center">
               <Image width={500}
-                src="/images/family (2).jpg"
-                className="rounded-b-xl lg:rounded-xl"
+                src="/images/family3.jpeg"
+                className="h-80 rounded-b-xl lg:rounded-xl"
                 height={253}
                 alt=""
               />

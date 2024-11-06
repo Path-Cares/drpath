@@ -11,37 +11,37 @@ const reviews = [
         name: "Mr. Ambresh Yadav",
         designation: "Cardiac Computerized Tomography",
         text: "Very good doctor and kind at heart. Gives maximum time to hear patient views. His clinical diagnosis is very sharp. Most of the times he avoids surgery and does not do unnecessary surgeries. And, after treatment, he himself calls the patients and follow up their condition, which is a rare quality we see in doctors nowadays. Thank you",
-        image: "/images/patient (3).jpg"
+        image: "/images/patient3.jpeg"
     },
     {
         name: "Ms. Vijay Singh",
         designation: "Patient",
         text: "Excellent care and service. Highly recommended!",
-        image: "/images/patient (4).jpg"
+        image: "/images/patient4.jpeg"
     },
     {
         name: "Mr. Ashish Solanki",
         designation: "Patient",
         text: "A very professional and attentive doctor.",
-        image: "/images/patient (1).jpg"
+        image: "/images/patient1.jpeg"
     },
     {
         name: "Mr. Ambresh Yadav",
         designation: "Cardiac Computerized Tomography",
         text: "Very good doctor and kind at heart. Gives maximum time to hear patient views. His clinical diagnosis is very sharp. Most of the times he avoids surgery and does not do unnecessary surgeries. And, after treatment, he himself calls the patients and follow up their condition, which is a rare quality we see in doctors nowadays. Thank you",
-        image: "/images/patient (2).jpg"
+        image: "/images/patient2.jpeg"
     },
     {
         name: "Ms. Vijay Singh",
         designation: "Patient",
         text: "Excellent care and service. Highly recommended!",
-        image: "/images/patient (3).jpg"
+        image: "/images/patient3.jpeg"
     },
     {
         name: "Mr. Ashish Solanki",
         designation: "Patient",
         text: "A very professional and attentive doctor.",
-        image: "/images/patient (4).jpg"
+        image: "/images/patient4.jpeg"
     },
 ];
 
@@ -83,7 +83,7 @@ const ClientsReview = () => {
                     >
                         {reviews.map((review, index) => (
                             <SwiperSlide key={index} className={`grayscalew-fit ${activeIndex === index ? "grayscale-0" : "grayscale"}`}>
-                                <Image src={review.image} width={500} height={500} className="rounded-xl" alt={review.name} />
+                                <Image src={review.image} width={500} height={500} className="rounded-xl h-72" alt={review.name} />
                             </SwiperSlide>
                         ))}
                     </Swiper>

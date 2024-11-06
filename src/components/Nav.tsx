@@ -24,7 +24,7 @@ const Nav: React.FC = () => {
 
   return (
     <>
-      <header className="xl:px-24 sticky top-0 z-50 bg-white shadow-xl">
+      <header className="xl:px-24 sticky top-0 z-50 bg-white ">
         <div className="flex items-center justify-between lg:items-start rounded-b-xl">
           {/* Logo */}
           {/* <div className="p-4 sm:p-8 flex justify-center items-center lg:shadow-lg h-full shadow-[#00b7ab7d] rounded-b-xl">
@@ -48,11 +48,11 @@ const Nav: React.FC = () => {
             />
           </div> */}
 
-          <div className="flex-grow w-full">
+          <div className=" w-full ">
             {/* Contact Info for Desktop */}
-            <div className="hidden lg:flex justify-end pr-4 xl:pr-8 gap-6 bg-[#00B7AB] text-white py-4">
+            <div className="hidden lg:flex justify-evenly pr-4 xl:px-4 gap-6 bg-[#00B7AB]  2xl:justify-center 2xl:gap-24 text-white py-4">
               <Image
-                src="/images/logo.png"
+                src="/images/mainlogo.png"
                 alt="new"
                 width={150}
                 height={150}
@@ -191,7 +191,7 @@ const Nav: React.FC = () => {
                         href="/contact"
                         className="py-2 px-3 text-gray-900 whitespace-nowrap"
                       >
-                        All Details
+                        Contact
                       </Link>
                     </li>
                   </ul>
