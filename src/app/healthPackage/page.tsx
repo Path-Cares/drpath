@@ -91,44 +91,44 @@ const HealthCheckup = () => {
             },
             {
               img: "/images/Thyroid.jpeg",
-              title: "Thyroid",
+              title: "DRP007 Healthy India (Thyroid)",
               price: "₹899",
               originalPrice: "₹1499",
               link: "/thyroid"
             },
             {
               img: "/images/Diabetic.jpeg",
-              title: "Diabetic",
+              title: "DRP007 Healthy India (Diabetic)",
               price: "₹899",
               originalPrice: "₹1499",
               link: "/diabetic"
             },
             {
               img: "/images/Fitindia.jpeg",
-              title: "Fit India",
+              title: "DRP055 Fit India",
               price: "₹599",
               originalPrice: "₹999",
               link: "/fit-india"
             },
             {
               img: "/images/Thyroid&Diabetic.jpeg",
-              title: "Thyroid & Diabetic",
+              title: "DRP082 Healthy India (Thyroid & Diabetic)",
               price: "₹999",
               originalPrice: "₹1599",
               link: "/thyroid&diabetic"
             },
           ].map((item, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full w-full">
-              <div className="h-48 w-full relative">
+            <div key={index} className="bg-white rounded-lg shadow-lg flex flex-col items-center h-full p-4">
+              <div className="relative h-48 w-full flex items-center justify-center">
                 <Image
                   src={item.img}
                   alt={item.title}
-                  layout="fill" // Ensures the image fills the container
-                  objectFit="contain" // Ensures the whole image is visible
-                  className="object-contain pr-10" // Tailwind utility for containing the image within its box
+                  fill
+                  style={{ objectFit: "contain" }}
+                  className="object-contain"
                 />
               </div>
-              <div className="p-4 flex-grow">
+              <div className="text-center mt-4">
                 <h2 className="text-xl font-semibold mb-2">{item.title}</h2>
                 <p className="text-gray-500 line-through">{item.originalPrice}</p>
                 <p className="text-green-500 text-lg font-bold">{item.price}</p>
@@ -151,15 +151,13 @@ const HealthCheckup = () => {
           </ul>
         </div>
 
-        {/* Additional sections omitted for brevity */}
-
         <div className="bg-[#002D62] text-white p-8 text-center">
           <h2 className="text-2xl font-semibold mb-4">Stay Healthy with Dr. Path Cares</h2>
           <p className="mb-4">Regular checkups are key to detecting health problems early and preventing further issues. Contact us today to schedule an appointment or learn more about our comprehensive health packages!</p>
           <button className="bg-green-500 text-white py-2 px-4 rounded">Schedule Appointment</button>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

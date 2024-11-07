@@ -11,7 +11,7 @@ function page() {
     <div>
       <Nav />
       <main className="">
-        <BasicPackageBanner testname={"Thyroid & Diabetic"} totaltest={"Includes 80 Tests"} originalprice={"₹1599"} saleprice={"₹999"} image={"images/test-banners.webp"}/>
+        <BasicPackageBanner testname={"DRP082 Healthy India (Thyroid & Diabetic)"} totaltest={"Includes 80 Tests"} originalprice={"₹1599"} saleprice={"₹999"} image={"/images/Thyroid&Diabetic.jpeg"}/>
         <ThroidDiabeticPackage />
       </main>
       <Footer />

@@ -9,7 +9,7 @@ function page() {
     <div>
       <Nav />
       <main className="">
-        <BasicPackageBanner testname={"Fever Panel 1"} totaltest={"Includes 86 Tests"} originalprice={"₹3500"} saleprice={"₹1499"} image={"images/test-banners.webp"}/>
+        <BasicPackageBanner testname={"Fever Panel 1"} totaltest={"Includes 86 Tests"} originalprice={"₹3500"} saleprice={"₹1499"} image={"/images/test-banners.webp"}/>
         <FeverOnePackage />
       </main>
       <Footer />

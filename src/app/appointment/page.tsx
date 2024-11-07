@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
-import Image from "next/image";
 
 const AppointmentContent = ({ closeModal }: { closeModal: () => void }) => {
   const [formData, setFormData] = useState({
@@ -38,37 +37,37 @@ const AppointmentContent = ({ closeModal }: { closeModal: () => void }) => {
   };
 
   return (
-    <section className="relative px-5 lg:px-20 xl:px-24 2xl:px-56 pb-20 lg:my-12 py-10">
+    <section className="relative px-4 md:px-10 lg:px-20 xl:px-24 2xl:px-56 py-10 pb-20 lg:pb-12 bg-white shadow-lg rounded-lg max-w-2xl mx-auto">
       <Toaster />
       
       {/* Close button */}
       <button
         onClick={closeModal}
-        className="absolute top-4 right-4 text-gray-500 hover:text-gray-700" // Adjusted margin and position
+        className="absolute top-8 right-4 text-gray-500 hover:text-gray-700"
       >
         ✕
       </button>
       
-      <h1 className="text-3xl font-bold text-center pb-3">Book Appointment</h1>
+      <h1 className="text-3xl font-bold text-center pb-3 underline decoration-[#00B7AB]">Book Appointment</h1>
+
       <form method="POST" onSubmit={handleSubmit}>
         <div className="grid gap-5 lg:gap-8">
           <input
             type="text"
-            onKeyDown={(e) => /[a-z]/i.test(e.key)}
             onChange={handleChange}
             placeholder="Name"
             name="name"
-            className="px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
+            className="w-full px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
             required
           />
           <input
             type="text"
-            name="number"
+            name="phonenumber"
             maxLength={10}
             minLength={10}
             onChange={handleChange}
             placeholder="Phone Number"
-            className="px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
+            className="w-full px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
             required
           />
           <input
@@ -76,26 +75,26 @@ const AppointmentContent = ({ closeModal }: { closeModal: () => void }) => {
             name="email"
             onChange={handleChange}
             placeholder="Email"
-            className="px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
+            className="w-full px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
             required
           />
           <input
             type="date"
             name="date"
             onChange={handleChange}
-            className="px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
+            className="w-full px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
             required
           />
           <input
             type="time"
             name="time"
             onChange={handleChange}
-            className="px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
+            className="w-full px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
             required
           />
           <button
             type="submit"
-            className="bg-[#00B7AB] text-white px-3 py-2 rounded-2xl mt-5 hover:bg-[#46716f] duration-300"
+            className="w-full bg-[#00B7AB] text-white px-3 py-2 rounded-2xl mt-5 hover:bg-[#46716f] duration-300"
           >
             Book An Appointment
           </button>

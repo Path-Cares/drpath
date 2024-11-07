@@ -94,7 +94,7 @@ const SwiperDeals = () => {
             <div className="flex items-center justify-center">
               <Image width={500}
                 src="/images/family3.jpeg"
-                className="h-80 rounded-b-xl lg:rounded-xl"
+                className="h-96 rounded-b-xl lg:rounded-xl"
                 height={253}
                 alt=""
               />
