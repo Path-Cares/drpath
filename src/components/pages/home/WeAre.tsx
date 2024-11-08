@@ -3,7 +3,7 @@ import H3GradientText from "@/components/pages/common/H3GradientText";
 
 const WeAre = () => {
   return (
-    <section className="px-6 mb-10 lg:px-20 xl:px-24 2xl:px-72 py-12 bg-gradient-to-r from-blue-50 to-gray-50 rounded-lg shadow-lg">
+    <section className="px-6 mb-10 lg:px-20 xl:px-24 2xl:px-72 py-20 bg-gradient-to-r from-blue-50 to-gray-50 rounded-lg shadow-lg">
       <div className="lg:flex items-center gap-12 lg:gap-16">
         <div className="lg:w-[60%]">
           <H3GradientText
@@ -24,8 +24,8 @@ const WeAre = () => {
           <Image
             src="/images/certified-doctors-new.png"
             alt="Certified doctors"
-            width={300}
-            height={300}
+            width={450} // Increased width by 50%
+            height={450} // Increased height by 50%
             className="rounded-lg shadow-md object-cover"
           />
         </div>

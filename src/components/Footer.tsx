@@ -14,7 +14,13 @@ const Footer = () => {
                         
                         {/* Logo and Description */}
                         <div className="flex flex-col items-center space-y-6">
-                            <Image src={footerlogo} alt="logo" width={250} height={150} className="w-full object-contain" />
+                            <Image 
+                                src={footerlogo} 
+                                alt="logo" 
+                                width={275} 
+                                height={165} 
+                                className="w-full object-contain" 
+                            />
                             <p className="text-sm text-white opacity-75 text-center">
                                 We have been caring for you in our clinics for over 100 years.
                             </p>

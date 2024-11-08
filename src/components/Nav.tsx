@@ -24,8 +24,8 @@ const Nav: React.FC = () => {
 
   return (
     <>
-      <header className=" px-12 sticky top-0 z-50 bg-white">
-        <div className=" w-full flex items-center justify-between lg:items-start rounded-b-xl">
+      <header className="px-6 lg:px-12 sticky top-0 z-50 bg-white">
+        <div className="flex flex-col lg:flex-row items-center justify-between lg:items-start rounded-b-xl">
           {/* Logo Section */}
           <div className="p-4 bg-white flex items-center">
             <Image
@@ -40,57 +40,23 @@ const Nav: React.FC = () => {
           {/* Contact Info for Desktop */}
           <div className="hidden lg:flex justify-evenly pr-4 xl:px-4 gap-6 bg-[#00B7AB] 2xl:justify-center 2xl:gap-24 text-white py-4 w-full">
             <a href="tel:+0120 4157 233" className="flex items-center gap-2">
-              <Image
-                src="/images/phone.svg"
-                alt="Phone"
-                width={30}
-                height={30}
-              />
+              <Image src="/images/phone.svg" alt="Phone" width={30} height={30} />
               +0120 4157 233
             </a>
             <a href="tel:+91 89290 62906" className="flex items-center gap-2">
-              <Image
-                src="/images/phone.svg"
-                alt="Phone"
-                width={30}
-                height={30}
-              />
+              <Image src="/images/phone.svg" alt="Phone" width={30} height={30} />
               +91 89290 62906
             </a>
-            <a
-              href="mailto:dr.pathcare@gmail.com"
-              className="flex items-center gap-2"
-            >
-              <Image
-                src="/images/mail.svg"
-                alt="Email"
-                width={30}
-                height={30}
-              />
+            <a href="mailto:dr.pathcare@gmail.com" className="flex items-center gap-2">
+              <Image src="/images/mail.svg" alt="Email" width={30} height={30} />
               Info@Drpathcares.com
             </a>
-            <a
-              href="tel:+91 89290 62906"
-              className="flex items-center bg-white py-2 px-4 rounded-lg gap-2 text-[#00B7AB]"
-            >
-              <Image
-                src="/images/phone-call.svg"
-                alt="Call"
-                width={16}
-                height={16}
-              />
+            <a href="tel:+91 89290 62906" className="flex items-center bg-white py-2 px-4 rounded-lg gap-2 text-[#00B7AB]">
+              <Image src="/images/phone-call.svg" alt="Call" width={16} height={16} />
               Call
             </a>
-            <a
-              href="https://wa.me/+918929062906"
-              className="flex items-center bg-white py-2 px-4 gap-2 rounded-lg text-[#00B7AB]"
-            >
-              <Image
-                src="/images/Whatsapp.svg"
-                alt="WhatsApp"
-                width={16}
-                height={16}
-              />
+            <a href="https://wa.me/+918929062906" className="flex items-center bg-white py-2 px-4 gap-2 rounded-lg text-[#00B7AB]">
+              <Image src="/images/Whatsapp.svg" alt="WhatsApp" width={16} height={16} />
               Whatsapp
             </a>
           </div>
@@ -105,72 +71,41 @@ const Nav: React.FC = () => {
               className="md:hidden p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none"
             >
               <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                viewBox="0 0 17 14"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
               </svg>
             </button>
 
             {/* Navigation Links */}
-            <div
-              className={`ml-4 flex ${isNavMenuVisible ? "block" : "hidden"} md:block w-full md:w-auto duration-100 transition-all`}
-            >
+            <div className={`ml-4 flex ${isNavMenuVisible ? "block" : "hidden"} md:block w-full md:w-auto duration-100 transition-all`}>
               <ul className="absolute md:static right-0 w-full flex flex-col p-4 md:p-0 mt-4 md:flex-row md:justify-center md:space-x-8">
                 <li>
-                  <Link
-                    href="/"
-                    className="py-2 px-3 text-gray-900 whitespace-nowrap"
-                  >
+                  <Link href="/" className="py-2 px-3 text-gray-900 whitespace-nowrap">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/aboutus"
-                    className="py-2 px-3 text-gray-900 whitespace-nowrap"
-                  >
+                  <Link href="/aboutus" className="py-2 px-3 text-gray-900 whitespace-nowrap">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/socialActivity"
-                    className="py-2 px-3 text-gray-900 whitespace-nowrap"
-                  >
+                  <Link href="/socialActivity" className="py-2 px-3 text-gray-900 whitespace-nowrap">
                     Social Activity
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/healthPackage"
-                    className="py-2 px-3 text-gray-900 whitespace-nowrap"
-                  >
+                  <Link href="/healthPackage" className="py-2 px-3 text-gray-900 whitespace-nowrap">
                     Health Package
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/certificates"
-                    className="py-2 px-3 text-gray-900 whitespace-nowrap"
-                  >
+                  <Link href="/certificates" className="py-2 px-3 text-gray-900 whitespace-nowrap">
                     All Certificate
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/contact"
-                    className="py-2 px-3 text-gray-900 whitespace-nowrap"
-                  >
+                  <Link href="/contact" className="py-2 px-3 text-gray-900 whitespace-nowrap">
                     Contact
                   </Link>
                 </li>
@@ -190,27 +125,9 @@ const Nav: React.FC = () => {
           >
             Login/Sign-up
           </Link>
-          <div className="mt-4 ">
-            <FaCartArrowDown className=" w-7 h-7 text-[#00B7AB]" />
+          <div className="mt-4">
+            <FaCartArrowDown className="w-7 h-7 text-[#00B7AB]" />
           </div>
-          {/* Cart Icon
-          <div
-            role="button"
-            onClick={toggleCart}
-            className="relative flex items-center justify-center w-10 h-10 lg:w-12 lg:h-12 border-2 border-gray-200 rounded-full cursor-pointer z-50 ml-4"
-          >
-            <Image src="/images/shopping-cart.png" alt="Shopping Cart" width={24} height={24} className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 mt-2" />
-            <span className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 px-1.5 py-0.5 text-xs sm:text-sm font-bold leading-none text-white bg-[#00B7AB] rounded-full">
-              0
-            </span>
-          </div> */}
-          {/* <Image
-            src="/images/shopping-cart.png"
-            width={12} // Adjusted for a smaller, responsive size
-            height={12}
-            alt="Shopping Cart"
-            className=" w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 mt-2"
-          /> */}
         </div>
       </header>
 

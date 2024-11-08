@@ -1,18 +1,26 @@
+
+
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import { FaAward } from "react-icons/fa";
+import Image from "next/image";
 
 const Certificates = () => {
   const certificates = [
-    { name: "Certificate MC-Augomentum.pdf", url: "/images/Certificate MC-Augomentum.pdf" },
-    { name: "Certificate RDPL.pdf", url: "/images/Certificate RDPL.pdf" },
-    { name: "ISO 14001 DR PATHCARES.pdf", url: "/images/ISO 14001 DR PATHCARES.pdf" },
-    { name: "ISO 45001 DR PATH CARE.pdf", url: "/images/ISO 45001 DR PATH CARE.pdf" },
-    { name: "Lucknow Certificate.pdf", url: "/images/Lucknow Certificate.pdf" },
-    { name: "Udyam Registration Certificate.pdf", url: "/images/Print _ Udyam Registration Certificate (1).pdf" },
+    { name: "Certificate MC-Augomentum", url: "/images/Certificate MC-Augomentum.png" },
+    { name: "Certificate RDPL", url: "/images/Certificate RDPL.png" },
+    { name: "ISO 14001 DR PATHCARES", url: "/images/ISO 14001 DR PATHCARES.png" },
+    { name: "ISO 45001 DR PATH CARE", url: "/images/ISO 45001 DR PATH CARE.png" },
+    { name: "Lucknow Certificate", url: "/images/Lucknow Certificate.png" },
+    { name: "Udyam Registration Certificate", url: "/images/Print _ Udyam Registration Certificate (1).png" },
   ];
+
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const openModal = (url: string) => setSelectedImage(url);
+  const closeModal = () => setSelectedImage(null);
 
   return (
     <div>
@@ -40,24 +48,50 @@ const Certificates = () => {
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {certificates.map((cert, index) => (
                 <li key={index} className="text-center">
-                  <a
-                    href={cert.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
+                  <div
+                    onClick={() => openModal(cert.url)}
+                    className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer"
                   >
-                    <div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-                    
-                      <embed src={cert.url} type="application/pdf" className="w-full h-64 object-cover mb-4 rounded-lg" />
-                      <p className="text-lg font-semibold">{cert.name}</p>
-                    </div>
-                  </a>
+                    <Image
+                      src={cert.url}
+                      alt={cert.name}
+                      width={300}
+                      height={400}
+                      className="w-full h-64 object-cover mb-4 rounded-lg"
+                    />
+                    <p className="text-lg font-semibold">{cert.name}</p>
+                  </div>
                 </li>
               ))}
             </ul>
           </div>
         </div>
       </div>
+
+      {/* Modal for Zoomed Image */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+          onClick={closeModal}
+        >
+          <div className="bg-white p-4 rounded-lg relative">
+            <button
+              onClick={closeModal}
+              className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 text-xl"
+            >
+              ✕
+            </button>
+            <Image
+              src={selectedImage}
+              alt="Zoomed Certificate"
+              width={600}
+              height={800}
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
+        </div>
+      )}
+
       <Footer />
     </div>
   );
