@@ -68,13 +68,13 @@ const HealthCheckup = () => {
               originalPrice: "₹7500",
               link: "/platinum-package"
             },
-            {
-              img: "/images/Platinum-Healthcare-Package.jpeg",
-              title: "Platinum Healthcare Package",
-              price: "₹3499",
-              originalPrice: "₹7999",
-              link: "/platinum-package"
-            },
+            // {
+            //   img: "/images/Platinum-Healthcare-Package.jpeg",
+            //   title: "Platinum Healthcare Package",
+            //   price: "₹3499",
+            //   originalPrice: "₹7999",
+            //   link: "/platinum-package"
+            // },
             {
               img: "/images/Full-Body-Checkup-With-IGG-Antibody.jpeg",
               title: "Full Body Checkup With IGG Antibody",

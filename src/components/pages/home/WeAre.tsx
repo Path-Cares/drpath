@@ -3,30 +3,30 @@ import H3GradientText from "@/components/pages/common/H3GradientText";
 
 const WeAre = () => {
   return (
-    <section className="px-5 lg:px-20 xl:px-24 2xl:px-72 pb-20">
-      <div className="lg:flex grid gap-12 lg:gap-20">
-        <div className="lg:w-[70%]">
+    <section className="px-6 mb-10 lg:px-20 xl:px-24 2xl:px-72 py-12 bg-gradient-to-r from-blue-50 to-gray-50 rounded-lg shadow-lg">
+      <div className="lg:flex items-center gap-12 lg:gap-16">
+        <div className="lg:w-[60%]">
           <H3GradientText
             textalign="text-left"
-            text="We Are A Certified And Award Winning You Can Trust"
+            text="We Are A Certified And Award-Winning Service You Can Trust"
           />
-          <p className="text-gray-900 text-md py-3">
-            DrPathCares Has Created Tech Enabled Processes That Ensure That The
-            Customer Entire Journey From Booking To Report Delivery Is Seamless
-            And Simplified. Through Our Proprietary Technological Developments
-            Like The Tamper Proof Sample Collection Kits (SmartPrik) To
-            Pre-Barcoded Vials To Live Temperature Monitored Sample Transportation
-            Boxes (CoolSure), We Make Sure That The Sample Collection And Testing
-            Process Is Quick, Painless And Of High Quality.
+          <p className="text-gray-700 text-lg leading-relaxed mt-4">
+            DrPathCares has created tech-enabled processes that ensure the
+            customer journey from booking to report delivery is seamless and
+            simplified. Through our proprietary technological developments, like
+            the tamper-proof sample collection kits (SmartPrik), pre-barcoded
+            vials, and live temperature-monitored sample transportation boxes
+            (CoolSure), we make the sample collection and testing process
+            quick, painless, and of high quality.
           </p>
         </div>
-        <div className=" lg:w-[30%] flex justify-center  ">
-          <Image 
-            src="/images/certified-doctors-new.png" 
-            alt="Certified doctors" 
-            width={300} // Adjust width as necessary
-            height={300} // Adjust height as necessary
-            className=" object-cover " 
+        <div className="lg:w-[40%] flex justify-center mt-8 lg:mt-0">
+          <Image
+            src="/images/certified-doctors-new.png"
+            alt="Certified doctors"
+            width={300}
+            height={300}
+            className="rounded-lg shadow-md object-cover"
           />
         </div>
       </div>

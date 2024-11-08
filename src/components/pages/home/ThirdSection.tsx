@@ -17,7 +17,7 @@ const ThirdSection = () => {
                 India’s fast AI-powered & temperature-controlled supply chain to collect and test your blood in the freshest state.
               </p>
             </div>
-            {/* <div className="grid jusitfy-start items-end"><Link href="/test"><button className="w-fit px-6 py-2 border-2 border-[#00B7AB] text-[#00B7AB] rounded-2xl font-semibold">View All Checkups</button></Link></div> */}
+            {/* <div className="grid jusitfy-start items-end"><Link href="/test"><button className="w-fit px-6 py-2 border-2 border-[#00B7AB] text-[#00B7AB] rounded-2xl font-semibold">View all Packages</button></Link></div> */}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -129,7 +129,7 @@ const ThirdSection = () => {
             <div className="grid jusitfy-start items-end">
               <Link href="/test">
                 <button className="w-fit px-6 py-2 border-2 border-[#00B7AB] text-[#00B7AB] rounded-2xl font-semibold">
-                  View All Checkups
+                  View all Packages
                 </button>
               </Link>
             </div>

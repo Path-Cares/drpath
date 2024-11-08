@@ -1,3 +1,4 @@
+import StatsSection from "@/app/StatsSection/page";
 import HomeForm from "@/components/pages/home/HomeForm";
 import Image from "next/image";
 
@@ -32,6 +33,10 @@ const HomeBanner = () => {
         </div>
       </div>
 
+      <div>
+
+       <StatsSection/>
+      </div>
       <div className="relative pt-8 px-4 xs:px-10 sm:px-20 md:px-40 lg:px-12 2xl:px-40">
         {/* Background Image Optimized */}
         {/* <Image
