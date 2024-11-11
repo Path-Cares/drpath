@@ -38,8 +38,8 @@ const TestView: React.FC<TestViewProps> = ({ testname, totaltest, originalprice,
           style={{ backgroundImage: "url('images/rectangle-for-plan.png')" }}
         >
           <div className=" text-end flex justify-end">
-            <span className=" text-white pb-1 rounded-b text-lg px-3  bg-gradient-to-tr from-[#00514C] to-[#00B7AB]">
-            Package
+            <span className=" text-white mb-1 rounded-b text-base px-3  bg-gradient-to-tr from-[#00514C] to-[#00B7AB]">
+            Our First Priority Package
             </span>
           </div>
           <div className="flex text-white items-baseline pb-8 gap-2">

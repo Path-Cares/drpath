@@ -3,6 +3,36 @@ import Nav from '@/components/Nav';
 import Image from 'next/image';
 
 const socialActivity = () => {
+  // Array of image paths for all 26 images
+  const galleryImages = [
+    '/images/sa1.jpeg',
+    '/images/sa2.jpeg',
+    '/images/sa3.jpeg',
+    '/images/sa4.jpeg',
+    '/images/sa5.jpeg',
+    '/images/sa6.jpeg',
+    '/images/sa7.jpeg',
+    '/images/sa8.jpeg',
+    '/images/sa9.jpeg',
+    '/images/sa10.jpeg',
+    '/images/sa11.jpeg',
+    '/images/sa12.jpeg',
+    '/images/sa13.jpeg',
+    '/images/sa14.jpeg',
+    '/images/sa15.jpeg',
+    '/images/sa16.jpeg',
+    '/images/sa17.jpeg',
+    '/images/sa18.jpeg',
+    '/images/sa19.jpeg',
+    '/images/sa20.jpeg',
+    '/images/sa21.jpeg',
+    '/images/sa22.jpeg',
+    '/images/sa23.jpeg',
+    '/images/sa24.jpeg',
+    // '/images/sa25.jpeg',
+    '/images/sa26.jpeg',
+  ];
+
   return (
     <>
       <div
@@ -51,7 +81,6 @@ const socialActivity = () => {
         <div className="container mx-auto my-12">
           <h2 className="text-3xl font-bold text-center mb-6">Our Recent Social Activities</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Video 1 */}
             <div className="w-full h-[35rem] overflow-hidden rounded-lg shadow-lg">
               <video
                 src="/images/video1.mp4"
@@ -59,7 +88,6 @@ const socialActivity = () => {
                 className="object-cover w-full h-full"
               ></video>
             </div>
-            {/* Video 2 */}
             <div className="w-full h-[35rem] overflow-hidden rounded-lg shadow-lg">
               <video
                 src="/images/video2.mp4"
@@ -67,7 +95,6 @@ const socialActivity = () => {
                 className="object-cover w-full h-full"
               ></video>
             </div>
-            {/* Video 3 */}
             <div className="w-full h-[35rem] overflow-hidden rounded-lg shadow-lg">
               <video
                 src="/images/video3.mp4"
@@ -75,6 +102,27 @@ const socialActivity = () => {
                 className="object-cover w-full h-full"
               ></video>
             </div>
+          </div>
+        </div>
+
+        {/* Image Gallery Section */}
+        <div className="container mx-auto my-12">
+          {/* <h2 className="text-3xl font-bold text-center mb-6">Gallery</h2> */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {galleryImages.map((src, index) => (
+              <div
+                key={index}
+                className="relative w-full h-48 overflow-hidden rounded-lg shadow-lg"
+              >
+                <Image
+                  src={src}
+                  alt={`Gallery Image ${index + 1}`}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-lg"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

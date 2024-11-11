@@ -1,5 +1,3 @@
-
-
 "use client";
 import React, { useState } from "react";
 import Footer from "@/components/Footer";
@@ -35,7 +33,7 @@ const Certificates = () => {
           <div className="flex items-center justify-center mb-10 bg-white p-8 rounded-lg shadow-md">
             <FaAward size={130} className="text-yellow-500 mr-8" />
             <div>
-              <h1 className="text-5xl font-bold">Our Certificates</h1>
+              <h1 className="text-4xl font-bold">Dr. PathCares+ Our Associate partner Labs Certificate</h1>
               <p className="text-gray-700 mt-4 text-2xl">
                 Celebrating our achievements and commitment to healthcare excellence.
               </p>

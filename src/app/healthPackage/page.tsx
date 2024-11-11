@@ -27,69 +27,6 @@ const HealthCheckup = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-8 max-w-7xl mx-auto">
           {[
             {
-              img: "/images/Basic-Package.jpeg",
-              title: "Basic Package",
-              price: "₹1150",
-              originalPrice: "₹3499",
-              link: "/basic-package"
-            },
-            {
-              img: "/images/Standard-Package.jpeg",
-              title: "Standard Package",
-              price: "₹1650",
-              originalPrice: "₹4500",
-              link: "/standard-package"
-            },
-            {
-              img: "/images/Classic-Package-Men.jpeg",
-              title: "Classic Package Men",
-              price: "₹2250",
-              originalPrice: "₹4999",
-              link: "/classic-men-package"
-            },
-            {
-              img: "/images/Classic-Package-Women.jpeg",
-              title: "Classic Package Women",
-              price: "₹2250",
-              originalPrice: "₹4500",
-              link: "/classic-women-package"
-            },
-            {
-              img: "/images/Senior-Citizen-Package.jpeg",
-              title: "Senior Citizen Package",
-              price: "₹2999",
-              originalPrice: "₹6500",
-              link: "/senior-citizens-package"
-            },
-            {
-              img: "/images/Platinum-Package.jpeg",
-              title: "Platinum Package",
-              price: "₹3999",
-              originalPrice: "₹7500",
-              link: "/platinum-package"
-            },
-            // {
-            //   img: "/images/Platinum-Healthcare-Package.jpeg",
-            //   title: "Platinum Healthcare Package",
-            //   price: "₹3499",
-            //   originalPrice: "₹7999",
-            //   link: "/platinum-package"
-            // },
-            {
-              img: "/images/Full-Body-Checkup-With-IGG-Antibody.jpeg",
-              title: "Full Body Checkup With IGG Antibody",
-              price: "₹1749",
-              originalPrice: "₹3499",
-              link: "#"
-            },
-            {
-              img: "/images/Health-Checkup-Special-Combo-Package.jpeg",
-              title: "Health Checkup Special Combo Package",
-              price: "₹2999",
-              originalPrice: "₹4999",
-              link: "#"
-            },
-            {
               img: "/images/Thyroid.jpeg",
               title: "DRP007 Healthy India (Thyroid)",
               price: "₹899",
@@ -117,6 +54,73 @@ const HealthCheckup = () => {
               originalPrice: "₹1599",
               link: "/thyroid&diabetic"
             },
+            {
+              img: "/images/Standard-Package.jpeg",
+              title: "Standard Package",
+              price: "₹1650",
+              originalPrice: "₹4500",
+              link: "/standard-package"
+            },
+            {
+              img: "/images/Classic-Package-Men.jpeg",
+              title: "Classic Package Men",
+              price: "₹2250",
+              originalPrice: "₹4999",
+              link: "/classic-men-package"
+            },
+            {
+              img: "/images/Platinum-Package.jpeg",
+              title: "Platinum Package",
+              price: "₹3999",
+              originalPrice: "₹7500",
+              link: "/platinum-package"
+            },
+            {
+              img: "/images/Basic-Package.jpeg",
+              title: "Basic Package",
+              price: "₹1150",
+              originalPrice: "₹3499",
+              link: "/basic-package"
+            },
+            
+            
+            {
+              img: "/images/Classic-Package-Women.jpeg",
+              title: "Classic Package Women",
+              price: "₹2250",
+              originalPrice: "₹4500",
+              link: "/classic-women-package"
+            },
+            {
+              img: "/images/Senior-Citizen-Package.jpeg",
+              title: "Senior Citizen Package",
+              price: "₹2999",
+              originalPrice: "₹6500",
+              link: "/senior-citizens-package"
+            },
+            
+            // {
+            //   img: "/images/Platinum-Healthcare-Package.jpeg",
+            //   title: "Platinum Healthcare Package",
+            //   price: "₹3499",
+            //   originalPrice: "₹7999",
+            //   link: "/platinum-package"
+            // },
+            {
+              img: "/images/Full-Body-Checkup-With-IGG-Antibody.jpeg",
+              title: "Full Body Checkup With IGG Antibody",
+              price: "₹1749",
+              originalPrice: "₹3499",
+              link: "#"
+            },
+            {
+              img: "/images/Health-Checkup-Special-Combo-Package.jpeg",
+              title: "Health Checkup Special Combo Package",
+              price: "₹2999",
+              originalPrice: "₹4999",
+              link: "#"
+            },
+            
           ].map((item, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg flex flex-col items-center h-full p-4">
               <div className="relative h-48 w-full flex items-center justify-center">
