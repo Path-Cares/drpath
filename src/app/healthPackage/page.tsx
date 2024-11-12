@@ -5,6 +5,26 @@ import Link from 'next/link';
 import { FaCheckCircle } from 'react-icons/fa';
 
 const HealthCheckup = () => {
+  const packages = [
+    { img: "/images/Fitindia.jpeg", title: "DRP055 Fit India", price: 599, originalPrice: "₹999", link: "/fit-india" },
+    { img: "/images/Thyroid.jpeg", title: "DRP007 Healthy India (Thyroid)", price: 899, originalPrice: "₹1499", link: "/thyroid" },
+    { img: "/images/Diabetic.jpeg", title: "DRP007 Healthy India (Diabetic)", price: 899, originalPrice: "₹1499", link: "/diabetic" },
+    { img: "/images/Thyroid&Diabetic.jpeg", title: "DRP082 Healthy India (Thyroid & Diabetic)", price: 999, originalPrice: "₹1599", link: "/thyroid&diabetic" },
+    { img: "/images/Fever Panel1.jpeg", title: "Fever Panel", price: 1499, originalPrice: "₹1999", link: "#" },
+    { img: "/images/Basic-Package.jpeg", title: "Basic Package", price: 1150, originalPrice: "₹3499", link: "/basic-package" },
+    { img: "/images/Standard-Package.jpeg", title: "Standard Package", price: 1650, originalPrice: "₹4500", link: "/standard-package" },
+    { img: "/images/Full-Body-Checkup-With-IGG-Antibody.jpeg", title: "Full Body Checkup With IGG Antibody", price: 1749, originalPrice: "₹3499", link: "#" },
+    { img: "/images/Health-Checkup-Special-Combo-Package.jpeg", title: "Health Checkup Special Combo Package", price: 2999, originalPrice: "₹4999", link: "#" },
+    { img: "/images/Senior-Citizen-Package.jpeg", title: "Senior Citizen Package", price: 2999, originalPrice: "₹6500", link: "/senior-citizens-package" },
+    { img: "/images/Classic-Package-Men.jpeg", title: "Classic Package Men", price: 2250, originalPrice: "₹4999", link: "/classic-men-package" },
+    { img: "/images/Classic-Package-Women.jpeg", title: "Classic Package Women", price: 2250, originalPrice: "₹4500", link: "/classic-women-package" },
+    { img: "/images/Platinum-Package.jpeg", title: "Platinum Package", price: 3999, originalPrice: "₹7500", link: "/platinum-package" },
+    { img: "/images/pcodprofile1.jpeg", title: "Pcod Profile", price: 2800, originalPrice: "₹4200", link: "#" },
+    { img: "/images/hepititisPanel1.jpeg", title: "Hepititis Panel", price: 4499, originalPrice: "₹4999", link: "#" }
+  ];
+
+  const sortedPackages = packages.sort((a, b) => a.price - b.price);
+
   return (
     <div>
       <Nav />
@@ -23,105 +43,8 @@ const HealthCheckup = () => {
           </p>
         </div>
 
-        {/* Health Checkup Package Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-8 max-w-7xl mx-auto">
-          {[
-            {
-              img: "/images/Thyroid.jpeg",
-              title: "DRP007 Healthy India (Thyroid)",
-              price: "₹899",
-              originalPrice: "₹1499",
-              link: "/thyroid"
-            },
-            {
-              img: "/images/Diabetic.jpeg",
-              title: "DRP007 Healthy India (Diabetic)",
-              price: "₹899",
-              originalPrice: "₹1499",
-              link: "/diabetic"
-            },
-            {
-              img: "/images/Fitindia.jpeg",
-              title: "DRP055 Fit India",
-              price: "₹599",
-              originalPrice: "₹999",
-              link: "/fit-india"
-            },
-            {
-              img: "/images/Thyroid&Diabetic.jpeg",
-              title: "DRP082 Healthy India (Thyroid & Diabetic)",
-              price: "₹999",
-              originalPrice: "₹1599",
-              link: "/thyroid&diabetic"
-            },
-            {
-              img: "/images/Standard-Package.jpeg",
-              title: "Standard Package",
-              price: "₹1650",
-              originalPrice: "₹4500",
-              link: "/standard-package"
-            },
-            {
-              img: "/images/Classic-Package-Men.jpeg",
-              title: "Classic Package Men",
-              price: "₹2250",
-              originalPrice: "₹4999",
-              link: "/classic-men-package"
-            },
-            {
-              img: "/images/Platinum-Package.jpeg",
-              title: "Platinum Package",
-              price: "₹3999",
-              originalPrice: "₹7500",
-              link: "/platinum-package"
-            },
-            {
-              img: "/images/Basic-Package.jpeg",
-              title: "Basic Package",
-              price: "₹1150",
-              originalPrice: "₹3499",
-              link: "/basic-package"
-            },
-            
-            
-            {
-              img: "/images/Classic-Package-Women.jpeg",
-              title: "Classic Package Women",
-              price: "₹2250",
-              originalPrice: "₹4500",
-              link: "/classic-women-package"
-            },
-            {
-              img: "/images/Senior-Citizen-Package.jpeg",
-              title: "Senior Citizen Package",
-              price: "₹2999",
-              originalPrice: "₹6500",
-              link: "/senior-citizens-package"
-            },
-            
-            // {
-            //   img: "/images/Platinum-Healthcare-Package.jpeg",
-            //   title: "Platinum Healthcare Package",
-            //   price: "₹3499",
-            //   originalPrice: "₹7999",
-            //   link: "/platinum-package"
-            // },
-            {
-              img: "/images/Full-Body-Checkup-With-IGG-Antibody.jpeg",
-              title: "Full Body Checkup With IGG Antibody",
-              price: "₹1749",
-              originalPrice: "₹3499",
-              link: "#"
-            },
-            {
-              img: "/images/Health-Checkup-Special-Combo-Package.jpeg",
-              title: "Health Checkup Special Combo Package",
-              price: "₹2999",
-              originalPrice: "₹4999",
-              link: "#"
-            },
-            
-          ].map((item, index) => (
+          {sortedPackages.map((item, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg flex flex-col items-center h-full p-4">
               <div className="relative h-48 w-full flex items-center justify-center">
                 <Image
@@ -132,14 +55,16 @@ const HealthCheckup = () => {
                   className="object-contain"
                 />
               </div>
-              <div className="text-center mt-4">
+              <div className="text-center mt-4 flex-grow">
                 <h2 className="text-xl font-semibold mb-2">{item.title}</h2>
                 <p className="text-gray-500 line-through">{item.originalPrice}</p>
-                <p className="text-green-500 text-lg font-bold">{item.price}</p>
-                <Link href={item.link}>
-                  <button className="mt-4 w-full bg-[#002D62] text-white py-2 px-4 rounded">Book Now</button>
-                </Link>
+                <p className="text-green-500 text-lg font-bold">₹{item.price}</p>
               </div>
+              <Link href={item.link} className="w-full">
+                <button className="w-full bg-[#002D62] text-white py-2 px-4 rounded hover:bg-[#001a42] transition-all duration-200">
+                  Book Now
+                </button>
+              </Link>
             </div>
           ))}
         </div>
@@ -151,14 +76,17 @@ const HealthCheckup = () => {
               <FaCheckCircle className="text-green-500 mr-2 mt-1" />
               <p><strong>Complete Blood Count (CBC):</strong> Detects potential anemia or infection issues by measuring components such as hemoglobin, WBCs, RBCs, and platelets.</p>
             </li>
-            {/* Additional list items omitted for brevity */}
           </ul>
         </div>
 
         <div className="bg-[#002D62] text-white p-8 text-center">
           <h2 className="text-2xl font-semibold mb-4">Stay Healthy with Dr. Path Cares</h2>
-          <p className="mb-4">Regular checkups are key to detecting health problems early and preventing further issues. Contact us today to schedule an appointment or learn more about our comprehensive health packages!</p>
-          <button className="bg-green-500 text-white py-2 px-4 rounded">Schedule Appointment</button>
+          <p className="mb-4">
+            Regular checkups are key to detecting health problems early and preventing further issues. Contact us today to schedule an appointment or learn more about our comprehensive health packages!
+          </p>
+          <Link href="tel:+918929062906">
+            <button className="bg-green-500 text-white py-2 px-4 rounded">Schedule Appointment</button>
+          </Link>
         </div>
       </div>
       <Footer />

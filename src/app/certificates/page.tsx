@@ -7,12 +7,12 @@ import Image from "next/image";
 
 const Certificates = () => {
   const certificates = [
-    { name: "Certificate MC-Augomentum", url: "/images/Certificate MC-Augomentum.png" },
-    { name: "Certificate RDPL", url: "/images/Certificate RDPL.png" },
-    { name: "ISO 14001 DR PATHCARES", url: "/images/ISO 14001 DR PATHCARES.png" },
-    { name: "ISO 45001 DR PATH CARE", url: "/images/ISO 45001 DR PATH CARE.png" },
-    { name: "Lucknow Certificate", url: "/images/Lucknow Certificate.png" },
-    { name: "Udyam Registration Certificate", url: "/images/Print _ Udyam Registration Certificate (1).png" },
+    { name: "Certificate MC-Augomentum", url: "/images/Certificate MC-Augomentum1.jpeg" },
+    { name: "Certificate RDPL", url: "/images/Certificate RDPL1.jpeg" },
+    { name: "ISO 14001 DR PATHCARES", url: "/images/ISO 14001 DR PATHCARES1.jpeg" },
+    { name: "ISO 45001 DR PATH CARE", url: "/images/ISO 45001 DR PATH CARE1.jpeg" },
+    { name: "Lucknow Certificate", url: "/images/Lucknow Certificate1.jpeg" },
+    { name: "Udyam Registration Certificate", url: "/images/Print _ Udyam Registration Certificate1.jpeg" },
   ];
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -33,7 +33,7 @@ const Certificates = () => {
           <div className="flex items-center justify-center mb-10 bg-white p-8 rounded-lg shadow-md">
             <FaAward size={130} className="text-yellow-500 mr-8" />
             <div>
-              <h1 className="text-4xl font-bold">Dr. PathCares+ Our Associate partner Labs Certificate</h1>
+              <h1 className="text-4xl font-bold">Dr. PathCares+ Our Associate Partner Labs Certificate</h1>
               <p className="text-gray-700 mt-4 text-2xl">
                 Celebrating our achievements and commitment to healthcare excellence.
               </p>
@@ -72,20 +72,25 @@ const Certificates = () => {
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
           onClick={closeModal}
         >
-          <div className="bg-white p-4 rounded-lg relative">
+          <div
+            className="bg-white p-4 rounded-lg relative max-w-sm w-full h-auto mx-4"
+            style={{ maxHeight: "90%" }}
+          >
             <button
               onClick={closeModal}
               className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 text-xl"
             >
               ✕
             </button>
-            <Image
-              src={selectedImage}
-              alt="Zoomed Certificate"
-              width={600}
-              height={800}
-              className="w-full h-auto rounded-lg"
-            />
+            <div className="flex justify-center items-center h-full">
+              <Image
+                src={selectedImage}
+                alt="Zoomed Certificate"
+                width={800}
+                height={600}
+                className="object-contain max-h-[80vh] max-w-full"
+              />
+            </div>
           </div>
         </div>
       )}
@@ -96,6 +101,7 @@ const Certificates = () => {
 };
 
 export default Certificates;
+
 
 
 
