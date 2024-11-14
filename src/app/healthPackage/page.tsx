@@ -20,45 +20,41 @@ const HealthCheckup = () => {
     { img: "/images/Classic-Package-Women.jpeg", title: "Classic Package Women", price: 2250, originalPrice: "₹4500", link: "/classic-women-package" },
     { img: "/images/Platinum-Package.jpeg", title: "Platinum Package", price: 3999, originalPrice: "₹7500", link: "/platinum-package" },
     { img: "/images/pcodprofile1.jpeg", title: "Pcod Profile", price: 2800, originalPrice: "₹4200", link: "#" },
-    { img: "/images/hepititisPanel1.jpeg", title: "Hepititis Panel", price: 4499, originalPrice: "₹4999", link: "#" }
+    { img: "/images/hepititisPanel1.jpeg", title: "Hepititis Panel", price: 4499, originalPrice: "₹4999", link: "#" },
+    { img: "/images/allergy.jpeg", title: "Allergy Package", link: "/allergy" }, // No price or originalPrice
   ];
 
-  const sortedPackages = packages.sort((a, b) => a.price - b.price);
+  const sortedPackages = packages.sort((a, b) => {
+    const priceA = a.price || Infinity; 
+    const priceB = b.price || Infinity; 
+    return priceA - priceB;
+  });
 
   return (
     <div>
       <Nav />
-
       <div className="flex flex-col items-center">
         <div className="w-full h-64 bg-cover bg-center relative" style={{ backgroundImage: "url('/images/banner-background.webp')" }}>
           <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-4xl font-bold text-[#002D62]">Health Checkup Packages</h1>
           </div>
         </div>
-
         <div className="max-w-5xl mx-auto p-6 text-center space-y-4">
           <h2 className="text-3xl font-semibold text-gray-800">Dr. Path Cares Comprehensive Health Checkup Packages</h2>
           <p className="text-gray-600">
-            These packages are designed to ensure your overall well-being by incorporating imaging, blood work, and screenings. Detect early warning signs for potential health issues and get effective treatments to ensure long-term benefits. Customize packages based on age, gender, or health conditions.
+            These packages are designed to ensure your overall well-being by incorporating imaging, blood work, and screenings. Detect early warning signs for potential health issues and get effective treatments to ensure long-term benefits.
           </p>
         </div>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-8 max-w-7xl mx-auto">
           {sortedPackages.map((item, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg flex flex-col items-center h-full p-4">
               <div className="relative h-48 w-full flex items-center justify-center">
-                <Image
-                  src={item.img}
-                  alt={item.title}
-                  fill
-                  style={{ objectFit: "contain" }}
-                  className="object-contain"
-                />
+                <Image src={item.img} alt={item.title} fill style={{ objectFit: "contain" }} className="object-contain" />
               </div>
               <div className="text-center mt-4 flex-grow">
                 <h2 className="text-xl font-semibold mb-2">{item.title}</h2>
-                <p className="text-gray-500 line-through">{item.originalPrice}</p>
-                <p className="text-green-500 text-lg font-bold">₹{item.price}</p>
+                {item.originalPrice && <p className="text-gray-500 line-through">{item.originalPrice}</p>}
+                {item.price && <p className="text-green-500 text-lg font-bold">₹{item.price}</p>}
               </div>
               <Link href={item.link} className="w-full">
                 <button className="w-full bg-[#002D62] text-white py-2 px-4 rounded hover:bg-[#001a42] transition-all duration-200">
@@ -68,28 +64,8 @@ const HealthCheckup = () => {
             </div>
           ))}
         </div>
-
-        <div className="bg-gray-100 p-8 max-w-5xl mx-auto my-10 rounded-lg">
-          <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">Common Tests in Our Health Checkup Packages</h2>
-          <ul className="space-y-4">
-            <li className="flex items-start">
-              <FaCheckCircle className="text-green-500 mr-2 mt-1" />
-              <p><strong>Complete Blood Count (CBC):</strong> Detects potential anemia or infection issues by measuring components such as hemoglobin, WBCs, RBCs, and platelets.</p>
-            </li>
-          </ul>
-        </div>
-
-        <div className="bg-[#002D62] text-white p-8 text-center">
-          <h2 className="text-2xl font-semibold mb-4">Stay Healthy with Dr. Path Cares</h2>
-          <p className="mb-4">
-            Regular checkups are key to detecting health problems early and preventing further issues. Contact us today to schedule an appointment or learn more about our comprehensive health packages!
-          </p>
-          <Link href="tel:+918929062906">
-            <button className="bg-green-500 text-white py-2 px-4 rounded">Schedule Appointment</button>
-          </Link>
-        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };

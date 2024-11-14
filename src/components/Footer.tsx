@@ -11,8 +11,9 @@ const Footer = () => {
       <footer className="bg-[#1F2259] py-16 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
-            {/* Logo and Description */}
-            <div className="flex flex-col items-center space-y-6">
+
+            {/* Logo and Description Section (White background) */}
+            <div className="flex flex-col items-center space-y-6 bg-white p-6 rounded-lg">
               <Image
                 src={footerlogo}
                 alt="logo"
@@ -20,12 +21,12 @@ const Footer = () => {
                 height={231}
                 className="w-full object-contain"
               />
-              <p className="text-sm text-white opacity-75 text-center">
+              <p className="text-sm text-black opacity-75 text-center">
                 We have been caring for you in our clinics for over 100 years.
               </p>
             </div>
 
-            {/* Services Section */}
+            {/* Services Section (Blue background) */}
             <div className="flex flex-col items-center lg:items-start">
               <p className="text-lg font-medium pb-3">Packages</p>
               <div className="flex flex-col space-y-3 text-sm">
@@ -37,7 +38,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Quick Links Section */}
+            {/* Quick Links Section (Blue background) */}
             <div className="flex flex-col items-center lg:items-start">
               <p className="text-lg font-medium pb-3">Quick Links</p>
               <div className="flex flex-col space-y-3 text-sm">
@@ -48,7 +49,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Follow Us Section */}
+            {/* Follow Us Section (Blue background) */}
             <div className="flex flex-col items-center lg:items-start">
               <p className="text-lg font-medium pb-3">Follow Us</p>
               <div className="flex gap-2 text-xl">
@@ -67,7 +68,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Contact Us Section */}
+            {/* Contact Us Section (Blue background) */}
             <div className="flex flex-col items-center lg:items-start">
               <p className="text-lg font-medium pb-3">Contact Us</p>
               <div className="flex flex-col space-y-3 text-sm">
