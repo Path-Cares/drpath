@@ -23,6 +23,7 @@ function Page() {
       price: "₹3500/-",
       discountPrice: "₹3000/-",
     },
+    
   ];
 
   return (

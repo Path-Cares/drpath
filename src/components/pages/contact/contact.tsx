@@ -81,7 +81,8 @@ const ContactContent = () => {
       {/* Request a Call Back Form */}
       <div className="mt-12 bg-white p-10 rounded-lg shadow-md">
         <h1 className="text-3xl font-bold text-center pb-5">Request a Call Back</h1>
-        <form method="POST" onSubmit={handleSubmit} className="grid gap-5">
+        <form action="https://formspree.io/f/mwpkqvnb" method="POST"  className="grid gap-5"> 
+        {/* onSubmit={handleSubmit} */}
           <input
             type="text"
             name="name"

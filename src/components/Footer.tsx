@@ -22,7 +22,7 @@ const Footer = () => {
                 className="w-full object-contain"
               />
               <p className="text-sm text-black opacity-75 text-center">
-                We have been caring for you in our clinics for over 100 years.
+                We have been caring for you in our clinics for over 10 years.
               </p>
             </div>
 

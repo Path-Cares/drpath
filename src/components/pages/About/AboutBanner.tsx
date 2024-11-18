@@ -24,6 +24,18 @@ const Contents = () => {
         </p>
       </div>
 
+      <div className=" w-full flex justify-center items-center mb-10" >
+      {/* style={{ height: "70%" }} */}
+          <video
+            className="w-[60%]  rounded-lg shadow-lg h-[60vh]"
+            controls
+            poster="/images/video-poster.png" // Optional poster image
+          >
+            <source src="/images/aboutus.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
       <div
         className="my-6 bg-center bg-no-repeat rounded-2xl"
         style={{ backgroundImage: "url('images/banner-background.webp')" }}>
