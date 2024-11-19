@@ -14,6 +14,7 @@ const AppointmentContent = ({ closeModal }: { closeModal: () => void }) => {
   const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+    
   };
 
   const handleSubmit = async (e: any) => {

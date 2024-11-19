@@ -1,66 +1,77 @@
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+
 const Contents = () => {
   return (
     <>
-    <section className="px-5 lg:px-20 xl:px-24 2xl:px-56 pt-14 lg:pt-18">
-      <div className="mb-20">
-        <h1 className="text-center text-4xl font-semibold mb-3">About Us</h1>
+      <section className="px-5 lg:px-20 xl:px-24 2xl:px-56 pt-14 lg:pt-18">
+        {/* About Us Section */}
+        <div className="mb-20">
+          <h1 className="text-center text-4xl font-semibold mb-3">About Us</h1>
+          <p className="mb-3">
+            DrPathCares is one of the most trusted leading preventive healthcare
+            companies and provides the highest quality diagnostic tests and health
+            packages to you at the comfort of your home. At DrPathCares, quality
+            is a way of functioning, guided by stringent quality control
+            parameters.
+          </p>
+          <p className="mb-3">
+            Coupled with technology-enabled systems, we ensure consistent
+            reproducibility of results and reports. Our tele-consultation services
+            from India's most prestigious medical colleges, along with clinical
+            nutritionists and dieticians, make staying healthy convenient and
+            hassle-free.
+          </p>
+        </div>
 
-        <p className="mb-3">
-          DrPathCares Is One Of The Most Trusted Leading Preventive Healthcare
-          Company And Provides Highest Quality Diagnostic Tests And Health
-          Packages To You At The Comfort Of Your Home. At DrPathcares ,
-          Quality Is A Way Of Functioning, Our Stringent Quality Control
-          Parameters.
-        </p>
-
-        <p className="mb-3">
-          Coupled With Technology Enabled Systems Ensure The Consistent
-          Reproducibility Of Results And Reports. Our Tele-Consultation Services
-          From India Most Prestigious Medical Colleges And Clinical
-          Nutritionists And Dieticians Make Staying Healthy Convenient And
-          Hassle Free.
-        </p>
-      </div>
-
-      <div className=" w-full flex justify-center items-center mb-10" >
-      {/* style={{ height: "70%" }} */}
+        {/* Video Section */}
+        <div className="w-full flex justify-center items-center mb-10">
           <video
-            className="w-[60%]  rounded-lg shadow-lg h-[60vh]"
+            className="w-[60%] rounded-lg shadow-lg h-[60vh] bg-gray-100"
             controls
-            poster="/images/video-poster.png" // Optional poster image
+            poster="/images/video-poster.png" // Ensure this image exists
+            autoPlay
+            muted
           >
             <source src="/images/aboutus.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
 
-      <div
-        className="my-6 bg-center bg-no-repeat rounded-2xl"
-        style={{ backgroundImage: "url('images/banner-background.webp')" }}>
-        <h2 className="text-center text-3xl mb-3 pt-8 font-medium">
-          Why Choose DrPathcares
-        </h2>
-        <div className="lg:flex items-center justify-center">
+        {/* Why Choose Us Section */}
+        <div
+          className="my-6 bg-center bg-no-repeat rounded-2xl"
+          style={{ backgroundImage: "url('/images/banner-background.webp')" }} // Ensure this image exists
+        >
+          <h2 className="text-center text-3xl mb-3 pt-8 font-medium">
+            Why Choose DrPathCares
+          </h2>
+          <div className="lg:flex items-center justify-center">
             <div className="flex justify-center">
-            <Image src="/images/whychooseus.webp" alt="alt" width={400} height={400} />
+              <Image
+                src="/images/whychooseus.webp" // Ensure this image exists
+                alt="Why Choose Us"
+                width={400}
+                height={400}
+              />
             </div>
-          <ul className="list-disc list-inside text-lg font-medium p-6">
-            <li>Affordable & Honest Pricing With 100% Accurate Reports</li>
-            <li>Expert Team Of Phlebotomists With MD Pathologist</li>
-            <li>Get On Time Fast & Accurate Service With Quality</li>
-            <li>Easy To Download E Reports At A Click</li>
-            <li>Fast & Accurate Test Reports</li>
-            <li>Free Medical Consultation</li>
-            <li>Fully Automated Machines</li>
-            <li>Professional Staff</li>
-          </ul>
+            <ul className="list-disc list-inside text-lg font-medium p-6">
+              <li>Affordable & honest pricing with 100% accurate reports</li>
+              <li>Expert team of phlebotomists with MD pathologists</li>
+              <li>On-time, fast & accurate service with quality</li>
+              <li>Easy-to-download e-reports at a click</li>
+              <li>Fast & accurate test reports</li>
+              <li>Free medical consultation</li>
+              <li>Fully automated machines</li>
+              <li>Professional staff</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
-    {/* <Footer/> */}
+      </section>
+      {/* Footer Component */}
+      {/* <Footer /> */}
     </>
   );
 };
+
 export default Contents;
