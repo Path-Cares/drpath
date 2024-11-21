@@ -30,7 +30,7 @@ const Footer = () => {
             <div className="flex flex-col items-center lg:items-start">
               <p className="text-lg font-medium pb-3">Packages</p>
               <div className="flex flex-col space-y-3 text-sm">
-                <Link href="/basic-package">Basic Package</Link>
+                {/* <Link href="/basic-package">Basic Package</Link> */}
                 <Link href="/standard-package">Standard Package</Link>
                 <Link href="/classic-men-package">Classic Men Package</Link>
                 <Link href="/classic-women-package">Classic Women Package</Link>

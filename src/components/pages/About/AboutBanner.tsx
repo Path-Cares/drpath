@@ -1,5 +1,5 @@
-import Footer from '@/components/Footer';
-import Image from 'next/image';
+import Footer from "@/components/Footer";
+import Image from "next/image";
 
 const Contents = () => {
   return (
@@ -10,32 +10,46 @@ const Contents = () => {
           <h1 className="text-center text-4xl font-semibold mb-3">About Us</h1>
           <p className="mb-3">
             DrPathCares is one of the most trusted leading preventive healthcare
-            companies and provides the highest quality diagnostic tests and health
-            packages to you at the comfort of your home. At DrPathCares, quality
-            is a way of functioning, guided by stringent quality control
+            companies and provides the highest quality diagnostic tests and
+            health packages to you at the comfort of your home. At DrPathCares,
+            quality is a way of functioning, guided by stringent quality control
             parameters.
           </p>
           <p className="mb-3">
             Coupled with technology-enabled systems, we ensure consistent
-            reproducibility of results and reports. Our tele-consultation services
-            from India's most prestigious medical colleges, along with clinical
-            nutritionists and dieticians, make staying healthy convenient and
-            hassle-free.
+            reproducibility of results and reports. Our tele-consultation
+            services from India's most prestigious medical colleges, along with
+            clinical nutritionists and dieticians, make staying healthy
+            convenient and hassle-free.
           </p>
         </div>
 
-        {/* Video Section */}
-        <div className="w-full flex justify-center items-center mb-10">
-          <video
-            className="w-[60%] rounded-lg shadow-lg h-[60vh] bg-gray-100"
-            controls
-            poster="/images/video-poster.png" // Ensure this image exists
-            autoPlay
-            muted
-          >
-            <source src="/images/aboutus.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <div className="flex">
+          {/* Video Section */}
+          <div className="w-full flex justify-center items-center mb-10">
+            <video
+              className="w-[60%] rounded-lg shadow-lg h-[60vh] bg-gray-100"
+              controls
+              poster="/images/video-poster.png" // Ensure this image exists
+              autoPlay
+              muted
+            >
+              <source src="/images/aboutus.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="w-full flex justify-center items-center mb-10">
+            <video
+              className="w-[60%] rounded-lg shadow-lg h-[60vh] bg-gray-100"
+              controls
+              poster="/images/video-poster.png" // Ensure this image exists
+              autoPlay
+              muted
+            >
+              <source src="/images/aboutus1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
 
         {/* Why Choose Us Section */}

@@ -36,7 +36,7 @@ const ThirdSection = () => {
 
           {/* Packages Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <Link href="/basic-package">
+            {/* <Link href="/basic-package">
               <div
                 className="rounded-lg p-4 bg-cover bg-center h-full"
                 style={{ backgroundImage: "url('/images/checkup-green.png')" }}
@@ -58,7 +58,7 @@ const ThirdSection = () => {
                   />
                 </div>
               </div>
-            </Link>
+            </Link> */}
 
             <Link href="/standard-package">
               <div

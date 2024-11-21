@@ -2,7 +2,6 @@ import Footer from '@/components/Footer';
 import Nav from '@/components/Nav';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaCheckCircle } from 'react-icons/fa';
 
 const HealthCheckup = () => {
   const packages = [
@@ -11,22 +10,30 @@ const HealthCheckup = () => {
     { img: "/images/Diabetic.jpeg", title: "DRP007 Healthy India (Diabetic)", price: 899, originalPrice: "₹1499", link: "/diabetic" },
     { img: "/images/Thyroid&Diabetic.jpeg", title: "DRP082 Healthy India (Thyroid & Diabetic)", price: 999, originalPrice: "₹1599", link: "/thyroid&diabetic" },
     { img: "/images/Fever Panel1.jpeg", title: "Fever Panel", price: 1499, originalPrice: "₹1999", link: "#" },
-    { img: "/images/Basic-Package.jpeg", title: "Basic Package", price: 1150, originalPrice: "₹3499", link: "/basic-package" },
     { img: "/images/Standard-Package.jpeg", title: "Standard Package", price: 1650, originalPrice: "₹4500", link: "/standard-package" },
-    { img: "/images/Full-Body-Checkup-With-IGG-Antibody.jpeg", title: "Full Body Checkup With IGG Antibody", price: 1749, originalPrice: "₹3499", link: "#" },
-    { img: "/images/Health-Checkup-Special-Combo-Package.jpeg", title: "Health Checkup Special Combo Package", price: 2999, originalPrice: "₹4999", link: "#" },
+    { img: "/images/Health-Checkup-Special-Combo-Package.jpeg", title: "Health Checkup Special Combo Package", price: 2999, originalPrice: "₹4999", link: "/health-checkup-special" },
     { img: "/images/Senior-Citizen-Package.jpeg", title: "Senior Citizen Package", price: 2999, originalPrice: "₹6500", link: "/senior-citizens-package" },
     { img: "/images/Classic-Package-Men.jpeg", title: "Classic Package Men", price: 2250, originalPrice: "₹4999", link: "/classic-men-package" },
     { img: "/images/Classic-Package-Women.jpeg", title: "Classic Package Women", price: 2250, originalPrice: "₹4500", link: "/classic-women-package" },
     { img: "/images/Platinum-Package.jpeg", title: "Platinum Package", price: 3999, originalPrice: "₹7500", link: "/platinum-package" },
     { img: "/images/pcodprofile1.jpeg", title: "Pcod Profile", price: 2800, originalPrice: "₹4200", link: "#" },
     { img: "/images/hepititisPanel1.jpeg", title: "Hepititis Panel", price: 4499, originalPrice: "₹4999", link: "#" },
-    { img: "/images/allergy.jpeg", title: "Allergy Package", link: "/allergy" }, // No price or originalPrice
+    { img: "/images/allergy.jpeg", title: "Allergy Package", link: "/allergy" },
+    { img: "/images/hepititisPanel1.jpeg", title: "Multiple Myoloma", price: 7000, originalPrice: "₹8000", link: "/multiple-myoloma" },
   ];
 
   const sortedPackages = packages.sort((a, b) => {
-    const priceA = a.price || Infinity; 
-    const priceB = b.price || Infinity; 
+    // Place "Multiple Myoloma" at the last position
+    if (a.title === "Multiple Myoloma") return 1;
+    if (b.title === "Multiple Myoloma") return -1;
+
+    // Place "Allergy Package" at the second last position
+    if (a.title === "Allergy Package") return 1;
+    if (b.title === "Allergy Package") return -1;
+
+    // Default sorting by price for the rest
+    const priceA = a.price || Infinity;
+    const priceB = b.price || Infinity;
     return priceA - priceB;
   });
 
