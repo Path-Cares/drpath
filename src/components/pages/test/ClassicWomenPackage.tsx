@@ -2,11 +2,11 @@
 import { useState } from "react";
 
 const ClassicWomenPackage = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null); // Specify the type for openIndex
 
   const services = [
     {
-      title: "Complete Blood Count (CBC) 27 Test",
+      title: "Complete Blood Count (25 Tests)",
       description: (
         <ul className="list-disc pl-5">
           <li>HB</li>
@@ -23,15 +23,12 @@ const ClassicWomenPackage = () => {
           <li>MCV</li>
           <li>MCH</li>
           <li>MCHC</li>
-          <li>HDW</li>
           <li>MPV</li>
           <li>PDW</li>
           <li>RDW-SD</li>
           <li>RDW-CV</li>
-          <li>Absolute</li>
-          <li>Neutrophil Count</li>
-          <li>Absolute</li>
-          <li>Lymphocyte Count</li>
+          <li>Absolute Neutrophil Count</li>
+          <li>Absolute Lymphocyte Count</li>
           <li>Absolute Monocyte Count</li>
           <li>Absolute Basophil Count</li>
           <li>Absolute Eosinophil Count</li>
@@ -40,14 +37,84 @@ const ClassicWomenPackage = () => {
       ),
     },
     {
-      title: "Urine Profile (19 Test)",
+      title: "Kidney Function Test (7 Tests)",
+      description: (
+        <ul className="list-disc pl-5">
+          <li>Urea</li>
+          <li>Uric Acid</li>
+          <li>Blood Urea Nitrogen</li>
+          <li>Creatinine</li>
+          <li>Urea/Creatinine Ratio</li>
+          <li>BUN Creatinine Ratio</li>
+          <li>BUN</li>
+        </ul>
+      ),
+    },
+    {
+      title: "Lipid Profile (8 Tests)",
+      description: (
+        <ul className="list-disc pl-5">
+          <li>Total Cholesterol</li>
+          <li>Triglycerides</li>
+          <li>HDL</li>
+          <li>LDL</li>
+          <li>VLDL</li>
+          <li>Total Cholesterol/HDL Cholesterol Ratio</li>
+          <li>LDL/HDL Ratio</li>
+          <li>Non-HDL Ratio</li>
+        </ul>
+      ),
+    },
+    {
+      title: "Bone Profile (3 Tests)",
+      description: (
+        <ul className="list-disc pl-5">
+          <li>Calcium</li>
+          <li>Phosphorus</li>
+          <li>Alkaline Phosphatase</li>
+        </ul>
+      ),
+    },
+    {
+      title: "Thyroid Profile (3 Tests)",
+      description: (
+        <ul className="list-disc pl-5">
+          <li>TSH (Thyroid Stimulating Hormone)</li>
+          <li>T3</li>
+          <li>T4</li>
+        </ul>
+      ),
+    },
+    {
+      title: "Diabetes Profile (3 Tests)",
+      description: (
+        <ul className="list-disc pl-5">
+          <li>Blood Sugar</li>
+          <li>Urine Sugar</li>
+          <li>HbA1c</li>
+        </ul>
+      ),
+    },
+    {
+      title: "Iron Profile (4 Tests)",
+      description: (
+        <ul className="list-disc pl-5">
+          <li>Iron Serum</li>
+          <li>TIBC</li>
+          <li>UIBC</li>
+          <li>Transferrin Saturation</li>
+        </ul>
+      ),
+    },
+    {
+      title: "Urine Profile (19 Tests)",
       description: (
         <ul className="list-disc pl-5">
           <li>Quantity</li>
           <li>Colour</li>
           <li>Transparency</li>
           <li>Specific Gravity</li>
-          <li>Ph</li>
+          <li>pH</li>
           <li>Blood</li>
           <li>Albumin</li>
           <li>Glucose</li>
@@ -58,7 +125,7 @@ const ClassicWomenPackage = () => {
           <li>RBC</li>
           <li>Casts</li>
           <li>Crystals</li>
-          <li>Epithelial</li>
+          <li>Epithelial Cells</li>
           <li>Bacteria</li>
           <li>Urine Protein</li>
           <li>Urine Bilirubin</li>
@@ -66,105 +133,36 @@ const ClassicWomenPackage = () => {
       ),
     },
     {
-      title: "Liver Function Test (LFT 12 Test)",
+      title: "Liver Function Test (12 Tests)",
       description: (
         <ul className="list-disc pl-5">
           <li>SGPT</li>
           <li>SGOT</li>
           <li>Total Proteins</li>
           <li>Albumin</li>
-          <li>Globliin</li>
-          <li>A:G Ratio</li>
-          <li>Bilirubin-Direct</li>
+          <li>Globulin</li>
+          <li>A/G Ratio</li>
+          <li>Bilirubin Direct</li>
           <li>Bilirubin Indirect</li>
           <li>Bilirubin Total</li>
-          <li>Serum Protien</li>
           <li>SGOT/SGPT Ratio</li>
           <li>Gamma GT</li>
         </ul>
       ),
     },
     {
-      title: "Kidney Function Test (KFT 7 Test)",
-      description: (
-        <ul className="list-disc pl-5">
-          <li>Urea</li>
-          <li>Uric Acid</li>
-          <li>Blood Urea Nitrogen</li>
-          <li>Creatinine</li>
-          <li>Serum Protein</li>
-          <li>Urea/ Creatinine Ratio</li>
-          <li>BUN Creatinine Ratio</li>
-        </ul>
-      ),
-    },
-    {
-      title: "Lipid Profile (8 Test)",
-      description: (
-        <ul className="list-disc pl-5">
-          <li>Total Cholesterol</li>
-          <li>Triglycerides</li>
-          <li>HDL</li>
-          <li>LDL</li>
-          <li>VLDL</li>
-          <li>Total Cholesterol/ HDL Cholesterol Ratio</li>
-          <li>LDL/HDL Ratio</li>
-          <li>NON/ HDL Ratio</li>
-        </ul>
-      ),
-    },
-    {
-      title: "BONE PROFILE( 3 TEST)",
-      description: (
-        <ul className="list-disc pl-5">
-          <li>Calcium</li>
-          <li>Phosphorus</li>
-          <li>Alkaline Phosphatase</li>
-        </ul>
-      ),
-    },
-    {
-      title: "IRON PROFILE ( 3 TEST )",
-      description: (
-        <ul className="list-disc pl-5">
-          <li>IRON Serum</li>
-          <li>TIBC</li>
-          <li>Transferrin Saturation</li>
-        </ul>
-      ),
-    },
-    {
-      title: "DIABETES PROFILE ( 3 TEST )",
-      description: (
-        <ul className="list-disc pl-5">
-          <li>Blood Sugar</li>
-          <li>Urine Sugar</li>
-          <li>HbA1c</li>
-        </ul>
-      ),
-    },
-    {
-      title: "Thyroid Profile ( 3 Test )",
-      description: (
-        <ul className="list-disc pl-5">
-          <li>TSH(Thyroid Stimulating Hormone)</li>
-          <li>T3</li>
-          <li>T4</li>
-        </ul>
-      ),
-    },
-    {
-      title: "Eletrolyte Profile ( 3 Test )",
+      title: "Electrolyte Profile (4 Tests)",
       description: (
         <ul className="list-disc pl-5">
           <li>Sodium</li>
           <li>Potassium</li>
           <li>Chloride</li>
+          <li>Bicarbonate</li>
         </ul>
       ),
     },
     {
-      title: "VITAMIN PROFILE ( 2 TEST )",
+      title: "Vitamin Profile (2 Tests)",
       description: (
         <ul className="list-disc pl-5">
           <li>Vitamin B12</li>
@@ -173,41 +171,43 @@ const ClassicWomenPackage = () => {
       ),
     },
     {
-        title: "CANCER PROFILE ( 1 TEST )",
-        description: (
-            <ul className="list-disc pl-5">
+      title: "Cancer Profile (1 Test)",
+      description: (
+        <ul className="list-disc pl-5">
           <li>CA-125</li>
         </ul>
       ),
-      },
-        {
-          title: "HORMONES PROFILE ( 3 TEST )",
-          description: (
-            <ul className="list-disc pl-5">
-              <li>LH</li>
-              <li>FSH</li>
-              <li>PRL</li>
-            </ul>
-          ),
-        },
-        {
-          title: "ARTHRITIS PROFILE (2 TEST)",
-          description: (
-            <ul className="list-disc pl-5">
-              <li>RA Factor</li>
-              <li>CPR</li>
-            </ul>
-          ),
-        },
+    },
+    {
+      title: "Hormones Profile (3 Tests)",
+      description: (
+        <ul className="list-disc pl-5">
+          <li>LH</li>
+          <li>FSH</li>
+          <li>PRL</li>
+        </ul>
+      ),
+    },
+    {
+      title: "Arthritis Profile (2 Tests)",
+      description: (
+        <ul className="list-disc pl-5">
+          <li>RA Factor</li>
+          <li>CRP</li>
+        </ul>
+      ),
+    },
   ];
 
-  const toggleService = (index: any) => {
+  const toggleService = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
     <section className="px-5 lg:px-28 xl:px-32 2xl:px-72 pb-20">
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-center">Included Tests</h2>
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-center">
+        Included Tests
+      </h2>
       {services.map((service, index) => (
         <div key={index} className="mb-4 border-b border-gray-200">
           <button
