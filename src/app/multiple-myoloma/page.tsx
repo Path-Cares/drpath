@@ -7,7 +7,7 @@ function Page() {
   const pricingData = [
     {
       title: "Multiple Myoloma",
-      pdfSrc: "/images/Multiple-Myloma.pdf",
+      pdfSrc: "/images/Multiple-Myloma-new.pdf",
       price: "₹8000/-",
       discountPrice: "₹7000/-",
     },
