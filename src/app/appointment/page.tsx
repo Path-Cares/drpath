@@ -51,7 +51,7 @@ const AppointmentContent = ({ closeModal }: { closeModal: () => void }) => {
       
       <h1 className="text-3xl font-bold text-center pb-3 underline decoration-[#00B7AB]">Book Appointment</h1>
 
-      <form action="https://formspree.io/f/mwpkqvnb" method="POST" >
+      <form action="https://formspree.io/f/xdkodzab" method="POST" >
         <div className="grid gap-5 lg:gap-8">
           <input
             type="text"
