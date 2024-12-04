@@ -111,6 +111,7 @@ const ContactContent = () => {
             className="px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
             required
           />
+          {/* phone */}
           <input
             type="text"
             name="phonenumber"
