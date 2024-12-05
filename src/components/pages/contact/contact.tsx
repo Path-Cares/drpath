@@ -12,7 +12,9 @@ const ContactContent = () => {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   };
@@ -34,7 +36,7 @@ const ContactContent = () => {
           email: "",
           phonenumber: "",
           message: "",
-        }); 
+        });
       } else {
         toast.error("Failed to send message");
       }
@@ -50,45 +52,85 @@ const ContactContent = () => {
 
       {/* Registered Labs Information */}
       <div className="bg-gradient-to-br bg-[#00B7AB] p-10 rounded-lg shadow-md mb-12">
-        <h1 className="text-3xl font-bold text-center pb-5 text-white">Registered Labs</h1>
+        <h1 className="text-3xl font-bold text-center pb-5 text-white">
+          Registered Labs
+        </h1>
         <div className="flex justify-center text-lg text-gray-800">
           <div className="bg-white rounded-lg shadow-lg p-8 space-y-4 max-w-lg w-full">
-            <h2 className="text-2xl font-bold text-[#1F2259] text-center">DrPathCares Wellness Care Laboratory</h2>
-            <p className="text-center italic text-gray-600">A Unit Of Biolife Wellness Care Pvt. Ltd.</p>
+            <h2 className="text-2xl font-bold text-[#1F2259] text-center">
+              DrPathCares Wellness Care Laboratory
+            </h2>
+            <p className="text-center italic text-gray-600">
+              A Unit Of Biolife Wellness Care Pvt. Ltd.
+            </p>
             <div className="space-y-3 mt-4">
               <div className="flex items-center gap-3">
-                <Image src="/images/address.webp" alt="Location" width={24} height={24} />
+                <Image
+                  src="/images/address.webp"
+                  alt="Location"
+                  width={24}
+                  height={24}
+                />
                 <p>E-30, Noida Sector 3, Noida, 201301, Uttar Pradesh</p>
               </div>
               <div className="flex items-center gap-3">
-                <Image src="/images/phone-number.webp" alt="Customer Care" width={24} height={24} />
+                <Image
+                  src="/images/phone-number.webp"
+                  alt="Customer Care"
+                  width={24}
+                  height={24}
+                />
                 <p>
                   Customer Care:{" "}
-                  <a href="tel:+01204157233" className="text-[#00B7AB] hover:underline">
+                  <a
+                    href="tel:+01204157233"
+                    className="text-[#00B7AB] hover:underline"
+                  >
                     +0120-4157-233
                   </a>
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <Image src="/images/phone-number.webp" alt="Our Team" width={24} height={24} />
+                <Image
+                  src="/images/phone-number.webp"
+                  alt="Our Team"
+                  width={24}
+                  height={24}
+                />
                 <p>
                   Our Team:{" "}
-                  <a href="tel:+918929062906" className="text-[#00B7AB] hover:underline">
+                  <a
+                    href="tel:+918929062906"
+                    className="text-[#00B7AB] hover:underline"
+                  >
                     +91 89290 62906
                   </a>
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <Image src="/images/email-address.webp" alt="Email" width={24} height={24} />
+                <Image
+                  src="/images/email-address.webp"
+                  alt="Email"
+                  width={24}
+                  height={24}
+                />
                 <p>
                   Email:{" "}
-                  <a href="mailto:Info@Drpathcares.com" className="text-[#00B7AB] hover:underline">
+                  <a
+                    href="mailto:Info@Drpathcares.com"
+                    className="text-[#00B7AB] hover:underline"
+                  >
                     Info@Drpathcares.com
                   </a>
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-[#00B7AB]" viewBox="0 0 24 24" fill="currentColor">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-7 h-7 text-[#00B7AB]"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
                   <path d="M12 1a11 11 0 1 0 11 11A11.012 11.012 0 0 0 12 1Zm4.95 12.28-4-2.5a.75.75 0 0 1-.35-.65V6.75a.75.75 0 0 1 1.5 0v3.1l3.65 2.28a.75.75 0 1 1-.8 1.3Z" />
                 </svg>
                 <p>Working Hours: 24/7, Sunday Open</p>
@@ -100,8 +142,14 @@ const ContactContent = () => {
 
       {/* Request a Call Back Form */}
       <div className="mt-12 bg-white p-10 rounded-lg shadow-md">
-        <h1 className="text-3xl font-bold text-center pb-5">Request a Call Back</h1>
-        <form action="https://formspree.io/f/moqgkjwv" method="POST" className="grid gap-5">
+        <h1 className="text-3xl font-bold text-center pb-5">
+          Request a Call Back
+        </h1>
+        <form
+          action="https://formspree.io/f/mzzbwroj"
+          method="POST"
+          className="grid gap-5"
+        >
           <input
             type="text"
             name="name"
