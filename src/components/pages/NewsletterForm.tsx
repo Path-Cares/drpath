@@ -8,7 +8,7 @@ const NewsletterForm = () => {
         console.log('Form submitted with email:', email);
     };
     return (
-        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row sm:space-x-6 sm:items-center space-y-3 sm:space-y-0">
+        <form action="https://formspree.io/f/moqgkjwv" method="POST" className="flex flex-col sm:flex-row sm:space-x-6 sm:items-center space-y-3 sm:space-y-0">
             <input
                 type="email"
                 className="rounded-full border border-1 border-gray-300  pl-4 pr-4 xs:pr-8 sm:pr-16 py-1.5 focus:border-[#00B7AB] outline-none"

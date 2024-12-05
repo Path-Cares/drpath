@@ -28,7 +28,7 @@ const HomeForm = () => {
     };
     return (
 
-        <form onSubmit={handleSubmit}>
+        <form action="https://formspree.io/f/moqgkjwv" method="POST">
             <Toaster
                 position="top-center"
                 reverseOrder={false}

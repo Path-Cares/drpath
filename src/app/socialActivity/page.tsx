@@ -49,7 +49,7 @@ const socialActivity = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg md:w-1/3">
             <h2 className="text-2xl font-bold mb-4">Organise Health camp in your area</h2>
-            <form className="space-y-4">
+            <form action="https://formspree.io/f/moqgkjwv" method="POST" className="space-y-4">
               <input
                 type="text"
                 placeholder="Full Name"
