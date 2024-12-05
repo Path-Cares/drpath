@@ -14,7 +14,6 @@ const AppointmentContent = ({ closeModal }: { closeModal: () => void }) => {
   const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-    
   };
 
   const handleSubmit = async (e: any) => {
@@ -40,7 +39,7 @@ const AppointmentContent = ({ closeModal }: { closeModal: () => void }) => {
   return (
     <section className="relative px-4 md:px-10 lg:px-20 xl:px-24 2xl:px-56 py-10 pb-20 lg:pb-12 bg-white shadow-lg rounded-lg max-w-2xl mx-auto">
       <Toaster />
-      
+
       {/* Close button */}
       <button
         onClick={closeModal}
@@ -48,11 +47,12 @@ const AppointmentContent = ({ closeModal }: { closeModal: () => void }) => {
       >
         ✕
       </button>
-      
-      <h1 className="text-3xl font-bold text-center pb-3 underline decoration-[#00B7AB]">Book Appointment</h1>
 
-      <form action="https://formspree.io/f/mzzbwroj"
-  method="POST" >
+      <h1 className="text-3xl font-bold text-center pb-3 underline decoration-[#00B7AB]">
+        Book Appointment
+      </h1>
+
+      <form action="https://formspree.io/f/mzzbwroj" method="POST">
         <div className="grid gap-5 lg:gap-8">
           <input
             type="text"
