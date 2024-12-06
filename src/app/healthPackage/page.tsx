@@ -6,8 +6,8 @@ import Link from 'next/link';
 const HealthCheckup = () => {
   const packages = [
     { img: "/images/Fitindia.jpeg", title: "DRP055 Fit India", price: 599, originalPrice: "₹999", link: "/fit-india" },
-    { img: "/images/Thyroid.jpeg", title: "DRP007 Healthy India (Thyroid)", price: 899, originalPrice: "₹1499", link: "/thyroid" },
-    { img: "/images/Diabetic.jpeg", title: "DRP007 Healthy India (Diabetic)", price: 899, originalPrice: "₹1499", link: "/diabetic" },
+    { img: "/images/Thyroid.jpeg", title: "DRP077 Healthy India (Thyroid)", price: 899, originalPrice: "₹1499", link: "/thyroid" },
+    { img: "/images/Diabetic.jpeg", title: "DRP077 Healthy India (Diabetic)", price: 899, originalPrice: "₹1499", link: "/diabetic" },
     { img: "/images/Thyroid&Diabetic.jpeg", title: "DRP082 Healthy India (Thyroid & Diabetic)", price: 999, originalPrice: "₹1599", link: "/thyroid&diabetic" },
     { img: "/images/Fever Panel1.jpeg", title: "Fever Panel", price: 1499, originalPrice: "₹1999", link: "/fever-panel" },
     { img: "/images/Standard-Package.jpeg", title: "Standard Package", price: 1650, originalPrice: "₹4500", link: "/standard-package" },

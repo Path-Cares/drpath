@@ -48,6 +48,7 @@ const Nav: React.FC = () => {
               />
               +0120 4157 233
             </a>
+            
             <a href="tel:+91 89290 62906" className="flex items-center gap-2">
               <Image
                 src="/images/phone.svg"

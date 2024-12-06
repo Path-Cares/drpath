@@ -26,9 +26,10 @@ const Contents = () => {
 
         <div className="flex">
           {/* Video Section */}
+          {/* video1  */}
           <div className="w-full flex justify-center items-center mb-10">
             <video
-              className="w-[60%] rounded-lg shadow-lg h-[60vh] bg-gray-100"
+              className=" rounded-lg shadow-lg h-[60vh] bg-gray-100"
               controls
               poster="/images/video-poster.png" // Ensure this image exists
               autoPlay
@@ -38,15 +39,55 @@ const Contents = () => {
               Your browser does not support the video tag.
             </video>
           </div>
+           {/* video2  */}
           <div className="w-full flex justify-center items-center mb-10">
             <video
-              className="w-[60%] rounded-lg shadow-lg h-[60vh] bg-gray-100"
+              className=" rounded-lg shadow-lg h-[60vh] bg-gray-100"
               controls
               poster="/images/video-poster.png" // Ensure this image exists
               autoPlay
               muted
             >
               <source src="/images/aboutus1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+           {/* video3  */}
+          <div className="w-full flex justify-center items-center mb-10">
+            <video
+              className=" rounded-lg shadow-lg h-[60vh] bg-gray-100"
+              controls
+              poster="/images/video-poster.png" // Ensure this image exists
+              autoPlay
+              muted
+            >
+              <source src="/images/aboutus2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+           {/* video4  */}
+          <div className="w-full flex justify-center items-center mb-10">
+            <video
+              className=" rounded-lg shadow-lg h-[60vh] bg-gray-100"
+              controls
+              poster="/images/video-poster.png" // Ensure this image exists
+              autoPlay
+              muted
+            >
+              <source src="/images/aboutus3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+           {/* video5  */}
+          <div className="w-full flex justify-center items-center mb-10">
+            <video
+              className=" rounded-lg shadow-lg h-[60vh] bg-gray-100"
+              controls
+              poster="/images/video-poster.png" // Ensure this image exists
+              autoPlay
+              muted
+            >
+              <source src="/images/aboutus4.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import { FaAward } from "react-icons/fa";
 import Image from "next/image";
+import AddressPage from "@/components/Address";
 
 const Certificates = () => {
   const certificates = [
@@ -94,7 +95,7 @@ const Certificates = () => {
           </div>
         </div>
       )}
-
+       <AddressPage/>
       <Footer />
     </div>
   );

@@ -2,13 +2,17 @@
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
+import Cities from "@/components/pages/Cities";
 
 const AppointmentContent = ({ closeModal }: { closeModal: () => void }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phonenumber: "",
+    location: "",
     address: "",
+    date: "",
+    time: "",
   });
 
   const handleChange = (e: any) => {
@@ -36,7 +40,70 @@ const AppointmentContent = ({ closeModal }: { closeModal: () => void }) => {
     }
   };
 
+  const cities = [
+    "Agra",
+    "Ajmer",
+    "Alwar",
+    "Ambala",
+    "Amritsar",
+    "Baghpat",
+    "Bahadurgarh",
+    "Ballabhgarh",
+    "Bareilly",
+    "Bhatinda",
+    "Bikaner",
+    "Bulandshahr",
+    "Central Delhi",
+    "Chandigarh",
+    "Dehradun",
+    "East Delhi",
+    "Faridabad",
+    "Ghaziabad",
+    "Greater Noida",
+    "Gurgaon (Gurugram)",
+    "Hapur",
+    "Haridwar",
+    "Hoshiarpur",
+    "Jaipur",
+    "Jalandhar",
+    "Jhajjar",
+    "Jhunjhunu",
+    "Jodhpur",
+    "Kanpur",
+    "Karnal",
+    "Khanna",
+    "Khurja",
+    "Kota",
+    "Kurukshetra",
+    "Lucknow",
+    "Ludhiana",
+    "Manesar",
+    "Meerut",
+    "Modinagar",
+    "Mohali",
+    "Moradabad",
+    "Moga",
+    "Muzaffarnagar",
+    "Noida",
+    "North Delhi",
+    "Palwal",
+    "Panchkula",
+    "Panipat",
+    "Patiala",
+    "Rohtak",
+    "Roorki",
+    "Saharanpur",
+    "Sikkar",
+    "Sonipat",
+    "South Delhi",
+    "Udaipur",
+    "West Delhi",
+    "Yamuna Nagar",
+    "Zirakpur"
+  ];
+
   return (
+    <>
     <section className="relative px-4 md:px-10 lg:px-20 xl:px-24 2xl:px-56 py-10 pb-20 lg:pb-12 bg-white shadow-lg rounded-lg max-w-2xl mx-auto">
       <Toaster />
 
@@ -72,27 +139,39 @@ const AppointmentContent = ({ closeModal }: { closeModal: () => void }) => {
             className="w-full px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
             required
           />
+          <select
+            name="location"
+            onChange={handleChange}
+            className="w-full px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
+            required
+          >
+            <option value="" disabled selected>
+              Select Location
+            </option>
+            {cities.map((city, index) => (
+              <option key={index} value={city}>
+                {city}
+              </option>
+            ))}
+          </select>
           <input
             type="email"
             name="email"
             onChange={handleChange}
-            placeholder="Email"
+            placeholder="Email (Optional)"
             className="w-full px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
-            required
           />
           <input
             type="date"
             name="date"
             onChange={handleChange}
             className="w-full px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
-            required
           />
           <input
             type="time"
             name="time"
             onChange={handleChange}
             className="w-full px-3 py-2 rounded-lg outline-none border-b-2 border-[#00B7AB] focus:border-[#1F2259] hover:border-[#1F2259] focus-visible:border-[#1F2259]"
-            required
           />
           <button
             type="submit"
@@ -103,6 +182,8 @@ const AppointmentContent = ({ closeModal }: { closeModal: () => void }) => {
         </div>
       </form>
     </section>
+    {/* <Cities /> */}
+    </>
   );
 };
 
