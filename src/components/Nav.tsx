@@ -185,12 +185,12 @@ const Nav: React.FC = () => {
             Book Appointment
           </button>
           {/* Login/Sign-up Tab */}
-          <Link
+          {/* <Link
             href="/login"
             className="hidden lg:flex items-center mt-4 bg-[#00B7AB] py-2 px-4 rounded-lg gap-2 text-white whitespace-nowrap"
           >
             Login/Sign-up
-          </Link>
+          </Link> */}
           <div className="mt-4">
             <FaCartArrowDown className="w-7 h-7 text-[#00B7AB] cursor-pointer" />
           </div>

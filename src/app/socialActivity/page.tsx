@@ -58,28 +58,31 @@ const socialActivity = () => {
               Organise Health camp in your area
             </h2>
             <form
-              action="https://formspree.io/f/mzzbwroj"
-              method="POST"
+              action="https://formspree.io/f/mzzbwroj" method="POST"
               className="space-y-4"
             >
               <input
                 type="text"
                 placeholder="Full Name"
+                 name="name"
                 className="w-full p-2 border border-gray-300 rounded"
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Email Address"
                 className="w-full p-2 border border-gray-300 rounded"
               />
               <input
                 type="tel"
                 placeholder="Phone Number"
+                 name="phonenumber"
                 className="w-full p-2 border border-gray-300 rounded"
               />
               <input
                 type="text"
                 placeholder="Your City"
+                 name="city"
                 className="w-full p-2 border border-gray-300 rounded"
               />
               <button className="bg-[#00B7AB] text-white py-2 px-4 rounded w-full hover:bg-[#46716f] transition">

@@ -39,6 +39,14 @@ const AddressPage = () => {
           C-56-A, City Heart, Chandigarh Road, Kharar, Mohali - 140301
         </p>
       </div>
+
+      {/* Lucknow Lab Address */}
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 border-b-2 border-white pb-2">Lucknow Lab Address</h2>
+        <p className="text-lg">
+        E2, 25, Kanpur Rd, Sector H, LDA Colony, Lucknow, Uttar Pradesh 226012
+        </p>
+      </div>
     </section>
   );
 };
