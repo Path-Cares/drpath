@@ -17,7 +17,7 @@ const FitIndiaPackage = () => {
           <li>Monocyte</li>
           <li>Basophil</li>
           <li>Platelet Count</li>
-          <li>CT</li>
+          <li>PCT</li>
           <li>RBC</li>
           <li>HCT</li>
           <li>MCV</li>
@@ -28,17 +28,13 @@ const FitIndiaPackage = () => {
           <li>PDW</li>
           <li>RDW-SD</li>
           <li>RDW-CV</li>
-          <li>Absolute</li>
-          <li>Neutrophil Count</li>
-          <li>Absolute</li>
-          <li>Lymphocyte</li>
-          <li>Count</li>
+          <li>Absolute Neutrophil Count</li>
+          <li>Absolute Lymphocyte Count</li>
           <li>Absolute Monocyte Count</li>
           <li>Absolute Basophil Count</li>
           <li>Absolute Eosinophil Count</li>
           <li>ESR</li>
         </ul>
-        
       ),
     },
     {
@@ -49,7 +45,7 @@ const FitIndiaPackage = () => {
           <li>Colour</li>
           <li>Transparency</li>
           <li>Specific Gravity</li>
-          <li>Ph</li>
+          <li>pH</li>
           <li>Blood</li>
           <li>Albumin</li>
           <li>Glucose</li>
@@ -57,7 +53,7 @@ const FitIndiaPackage = () => {
           <li>Bilirubin</li>
           <li>Nitrite</li>
           <li>Pus Cells</li>
-          <li>RBC</li>
+          <li>RBCs</li>
           <li>Casts</li>
           <li>Crystals</li>
           <li>Epithelial</li>
@@ -68,75 +64,35 @@ const FitIndiaPackage = () => {
       ),
     },
     {
-      title: "Liver Function Test (LFT 12 Test)",
+      title: "Liver Function Test (LFT 3 Test)",
       description: (
         <ul className="list-disc pl-5">
           <li>SGPT</li>
           <li>SGOT</li>
-          <li>Total Proteins</li>
-          <li>Albumin</li>
-          <li>Globliin</li>
-          <li>A:G Ratio</li>
-          <li>Bilirubin-Direct</li>
-          <li>Bilirubin Indirect</li>
-          <li>Bilirubin Total</li>
-          <li>Serum Protien</li>
-          <li>SGOT/SGPT Ratio</li>
-          <li>Gamma GT</li>
+          <li>Ratio</li>
         </ul>
       ),
     },
     {
-      title: "Kidney Function Test (KFT 8 Test)",
+      title: "Kidney Function Test (KFT 5 Test)",
       description: (
         <ul className="list-disc pl-5">
-          <li>Urea</li>
-          <li>Uric Acid</li>
-          <li>Blood Urea Nitrogen</li>
-          <li>Creatinine</li>
-          <li>Serum Protein</li>
-          <li>Urea/ Creatinine Ratio</li>
+          <li>Urea/Creatinine Ratio</li>
           <li>BUN Creatinine Ratio</li>
-          <li>Creatinine Ratio</li>
+          <li>Egfr</li>
         </ul>
       ),
     },
     {
-      title: "Lipid Profile (8 Test)",
+      title: "Lipid Profile (1 Test)",
       description: (
         <ul className="list-disc pl-5">
           <li>Total Cholesterol</li>
-          <li>Triglycerides</li>
-          <li>HDL</li>
-          <li>LDL</li>
-          <li>VLDL</li>
-          <li>Total Cholesterol/ HDL Cholesterol Ratio</li>
-          <li>LDL/HDL Ratio</li>
-          <li>NON/ HDL Ratio</li>
         </ul>
       ),
     },
-    // {
-    //   title: "BONE PROFILE( 2 TEST)",
-    //   description: (
-    //     <ul className="list-disc pl-5">
-    //       <li>Calcium Phosphorus</li>
-    //       <li>Alkaline Phosphate</li>
-    //     </ul>
-    //   ),
-    // },
-    // {
-    //   title: "IRON PROFILE ( 3 TEST )",
-    //   description: (
-    //     <ul className="list-disc pl-5">
-    //       <li>IRON Serum</li>
-    //       <li>TIBC</li>
-    //       <li>Transferrin Saturation</li>
-    //     </ul>
-    //   ),
-    // },
     {
-      title: "DIABETES PROFILE ( 2 TEST )",
+      title: "Diabetes Profile (2 Test)",
       description: (
         <ul className="list-disc pl-5">
           <li>Blood Sugar</li>
@@ -144,24 +100,7 @@ const FitIndiaPackage = () => {
         </ul>
       ),
     },
-    // {
-    //   title: "Thyroid Profile ( 1 Test )",
-    //   description: (
-    //     <ul className="list-disc pl-5">
-    //       <li>TSH(Thyroid Stimulating Hormone)</li>
-    //     </ul>
-    //   ),
-    // },
-    // {
-    //   title: "Eletrolyte Profile ( 3 Test )",
-    //   description: (
-    //     <ul className="list-disc pl-5">
-    //       <li>Sodium</li>
-    //       <li>Potassium</li>
-    //       <li>Chloride</li>
-    //     </ul>
-    //   ),
-    // },
+    
   ];
 
   const toggleService = (index: any) => {
