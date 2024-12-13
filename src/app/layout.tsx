@@ -22,9 +22,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Full Body Checkup | Blood Test | Pathology Lab - DrPathCaress",
+  title: "Full Body Checkup | Blood Test | Pathology Lab - DrPathCares",
   description:
-    "DrPathCares is a one stop solution for all your health and pathology needs. We provide complete blood test and full body checkup packages for you.",
+    "DrPathCares is a one-stop solution for all your health and pathology needs. We provide complete blood test and full body checkup packages for you.",
   icons: {
     icon: ["/favicon.ico?v=4"],
     apple: ["apple-touch-icon.png?v=4"],
@@ -47,6 +47,20 @@ export default function RootLayout({
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtm.js?id=GTM-5ZVV8F74`}
         />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Full Body Checkup | Blood Test | Pathology Lab - DrPathCares" />
+        <meta property="og:description" content="DrPathCares offers comprehensive health solutions with complete blood tests and full body checkup packages for all your pathology needs." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.drpathcares.com/" />
+        <meta property="og:image" content="https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@Dr.pathcares" />
+        <meta name="twitter:title" content="Full Body Checkup | Blood Test | Pathology Lab - DrPathCares" />
+        <meta name="twitter:description" content="DrPathCares offers comprehensive health solutions with complete blood tests and full body checkup packages for all your pathology needs." />
+        <meta name="twitter:image" content="https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75" />
       </head>
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}

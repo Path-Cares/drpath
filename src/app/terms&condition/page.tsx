@@ -10,7 +10,7 @@ const Disclaimer: React.FC = () => {
         {/* Section 1: Disclaimer for DrPathCares */}
         <section className="mb-8">
           <h1 className="text-2xl font-bold text-black mb-4">
-            1. Welcome To DrPathcares!
+            1. To DrPathcares!
           </h1>
           <p className="text-lg pb-4">
             These Terms And Conditions Outline The Rules And Regulations For The

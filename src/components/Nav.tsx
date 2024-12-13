@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Head from "next/head";
 import Link from "next/link";
 import SidebarToggle from "@/hooks/cart/SidebarToggle";
 import CartSidebar from "./pages/cart/CartSidebar";
@@ -24,6 +25,33 @@ const Nav: React.FC = () => {
 
   return (
     <>
+      
+      
+      <Head>
+        
+
+        {/* OG Tags */}
+        <meta property="og:title" content="Full Body Checkup | Blood Test | Pathology Lab - DrPathCares" />
+        <meta property="og:site_name" content="Dr. Path Cares" />
+        <meta property="og:url" content="https://drpathcares.com/" />
+        <meta property="og:description" content="DrPathCares offers comprehensive health solutions with complete blood tests and full body checkup packages for all your pathology needs." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75" />
+
+        {/* Twitter Tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@DrPathCares" />
+        <meta name="twitter:title" content="Full Body Checkup | Blood Test | Pathology Lab - DrPathCares" />
+        <meta name="twitter:description" content="DrPathCares offers comprehensive health solutions with complete blood tests and full body checkup packages for all your pathology needs." />
+        <meta name="twitter:image" content="https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75" />
+
+        {/* Robots Meta Tag for Page-Specific Indexing */}
+        <meta name="robots" content="index, follow" />
+
+        
+      </Head>
+
+
       <header className="px-6 lg:px-12 sticky top-0 z-50 bg-white shadow">
         <div className="flex flex-col lg:flex-row items-center justify-between lg:items-start rounded-b-xl">
           {/* Logo Section */}

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Footer from "@/components/Footer";
 import Cities from "@/components/pages/Cities";
@@ -14,15 +14,23 @@ import WeAre from "@/components/pages/home/WeAre";
 import CtaStrip from "@/components/pages/home/CtaStrip";
 import SwiperDeals from "@/components/pages/home/SwiperDeals";
 import ClientsReview from "@/components/pages/home/ClientsReview";
-import SidebarToggle from '@/hooks/cart/SidebarToggle';
+import SidebarToggle from "@/hooks/cart/SidebarToggle";
+import TitleDescription from "@/components/pages/home/Title&Description"; // Ensure the path is correct
+
 export default function Home() {
   const [isCartOpen, toggleCart] = SidebarToggle(false);
-    console.log(isCartOpen);
+
   return (
     <div>
+      <TitleDescription
+        title="Full Body Checkup | Blood Test | Pathology Lab - DrPathCares"
+        description="DrPathCares is a one stop solution for all your health and pathology needs. We provide complete blood test and full body checkup packages for you."
+      />
+
       <Nav />
-  
-      <main className="">
+
+      {/* Main Content */}
+      <main>
         <HomeBanner />
         <Plans />
         <ThirdSection />
@@ -36,6 +44,8 @@ export default function Home() {
         <SubscribeNewsletter />
         {/* <Cities /> */}
       </main>
+
+      {/* Footer */}
       <Footer />
     </div>
   );
