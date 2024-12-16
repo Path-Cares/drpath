@@ -43,7 +43,7 @@ const HealthCheckup = () => {
       <div className="flex flex-col items-center">
         <div className="w-full h-64 bg-cover bg-center relative" style={{ backgroundImage: "url('/images/banner-background.webp')" }}>
           <div className="absolute inset-0 flex items-center justify-center">
-            <h1 className="text-4xl font-bold text-[#002D62]">Health Checkup Packages</h1>
+            <h1 className="text-2xl md:text-4xl font-bold text-[#002D62]">Health Checkup Packages</h1>
           </div>
         </div>
         <div className="max-w-5xl mx-auto p-6 text-center space-y-4">

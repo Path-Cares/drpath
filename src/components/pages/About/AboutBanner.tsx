@@ -24,8 +24,8 @@ const Contents = () => {
           </p>
         </div>
 
-        <div className="flex">
-          {/* Video Section */}
+        <div className="md:flex">
+         
           {/* video1  */}
           <div className="w-full flex justify-center items-center mb-10">
             <video

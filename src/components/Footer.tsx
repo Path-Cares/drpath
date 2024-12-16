@@ -11,13 +11,12 @@ const Footer = () => {
       <footer className="bg-[#1F2259] py-16 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
-
-            {/* Logo and Description Section (White background) */}
+            
             <div className="flex flex-col items-center space-y-6 bg-white p-6 rounded-lg">
               <Image
                 src={footerlogo}
                 alt="logo"
-                width={385} 
+                width={385}
                 height={231}
                 className="w-full object-contain"
               />
@@ -26,10 +25,11 @@ const Footer = () => {
               </p>
             </div>
 
-            {/* Services Section (Blue background) */}
-            <div className="flex flex-col items-center lg:items-start">
+            
+            <div className="flex flex-col items-center  lg:items-start">
               <p className="text-lg font-medium pb-3">Packages</p>
-              <div className="flex flex-col space-y-3 text-sm">
+
+              <div className="flex flex-col space-y-3 text-sm ml-10 sm:ml-0 ">
                 {/* <Link href="/basic-package">Basic Package</Link> */}
                 <Link href="/standard-package">Standard Package</Link>
                 <Link href="/classic-men-package">Classic Men Package</Link>
@@ -38,10 +38,10 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Quick Links Section (Blue background) */}
+           
             <div className="flex flex-col items-center lg:items-start">
               <p className="text-lg font-medium pb-3">Quick Links</p>
-              <div className="flex flex-col space-y-3 text-sm">
+              <div className="flex flex-col space-y-3 text-sm ml-10 sm:ml-0 ">
                 <Link href="#">About Us</Link>
                 <Link href="#">Contact Us</Link>
                 <Link href="/disclaimer">Disclaimer</Link>
@@ -49,7 +49,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Follow Us Section (Blue background) */}
+            
             <div className="flex flex-col items-center lg:items-start">
               <p className="text-lg font-medium pb-3">Follow Us</p>
               <div className="flex gap-2 text-xl">
@@ -68,18 +68,18 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Contact Us Section (Blue background) */}
+            
             <div className="flex flex-col items-center lg:items-start">
               <p className="text-lg font-medium pb-3">Contact Us</p>
-              <div className="flex flex-col space-y-3 text-sm">
-                <p>+91 89290 62906</p>
-                <p>Info@Drpathcares.com</p>
+              <div className="flex flex-col space-y-3 text-sm ">
+                <p className="ml-20 sm:ml-0 ">+91 89290 62906</p>
+                <p className="ml-20 sm:ml-0">Info@Drpathcares.com</p>
                 <p>E-30, Sec-3 Noida, Uttar Pradesh, 201301</p>
               </div>
             </div>
           </div>
 
-          {/* Footer Divider */}
+       
           <div className="mt-10">
             <hr className="bg-white opacity-50 mx-auto w-full sm:w-3/4 lg:w-1/2" />
           </div>

@@ -3,7 +3,7 @@ import Nav from "@/components/Nav";
 import Image from "next/image";
 
 const socialActivity = () => {
-  // Array of image paths for all 26 images
+ 
   const galleryImages = [
     "/images/sa1.jpeg",
     "/images/sa2.jpeg",
@@ -35,15 +35,16 @@ const socialActivity = () => {
 
   return (
     <>
+    <Nav />
       <div
-        className="bg-cover bg-center p-8 h-auto"
+        className="bg-cover bg-center md:p-8 h-auto"
         style={{ backgroundImage: "url('/images/banner-background.webp')" }}
       >
-        <Nav />
-        <div className="container mx-auto flex flex-col md:flex-row items-start p-16 justify-between">
+        
+        <div className="container mx-auto flex flex-col md:flex-row items-start p-8  md:p-16 justify-between">
           <div className="text-left md:w-1/2">
-            <h1 className="text-4xl font-bold mb-4">Social Activities</h1>
-            <p className="mb-4 text-xl">
+            <h1 className="text-4xl font-bold mb-4 py-4">Social Activities</h1>
+            <p className="mb-4 text-xl pb-4">
               Dr. Path Cares, a leading healthcare provider in India, is
               dedicated to promoting health awareness among the public. We
               consistently organize free camps offering blood tests and health
@@ -92,37 +93,11 @@ const socialActivity = () => {
           </div>
         </div>
 
-        {/* Video Section */}
-        {/* <div className="container mx-auto my-12">
-          <h2 className="text-3xl font-bold text-center mb-6">Our Recent Social Activities</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="w-full h-[35rem] overflow-hidden rounded-lg shadow-lg">
-              <video
-                src="/images/video1.mp4"
-                controls
-                className="object-cover w-full h-full"
-              ></video>
-            </div>
-            <div className="w-full h-[35rem] overflow-hidden rounded-lg shadow-lg">
-              <video
-                src="/images/video2.mp4"
-                controls
-                className="object-cover w-full h-full"
-              ></video>
-            </div>
-            <div className="w-full h-[35rem] overflow-hidden rounded-lg shadow-lg">
-              <video
-                src="/images/video3.mp4"
-                controls
-                className="object-cover w-full h-full"
-              ></video>
-            </div>
-          </div>
-        </div> */}
+        
 
         {/* Image Gallery Section */}
         <div className="container mx-auto my-12">
-          {/* <h2 className="text-3xl font-bold text-center mb-6">Gallery</h2> */}
+          
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {galleryImages.map((src, index) => (
               <div

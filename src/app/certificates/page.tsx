@@ -30,8 +30,8 @@ const Certificates = () => {
         style={{ backgroundImage: `url('/images/banner-background.webp')` }}
       >
         <div className="max-w-6xl mx-auto px-4">
-          {/* Title Section */}
-          <div className="flex items-center justify-center mb-10 bg-white p-8 rounded-lg shadow-md">
+          
+          <div className="flex items-center justify-center mb-10 bg-white p-3 md:p-8 rounded-lg shadow-md">
             <FaAward size={130} className="text-yellow-500 mr-8" />
             <div>
               <h1 className="text-4xl font-bold">Dr. PathCares+ Our Associate Partner Labs Certificate</h1>
@@ -41,7 +41,7 @@ const Certificates = () => {
             </div>
           </div>
 
-          {/* Certificates List Section */}
+          {/* Certificates Lists*/}
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold mb-6">Our Certificates</h2>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -67,7 +67,7 @@ const Certificates = () => {
         </div>
       </div>
 
-      {/* Modal for Zoomed Image */}
+      {/* Zoomed Image */}
       {selectedImage && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
