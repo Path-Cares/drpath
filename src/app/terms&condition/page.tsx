@@ -111,8 +111,7 @@ const Disclaimer: React.FC = () => {
           </p>
         </section>
 
-        {/* Remaining sections */}
-        {/* Escape all unescaped quotes using &quot; for double quotes */}
+        
         <Footer />
       </div>
     </>

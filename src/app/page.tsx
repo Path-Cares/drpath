@@ -23,8 +23,8 @@ export default function Home() {
   return (
     <div>
       <TitleDescription
-        title="Full Body Checkup | Blood Test | Pathology Lab - DrPathCares"
-        description="DrPathCares is a one stop solution for all your health and pathology needs. We provide complete blood test and full body checkup packages for you."
+        title="Full Body Checkup| Blood Test | Pathology Lab - DrPathCares"
+        description="DrPathCares offers comprehensive health solutions with complete blood tests and full body checkup packages for all your pathology needs."
       />
 
       <Nav />

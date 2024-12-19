@@ -124,12 +124,12 @@ const PlatinumPackage = () => {
       ),
     },
     {
-      title: "IRON PROFILE ( 4 TEST )",
+      title: "IRON PROFILE ( 3 TEST )",
       description: (
         <ul className="list-disc pl-5">
           <li>IRON Serum</li>
           <li>TIBC</li>
-          <li>UIBC</li>
+          {/* <li>UIBC</li> */}
           <li>Transferrin Saturation</li>
         </ul>
       ),

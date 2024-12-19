@@ -22,9 +22,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Full Body Checkup | Blood Test | Pathology Lab - DrPathCares",
+  title: "Full Body Checkup| Blood Test | Pathology Lab - DrPathCares",
   description:
-    "DrPathCares is a one-stop solution for all your health and pathology needs. We provide complete blood test and full body checkup packages for you.",
+    "DrPathCares offers comprehensive health solutions with complete blood tests and full body checkup packages for all your pathology needs.",
   icons: {
     icon: ["/favicon.ico?v=4"],
     apple: ["apple-touch-icon.png?v=4"],

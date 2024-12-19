@@ -96,12 +96,12 @@ const ClassicWomenPackage = () => {
       ),
     },
     {
-      title: "Iron Profile (4 Tests)",
+      title: "Iron Profile (3 Tests)",
       description: (
         <ul className="list-disc pl-5">
           <li>Iron Serum</li>
           <li>TIBC</li>
-          <li>UIBC</li>
+          {/* <li>UIBC</li> */}
           <li>Transferrin Saturation</li>
         </ul>
       ),
