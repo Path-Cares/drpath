@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "@/components/Nav";
+import Head from "next/head";
 import Footer from "@/components/Footer";
 import FitIndiaPackage from "@/components/pages/test/FitIndiaPackage";
 
@@ -23,14 +24,44 @@ function Page() {
       price: "₹3500/-",
       discountPrice: "₹3000/-",
     },
-    
   ];
 
   return (
-    <div>
+    <>
+      <Head>
+        <title>Full Body Checkup | DrPathCares</title>
+        <meta
+          name="description"
+          content="DrPathCares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs."
+        />
+        <link rel="canonical" href="https://drpathcares.com/allergy" />
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-5ZVV8F74');
+            `,
+          }}
+        />
+      </Head>
+
+      {/* Google Tag Manager (noscript) */}
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-5ZVV8F74"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
+        ></iframe>
+      </noscript>
+      
       <Nav />
+
       <main className="py-8">
-        
         <div className="max-w-6xl mx-auto px-4 mb-20">
           {/* <h2 className="text-3xl font-bold mb-6 text-center">PDF Documents</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -39,7 +70,6 @@ function Page() {
                 {/* PDF Title */}
                 <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
 
-               
                 <iframe
                   src={`${item.pdfSrc}#toolbar=0`}
                   title={`PDF Document ${index + 1}`}
@@ -47,7 +77,6 @@ function Page() {
                   style={{ height: "100px" }} // Adjust height to fit PDF content
                 ></iframe>
 
-               
                 <a
                   href={item.pdfSrc}
                   target="_blank"
@@ -71,11 +100,10 @@ function Page() {
           </div>
         </div>
 
-        
         <FitIndiaPackage />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

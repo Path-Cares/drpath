@@ -24,7 +24,7 @@ export default function Home() {
     <div>
       <TitleDescription
         title="Full Body Checkup| Blood Test | Pathology Lab - DrPathCares"
-        description="Dr. Path Cares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs."
+        description="Dr. Path Cares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs.``"
       />
 
       <Nav />

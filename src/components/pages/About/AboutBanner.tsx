@@ -1,9 +1,45 @@
 import Footer from "@/components/Footer";
+import Head from "next/head";
 import Image from "next/image";
 
 const Contents = () => {
   return (
     <>
+      <Head>
+        <title>
+          Full Body Checkup| Blood Test | Pathology Lab - DrPathCares
+        </title>
+        <meta
+          name="description"
+          content="DrPathCares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs."
+        />
+        <link rel="canonical" href="https://drpathcares.com/aboutus" />
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-5ZVV8F74');
+            `,
+          }}
+        />
+        {/* End Google Tag Manager */}
+      </Head>
+
+      {/* Google Tag Manager (noscript) */}
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-5ZVV8F74"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
+        ></iframe>
+      </noscript>
+      {/* End Google Tag Manager (noscript) */}
+
       <section className="px-5 lg:px-20 xl:px-24 2xl:px-56 pt-14 lg:pt-18">
         {/* About Us Section */}
         <div className="mb-20">
@@ -25,78 +61,30 @@ const Contents = () => {
         </div>
 
         <div className="md:flex">
-         
-          {/* video1  */}
-          <div className="w-full flex justify-center items-center mb-10">
-            <video
-              className=" rounded-lg shadow-lg h-[60vh] bg-gray-100"
-              controls
-              poster="/images/video-poster.png" // Ensure this image exists
-              autoPlay
-              muted
-            >
-              <source src="/images/aboutus.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-           {/* video2  */}
-          <div className="w-full flex justify-center items-center mb-10">
-            <video
-              className=" rounded-lg shadow-lg h-[60vh] bg-gray-100"
-              controls
-              poster="/images/video-poster.png" // Ensure this image exists
-              autoPlay
-              muted
-            >
-              <source src="/images/aboutus1.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-           {/* video3  */}
-          <div className="w-full flex justify-center items-center mb-10">
-            <video
-              className=" rounded-lg shadow-lg h-[60vh] bg-gray-100"
-              controls
-              poster="/images/video-poster.png" // Ensure this image exists
-              autoPlay
-              muted
-            >
-              <source src="/images/aboutus2.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-           {/* video4  */}
-          <div className="w-full flex justify-center items-center mb-10">
-            <video
-              className=" rounded-lg shadow-lg h-[60vh] bg-gray-100"
-              controls
-              poster="/images/video-poster.png" // Ensure this image exists
-              autoPlay
-              muted
-            >
-              <source src="/images/aboutus3.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-           {/* video5  */}
-          <div className="w-full flex justify-center items-center mb-10">
-            <video
-              className=" rounded-lg shadow-lg h-[60vh] bg-gray-100"
-              controls
-              poster="/images/video-poster.png" // Ensure this image exists
-              autoPlay
-              muted
-            >
-              <source src="/images/aboutus4.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+          {/* Videos */}
+          {[...Array(5)].map((_, index) => (
+            <div className="w-full flex justify-center items-center mb-10" key={index}>
+              <video
+                className="rounded-lg shadow-lg h-[60vh] bg-gray-100"
+                controls
+                poster="/images/video-poster.png"
+                autoPlay
+                muted
+              >
+                <source
+                  src={`/images/aboutus${index === 0 ? "" : index}.mp4`}
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          ))}
         </div>
 
         {/* Why Choose Us Section */}
         <div
           className="my-6 bg-center bg-no-repeat rounded-2xl"
-          style={{ backgroundImage: "url('/images/banner-background.webp')" }} // Ensure this image exists
+          style={{ backgroundImage: "url('/images/banner-background.webp')" }}
         >
           <h2 className="text-center text-3xl mb-3 pt-8 font-medium">
             Why Choose DrPathCares
@@ -104,7 +92,7 @@ const Contents = () => {
           <div className="lg:flex items-center justify-center">
             <div className="flex justify-center">
               <Image
-                src="/images/whychooseus.webp" // Ensure this image exists
+                src="/images/whychooseus.webp"
                 alt="Why Choose Us"
                 width={400}
                 height={400}
@@ -123,8 +111,6 @@ const Contents = () => {
           </div>
         </div>
       </section>
-      {/* Footer Component */}
-      {/* <Footer /> */}
     </>
   );
 };

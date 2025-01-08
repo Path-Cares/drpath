@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+"use client";
+import { usePathname } from "next/navigation";
 import Script from "next/script";
 import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
@@ -21,35 +22,28 @@ const roboto = Roboto({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Full Body Checkup| Blood Test | Pathology Lab - DrPathCares",
-  description:
-    "Dr. Path Cares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs.",
-  icons: {
-    icon: ["/favicon.ico?v=4"],
-    apple: ["apple-touch-icon.png?v=4"],
-    shortcut: ["apple-touch-icon.png"],
-  },
-  manifest: "site.webmanifest",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
+  const baseUrl = "https://drpathcares.com";
+  const canonicalURL = `${baseUrl}${pathname}`;
+
   return (
     <html lang="en">
       <head>
         {/* Canonical Tag */}
-        <link rel="canonical" href="https://drpathcares.com" />
+        <link rel="canonical" href={canonicalURL} />
 
-        {/* Google Analytics (gtag.js) */}
+        {/* Google Analytics */}
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-TXDJ1TF0E3"
+          strategy="afterInteractive"
         />
-        <Script id="google-analytics">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -58,7 +52,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Google Tag Manager Script */}
+        {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -79,10 +73,10 @@ export default function RootLayout({
           content="DrPathCares offers comprehensive health solutions with complete blood tests and full body checkup packages for all your pathology needs."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.drpathcares.com/" />
+        <meta property="og:url" content={canonicalURL} />
         <meta
           property="og:image"
-          content="https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75"
+          content={`${baseUrl}/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75`}
         />
 
         {/* Twitter Meta Tags */}
@@ -98,8 +92,13 @@ export default function RootLayout({
         />
         <meta
           name="twitter:image"
-          content="https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75"
+          content={`${baseUrl}/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75`}
         />
+
+        {/* Favicon and Manifest */}
+        <link rel="icon" href="/favicon.ico?v=4" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=4" />
+        <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}
@@ -112,6 +111,7 @@ export default function RootLayout({
           ></iframe>
         </noscript>
 
+        {/* Cart Provider Context */}
         <CartProvider>{children}</CartProvider>
       </body>
     </html>
