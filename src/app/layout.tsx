@@ -70,7 +70,7 @@ export default function RootLayout({
         />
         <meta
           property="og:description"
-          content="DrPathCares offers comprehensive health solutions with complete blood tests and full body checkup packages for all your pathology needs."
+          content=" Dr. Path Cares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={canonicalURL} />
@@ -88,12 +88,40 @@ export default function RootLayout({
         />
         <meta
           name="twitter:description"
-          content="DrPathCares offers comprehensive health solutions with complete blood tests and full body checkup packages for all your pathology needs."
+          content=" Dr. Path Cares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs."
         />
         <meta
           name="twitter:image"
           content={`${baseUrl}/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75`}
         />
+
+        {/* Structured Data JSON-LD */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Dr. Path Cares",
+              "url": "https://drpathcares.com/",
+              "logo": "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91 8929062906",
+                "contactType": "Customer Service",
+                "areaServed": "IN",
+                "availableLanguage": "English, Hindi",
+                "email": "Info@Drpathcares.com"
+              },
+              "sameAs": [
+                "https://www.facebook.com/DrPathCares",
+                "https://twitter.com/DrPathCares",
+                "https://www.instagram.com/drpathcares",
+                "https://www.linkedin.com/company/dr-path-cares/",
+                "https://www.youtube.com/@dr.pathcares"
+              ]
+            }
+          `}
+        </script>
 
         {/* Favicon and Manifest */}
         <link rel="icon" href="/favicon.ico?v=4" />

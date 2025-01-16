@@ -1,43 +1,55 @@
 import Nav from "@/components/Nav";
-import { FaHeartbeat, FaVirus, FaThermometerHalf, FaCandyCane, FaCarrot, FaTint } from "react-icons/fa";
+import {
+  FaHeartbeat,
+  FaVirus,
+  FaThermometerHalf,
+  FaCandyCane,
+  FaCarrot,
+  FaTint,
+} from "react-icons/fa";
 
 const Faqs = () => {
   const infoData = [
     {
       icon: <FaVirus size={40} className="text-green-500" />,
       title: "Where do Coronaviruses originate?",
-      content: "Coronaviruses can infect and spread among various animal species including cats, dogs, and pigs. Human coronaviruses are believed to originate from animal reservoirs.",
+      content:
+        "Coronaviruses can infect and spread among various animal species including cats, dogs, and pigs. Human coronaviruses are believed to originate from animal reservoirs.",
     },
     {
       icon: <FaHeartbeat size={40} className="text-red-500" />,
       title: "What causes a heart attack?",
-      content: "Atherosclerosis is one of the primary contributors to coronary artery diseases. It results from fat accumulation in arteries, leading to blockages.",
+      content:
+        "Atherosclerosis is one of the primary contributors to coronary artery diseases. It results from fat accumulation in arteries, leading to blockages.",
     },
     {
       icon: <FaTint size={40} className="text-blue-500" />,
       title: "Why should my blood glucose level be between 120 and 200?",
-      content: "Uncontrolled blood sugar levels can lead to kidney disease, heart attacks, or strokes.",
+      content:
+        "Uncontrolled blood sugar levels can lead to kidney disease, heart attacks, or strokes.",
     },
     {
       icon: <FaCarrot size={40} className="text-orange-500" />,
       title: "What Foods Contain Carbohydrates?",
-      content: "Carbohydrates are found in grains, fruits, vegetables, sweets, and snacks. Check your nutrition label for accurate carb counts!",
+      content:
+        "Carbohydrates are found in grains, fruits, vegetables, sweets, and snacks. Check your nutrition label for accurate carb counts!",
     },
     {
       icon: <FaThermometerHalf size={40} className="text-yellow-500" />,
       title: "What is the temperature that is considered a fever?",
-      content: "Fever is usually defined as a core body temperature greater than 100.4°F. The threshold may vary for older adults.",
+      content:
+        "Fever is usually defined as a core body temperature greater than 100.4°F. The threshold may vary for older adults.",
     },
     {
       icon: <FaCandyCane size={40} className="text-pink-500" />,
       title: "What is the healthiest sugar?",
-      content: "Brown sugar is a healthier option than white sugar because it retains more vitamins and minerals from sugarcane.",
+      content:
+        "Brown sugar is a healthier option than white sugar because it retains more vitamins and minerals from sugarcane.",
     },
   ];
 
   return (
     <div>
-    
       <div
         className="w-full  bg-cover bg-center bg-no-repeat py-10"
         style={{ backgroundImage: `url('/images/banner-background.wbp')` }}
@@ -45,7 +57,9 @@ const Faqs = () => {
         <div className="max-w-7xl mx-auto px-4">
           {/* Title Section */}
           <div className="text-center mb-10">
-            <h1 className="text-5xl font-bold text-gray-800">Health & Wellness Information</h1>
+            <h3 className="text-4xl font-bold text-gray-800">
+              Health & Wellness Information
+            </h3>
             <p className="text-lg text-gray-600 mt-4">
               Get insights into various health topics to keep yourself informed.
             </p>
