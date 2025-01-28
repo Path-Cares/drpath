@@ -48,9 +48,15 @@ const HomeBanner = () => {
                 Dr. Path Cares
               </span>
             </h1>
-            <h2 className="text-2xl font-semibold">
+            <h2 className="text-2xl font-semibold mt-4">
               “The Pathology Lab, Doctor Suggested”
             </h2>
+            <p className="text-lg mt-4">
+              DrPathCares offers a full body checkup in Noida at home with
+              comprehensive tests tailored to meet your health needs. We bring
+              trusted diagnostic services to your doorstep, ensuring you get
+              accurate results without stepping out of your home.
+            </p>
           </div>
           <div className="image lg:w-1/2 flex justify-center">
             {/* Optimized banner image with next/image */}

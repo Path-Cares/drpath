@@ -23,8 +23,8 @@ export default function Home() {
   return (
     <div>
       <TitleDescription
-        title="Full Body Checkup| Blood Test | Pathology Lab - DrPathCares"
-        description="Dr. Path Cares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs.``"
+        title="Full Body Checkup in Noida at Home – DrPathCares Services"
+        description="Get a full body checkup in Noida at home with DrPathCares. Enjoy hassle-free healthcare with our doorstep diagnostic services and accurate results.``"
       />
 
       <Nav />
