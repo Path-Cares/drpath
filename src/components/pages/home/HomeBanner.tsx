@@ -7,10 +7,10 @@ const HomeBanner = () => {
   return (
     <>
       <Head>
-        <title>Full Body Checkup | DrPathCares</title>
+        <title>Full Body Checkup in Noida at Home – DrPathCares Services</title>
         <meta
           name="description"
-          content="DrPathCares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs."
+          content="Get a full body checkup in Noida at home with DrPathCares. Enjoy hassle-free healthcare with our doorstep diagnostic services and accurate results.``"
         />
         {/* <link rel="canonical" href="https://drpathcares.com/allergy" /> */}
         {/* Google Tag Manager */}

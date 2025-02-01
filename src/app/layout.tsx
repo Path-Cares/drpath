@@ -1,5 +1,3 @@
-"use client";
-import { usePathname } from "next/navigation";
 import Script from "next/script";
 import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
@@ -22,20 +20,53 @@ const roboto = Roboto({
   display: "swap",
 });
 
+export const metadata = {
+  title: "DrPathCares - Your Trusted Pathology Lab",
+  description:
+    "DrPathCares provides comprehensive diagnostic services for all your health checkup needs.",
+  icons: {
+    icon: "/favicon.ico?v=4",
+    apple: "/apple-touch-icon.png?v=4",
+  },
+  manifest: "/site.webmanifest",
+  openGraph: {
+    title: "Full Body Checkup | Blood Test | Pathology Lab - DrPathCares",
+    description:
+      "Dr. Path Cares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs.",
+    type: "website",
+    url: "https://drpathcares.com/",
+    images: [
+      {
+        url: "/images/mainlogo.png",
+        width: 256,
+        height: 256,
+        alt: "DrPathCares Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    site: "@Dr.pathcares",
+    title: "Full Body Checkup | Blood Test | Pathology Lab - DrPathCares",
+    description:
+      "Dr. Path Cares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs.",
+    images: ["/images/mainlogo.png"],
+  },
+};
+
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
-  const pathname = usePathname();
-  const baseUrl = "https://drpathcares.com";
-  const canonicalURL = `${baseUrl}${pathname}`;
-
+}) {
   return (
     <html lang="en">
       <head>
-        {/* Canonical Tag */}
-        <link rel="canonical" href={canonicalURL} />
+        {/* Favicon and Manifest */}
+        <link rel="icon" href="/favicon.ico?v=4" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=4" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Google Analytics */}
         <Script
@@ -62,74 +93,8 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-5ZVV8F74');
           `}
         </Script>
-
-        {/* Open Graph Meta Tags */}
-        <meta
-          property="og:title"
-          content="Full Body Checkup | Blood Test | Pathology Lab - DrPathCares"
-        />
-        <meta
-          property="og:description"
-          content=" Dr. Path Cares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={canonicalURL} />
-        <meta
-          property="og:image"
-          content={`${baseUrl}/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75`}
-        />
-
-        {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@Dr.pathcares" />
-        <meta
-          name="twitter:title"
-          content="Full Body Checkup | Blood Test | Pathology Lab - DrPathCares"
-        />
-        <meta
-          name="twitter:description"
-          content=" Dr. Path Cares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs."
-        />
-        <meta
-          name="twitter:image"
-          content={`${baseUrl}/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75`}
-        />
-
-        {/* Structured Data JSON-LD */}
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Dr. Path Cares",
-              "url": "https://drpathcares.com/",
-              "logo": "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+91 8929062906",
-                "contactType": "Customer Service",
-                "areaServed": "IN",
-                "availableLanguage": "English, Hindi",
-                "email": "Info@Drpathcares.com"
-              },
-              "sameAs": [
-                "https://www.facebook.com/DrPathCares",
-                "https://twitter.com/DrPathCares",
-                "https://www.instagram.com/drpathcares",
-                "https://www.linkedin.com/company/dr-path-cares/",
-                "https://www.youtube.com/@dr.pathcares"
-              ]
-            }
-          `}
-        </script>
-
-        {/* Favicon and Manifest */}
-        <link rel="icon" href="/favicon.ico?v=4" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=4" />
-        <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={inter.className}>
-        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-5ZVV8F74"
@@ -138,8 +103,6 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-
-        {/* Cart Provider Context */}
         <CartProvider>{children}</CartProvider>
       </body>
     </html>
