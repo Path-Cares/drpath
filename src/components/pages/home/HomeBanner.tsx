@@ -7,10 +7,10 @@ const HomeBanner = () => {
   return (
     <>
       <Head>
-        <title>Full Body Checkup in Noida at Home – DrPathCares Services</title>
+        <title>Best Full Body Checkup in Noida at Home – Dr Pathcares </title>
         <meta
           name="description"
-          content="Get a full body checkup in Noida at home with DrPathCares. Enjoy hassle-free healthcare with our doorstep diagnostic services and accurate results.``"
+          content="Get a Best full body checkup in Noida at home with Dr Pathcares. Enjoy hassle-free healthcare with our doorstep diagnostic services and accurate results.``"
         />
         {/* <link rel="canonical" href="https://drpathcares.com/allergy" /> */}
         {/* Google Tag Manager */}
@@ -52,10 +52,13 @@ const HomeBanner = () => {
               “The Pathology Lab, Doctor Suggested”
             </h2>
             <p className="text-lg mt-4">
-              DrPathCares offers a full body checkup in Noida at home with
+              DrPathCares offers a Best full body checkup in Noida at home with
               comprehensive tests tailored to meet your health needs. We bring
               trusted diagnostic services to your doorstep, ensuring you get
-              accurate results without stepping out of your home.
+              accurate results without stepping out of your home. With our best
+              full body health checkups, we make sure that every aspect of your
+              health is thoroughly examined and you receive top-quality care at
+              your convenience.
             </p>
           </div>
           <div className="image lg:w-1/2 flex justify-center">

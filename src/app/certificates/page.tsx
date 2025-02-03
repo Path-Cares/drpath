@@ -9,12 +9,24 @@ import AddressPage from "@/components/Address";
 
 const Certificates = () => {
   const certificates = [
-    { name: "Certificate MC-Augomentum", url: "/images/Certificate MC-Augomentum1.jpeg" },
+    {
+      name: "Certificate MC-Augomentum",
+      url: "/images/Certificate MC-Augomentum1.jpeg",
+    },
     { name: "Certificate RDPL", url: "/images/Certificate RDPL1.jpeg" },
-    { name: "ISO 14001 DR PATHCARES", url: "/images/ISO 14001 DR PATHCARES1.jpeg" },
-    { name: "ISO 45001 DR PATH CARE", url: "/images/ISO 45001 DR PATH CARE1.jpeg" },
+    {
+      name: "ISO 14001 DR PATHCARES",
+      url: "/images/ISO 14001 DR PATHCARES1.jpeg",
+    },
+    {
+      name: "ISO 45001 DR PATH CARE",
+      url: "/images/ISO 45001 DR PATH CARE1.jpeg",
+    },
     { name: "Lucknow Certificate", url: "/images/Lucknow Certificate1.jpeg" },
-    { name: "Udyam Registration Certificate", url: "/images/Print _ Udyam Registration Certificate1.jpeg" },
+    {
+      name: "Udyam Registration Certificate",
+      url: "/images/Print _ Udyam Registration Certificate1.jpeg",
+    },
   ];
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -24,13 +36,36 @@ const Certificates = () => {
 
   return (
     <>
-    <Head>
+      <Head>
         <title>Full Body Checkup | DrPathCares</title>
         <meta
           name="description"
           content="DrPathCares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs."
         />
         <link rel="canonical" href="https://drpathcares.com/allergy" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              "url": "https://www.drpathcares.com/",
+              "logo": "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
+              "name": "Dr. Path Cares",
+              "sameAs": [
+                "https://www.facebook.com/drpathcares1",
+                "https://www.instagram.com/drpathcares",
+                "https://www.linkedin.com/company/dr-path-cares/",
+                "https://www.youtube.com/@dr.pathcares"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-8929062906",
+                "contactType": "Customer service",
+                "email": "Info@Drpathcares.com"
+              }
+            }
+          `}
+        </script>
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
@@ -61,13 +96,15 @@ const Certificates = () => {
         style={{ backgroundImage: `url('/images/banner-background.webp')` }}
       >
         <div className="max-w-6xl mx-auto px-4">
-          
           <div className="flex items-center justify-center mb-10 bg-white p-3 md:p-8 rounded-lg shadow-md">
             <FaAward size={130} className="text-yellow-500 mr-8" />
             <div>
-              <h1 className="text-4xl font-bold">Dr. PathCares+ Our Associate Partner Labs Certificate</h1>
+              <h1 className="text-4xl font-bold">
+                Dr. PathCares+ Our Associate Partner Labs Certificate
+              </h1>
               <p className="text-gray-700 mt-4 text-2xl">
-                Celebrating our achievements and commitment to healthcare excellence.
+                Celebrating our achievements and commitment to healthcare
+                excellence.
               </p>
             </div>
           </div>
@@ -126,47 +163,13 @@ const Certificates = () => {
           </div>
         </div>
       )}
-       <AddressPage/>
+      <AddressPage />
       <Footer />
     </>
   );
 };
 
 export default Certificates;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import { FaTrophy } from "react-icons/fa";
 
@@ -248,7 +251,7 @@ export default Certificates;
 //       </div>
 //       </div>
 //      </div>
-    
+
 //   );
 // };
 
@@ -296,4 +299,3 @@ export default Certificates;
 // };
 
 // export default Awards;
-

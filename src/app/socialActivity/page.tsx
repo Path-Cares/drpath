@@ -4,7 +4,6 @@ import Head from "next/head";
 import Image from "next/image";
 
 const socialActivity = () => {
- 
   const galleryImages = [
     "/images/sa1.jpeg",
     "/images/sa2.jpeg",
@@ -36,13 +35,36 @@ const socialActivity = () => {
 
   return (
     <>
-    <Head>
+      <Head>
         <title>Full Body Checkup | DrPathCares</title>
         <meta
           name="description"
           content="DrPathCares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs."
         />
         <link rel="canonical" href="https://drpathcares.com/socialActivity" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              "url": "https://www.drpathcares.com/",
+              "logo": "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
+              "name": "Dr. Path Cares",
+              "sameAs": [
+                "https://www.facebook.com/drpathcares1",
+                "https://www.instagram.com/drpathcares",
+                "https://www.linkedin.com/company/dr-path-cares/",
+                "https://www.youtube.com/@dr.pathcares"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-8929062906",
+                "contactType": "Customer service",
+                "email": "Info@Drpathcares.com"
+              }
+            }
+          `}
+        </script>
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
@@ -66,12 +88,11 @@ const socialActivity = () => {
           style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
-    <Nav />
+      <Nav />
       <div
         className="bg-cover bg-center md:p-8 h-auto"
         style={{ backgroundImage: "url('/images/banner-background.webp')" }}
       >
-        
         <div className="container mx-auto flex flex-col md:flex-row items-start p-8  md:p-16 justify-between">
           <div className="text-left md:w-1/2">
             <h1 className="text-4xl font-bold mb-4 py-4">Social Activities</h1>
@@ -90,13 +111,14 @@ const socialActivity = () => {
               Organise Health camp in your area
             </h2>
             <form
-              action="https://formspree.io/f/mzzbwroj" method="POST"
+              action="https://formspree.io/f/mzzbwroj"
+              method="POST"
               className="space-y-4"
             >
               <input
                 type="text"
                 placeholder="Full Name"
-                 name="name"
+                name="name"
                 className="w-full p-2 border border-gray-300 rounded"
               />
               <input
@@ -108,13 +130,13 @@ const socialActivity = () => {
               <input
                 type="tel"
                 placeholder="Phone Number"
-                 name="phonenumber"
+                name="phonenumber"
                 className="w-full p-2 border border-gray-300 rounded"
               />
               <input
                 type="text"
                 placeholder="Your City"
-                 name="city"
+                name="city"
                 className="w-full p-2 border border-gray-300 rounded"
               />
               <button className="bg-[#00B7AB] text-white py-2 px-4 rounded w-full hover:bg-[#46716f] transition">
@@ -124,11 +146,8 @@ const socialActivity = () => {
           </div>
         </div>
 
-        
-
         {/* Image Gallery Section */}
         <div className="container mx-auto my-12">
-          
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {galleryImages.map((src, index) => (
               <div

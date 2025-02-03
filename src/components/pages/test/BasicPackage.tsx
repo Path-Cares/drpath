@@ -39,7 +39,6 @@ const BasicPackage = () => {
           <li>Absolute Eosinophil Count</li>
           <li>ESR</li>
         </ul>
-        
       ),
     },
     {
@@ -171,13 +170,36 @@ const BasicPackage = () => {
 
   return (
     <>
-    <Head>
+      <Head>
         <title>Full Body Checkup | DrPathCares</title>
         <meta
           name="description"
           content="DrPathCares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs."
         />
         {/* <link rel="canonical" href="https://drpathcares.com/allergy" /> */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              "url": "https://www.drpathcares.com/",
+              "logo": "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
+              "name": "Dr. Path Cares",
+              "sameAs": [
+                "https://www.facebook.com/drpathcares1",
+                "https://www.instagram.com/drpathcares",
+                "https://www.linkedin.com/company/dr-path-cares/",
+                "https://www.youtube.com/@dr.pathcares"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-8929062906",
+                "contactType": "Customer service",
+                "email": "Info@Drpathcares.com"
+              }
+            }
+          `}
+        </script>
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
@@ -201,29 +223,33 @@ const BasicPackage = () => {
           style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
-    <section className="px-5 lg:px-28 xl:px-32 2xl:px-72 pb-20">
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-center">Included Tests</h2>
-      {services.map((service, index) => (
-        <div key={index} className="mb-4 border-b border-gray-200">
-          <button
-            className="w-full text-left py-4 px-5 bg-[#00B7AB] text-white focus:outline-none focus:bg-[#1F2259]"
-            onClick={() => toggleService(index)}
-          >
-            <div className="flex justify-between items-center">
-              <span className="text-lg font-medium text-white">
-                {service.title}
-              </span>
-              <span className="text-lg">{openIndex === index ? "-" : "+"}</span>
-            </div>
-          </button>
-          {openIndex === index && (
-            <div className="p-5 bg-white text-gray-700">
-              {service.description}
-            </div>
-          )}
-        </div>
-      ))}
-    </section>
+      <section className="px-5 lg:px-28 xl:px-32 2xl:px-72 pb-20">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-center">
+          Included Tests
+        </h2>
+        {services.map((service, index) => (
+          <div key={index} className="mb-4 border-b border-gray-200">
+            <button
+              className="w-full text-left py-4 px-5 bg-[#00B7AB] text-white focus:outline-none focus:bg-[#1F2259]"
+              onClick={() => toggleService(index)}
+            >
+              <div className="flex justify-between items-center">
+                <span className="text-lg font-medium text-white">
+                  {service.title}
+                </span>
+                <span className="text-lg">
+                  {openIndex === index ? "-" : "+"}
+                </span>
+              </div>
+            </button>
+            {openIndex === index && (
+              <div className="p-5 bg-white text-gray-700">
+                {service.description}
+              </div>
+            )}
+          </div>
+        ))}
+      </section>
     </>
   );
 };

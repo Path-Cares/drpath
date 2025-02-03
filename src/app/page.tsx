@@ -13,9 +13,9 @@ import BlogSection from "@/components/pages/blog/BlogSection";
 import SubscribeNewsletter from "@/components/pages/SubscribeNewsletter";
 
 export const metadata = {
-  title: "Full Body Checkup in Noida at Home – DrPathCares Services",
+  title: "Best Full Body Checkup in Noida at Home – Dr Pathcares ",
   description:
-    "Get a full body checkup in Noida at home with DrPathCares. Enjoy hassle-free healthcare with our doorstep diagnostic services and accurate results.",
+    "Get a Best full body checkup in Noida at home with Dr Pathcares. Enjoy hassle-free healthcare with our doorstep diagnostic services and accurate results.",
   alternates: {
     canonical: "https://drpathcares.com/",
   },

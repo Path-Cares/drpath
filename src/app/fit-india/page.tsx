@@ -10,13 +10,36 @@ import Head from "next/head";
 function Page() {
   return (
     <>
-    <Head>
+      <Head>
         <title>Full Body Checkup | DrPathCares</title>
         <meta
           name="description"
           content="DrPathCares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs."
         />
         <link rel="canonical" href="https://drpathcares.com/fit-india" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              "url": "https://www.drpathcares.com/",
+              "logo": "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
+              "name": "Dr. Path Cares",
+              "sameAs": [
+                "https://www.facebook.com/drpathcares1",
+                "https://www.instagram.com/drpathcares",
+                "https://www.linkedin.com/company/dr-path-cares/",
+                "https://www.youtube.com/@dr.pathcares"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-8929062906",
+                "contactType": "Customer service",
+                "email": "Info@Drpathcares.com"
+              }
+            }
+          `}
+        </script>
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
@@ -42,7 +65,13 @@ function Page() {
       </noscript>
       <Nav />
       <main className="">
-        <BasicPackageBanner testname={"DRP055 Fit India"} totaltest={"Includes 80 Tests"} originalprice={"₹999"} saleprice={"₹599"} image={"/images/Fitindia.jpeg"}/>
+        <BasicPackageBanner
+          testname={"DRP055 Fit India"}
+          totaltest={"Includes 80 Tests"}
+          originalprice={"₹999"}
+          saleprice={"₹599"}
+          image={"/images/Fitindia.jpeg"}
+        />
         <FitIndiaPackage />
       </main>
       <Footer />

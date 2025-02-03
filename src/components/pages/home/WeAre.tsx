@@ -11,13 +11,17 @@ const WeAre = () => {
             text="We Are A Certified And Award-Winning Service You Can Trust"
           />
           <p className="text-gray-700 text-lg leading-relaxed mt-4">
-            DrPathCares has created tech-enabled processes that ensure the
-            customer journey from booking to report delivery is seamless and
-            simplified. Through our proprietary technological developments, like
-            the tamper-proof sample collection kits (SmartPrik), pre-barcoded
-            vials, and live temperature-monitored sample transportation boxes
-            (CoolSure), we make the sample collection and testing process
-            quick, painless, and of high quality.
+            DrPathCares offers full body checkups near me, making the experience
+            convenient, efficient, and trustworthy. We have created tech-enabled
+            processes that ensure the customer journey from booking to report
+            delivery is seamless and simplified. Through our proprietary
+            technological developments, like the tamper-proof sample collection
+            kits (SmartPrix), pre-barcoded vials, and live temperature-monitored
+            sample transportation boxes (CoolSure), we make the sample
+            collection and testing process quick, painless, and of high quality.
+            Whether you're looking for a comprehensive health checkup near me or
+            testing for a specific health concern, we ensure the best experience
+            at competitive full body checkup prices.
           </p>
         </div>
         <div className="lg:w-[40%] flex justify-center mt-8 lg:mt-0">
