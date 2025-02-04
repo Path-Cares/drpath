@@ -171,35 +171,39 @@ const BasicPackage = () => {
   return (
     <>
       <Head>
-        <title>Full Body Checkup | DrPathCares</title>
+        <title>Best Full Body Checkup in Noida at Home – Dr Pathcares</title>
         <meta
           name="description"
-          content="DrPathCares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs."
+          content="Get the best full body checkup in Noida at home with Dr. PathCares. Enjoy hassle-free doorstep diagnostic services, accurate results, and comprehensive health monitoring."
         />
-        {/* <link rel="canonical" href="https://drpathcares.com/allergy" /> */}
-        <script type="application/ld+json">
-          {`
-            {
+        <link rel="canonical" href="https://drpathcares.com/" />
+
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
               "@context": "http://schema.org",
               "@type": "Organization",
-              "url": "https://www.drpathcares.com/",
-              "logo": "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
-              "name": "Dr. Path Cares",
-              "sameAs": [
+              url: "https://www.drpathcares.com/",
+              logo: "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
+              name: "Dr. Path Cares",
+              sameAs: [
                 "https://www.facebook.com/drpathcares1",
                 "https://www.instagram.com/drpathcares",
                 "https://www.linkedin.com/company/dr-path-cares/",
-                "https://www.youtube.com/@dr.pathcares"
+                "https://www.youtube.com/@dr.pathcares",
               ],
-              "contactPoint": {
+              contactPoint: {
                 "@type": "ContactPoint",
-                "telephone": "+91-8929062906",
-                "contactType": "Customer service",
-                "email": "Info@Drpathcares.com"
-              }
-            }
-          `}
-        </script>
+                telephone: "+91-8929062906",
+                contactType: "Customer service",
+                email: "Info@Drpathcares.com",
+              },
+            }),
+          }}
+        />
+
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{

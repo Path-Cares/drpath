@@ -26,41 +26,51 @@ const Nav: React.FC = () => {
   return (
     <>
       <Head>
-        {/* OG Tags */}
+        <title>Best Full Body Checkup in Noida at Home – Dr Pathcares</title>
         <meta
-          property="og:title"
-          content="Full Body Checkup | Blood Test | Pathology Lab - DrPathCares"
+          name="description"
+          content="Get the best full body checkup in Noida at home with Dr. PathCares. Enjoy hassle-free doorstep diagnostic services, accurate results, and comprehensive health monitoring."
         />
-        <meta property="og:site_name" content="Dr. Path Cares" />
-        <meta property="og:url" content="https://drpathcares.com/" />
-        <meta
-          property="og:description"
-          content="DrPathCares offers comprehensive health solutions with complete blood tests and full body checkup packages for all your pathology needs."
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75"
+        <link rel="canonical" href="https://drpathcares.com/" />
+
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              url: "https://www.drpathcares.com/",
+              logo: "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
+              name: "Dr. Path Cares",
+              sameAs: [
+                "https://www.facebook.com/drpathcares1",
+                "https://www.instagram.com/drpathcares",
+                "https://www.linkedin.com/company/dr-path-cares/",
+                "https://www.youtube.com/@dr.pathcares",
+              ],
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+91-8929062906",
+                contactType: "Customer service",
+                email: "Info@Drpathcares.com",
+              },
+            }),
+          }}
         />
 
-        {/* Twitter Tags */}
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@DrPathCares" />
-        <meta
-          name="twitter:title"
-          content="Full Body Checkup | Blood Test | Pathology Lab - DrPathCares"
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-5ZVV8F74');
+            `,
+          }}
         />
-        <meta
-          name="twitter:description"
-          content="DrPathCares offers comprehensive health solutions with complete blood tests and full body checkup packages for all your pathology needs."
-        />
-        <meta
-          name="twitter:image"
-          content="https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75"
-        />
-
-        {/* Robots Meta Tag for Page-Specific Indexing */}
-        <meta name="robots" content="index, follow" />
       </Head>
 
       <header className="px-6 lg:px-12 sticky top-0 z-50 bg-white shadow">
