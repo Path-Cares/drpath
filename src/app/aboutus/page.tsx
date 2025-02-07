@@ -10,12 +10,12 @@ function Page() {
   return (
     <>
       <Head>
-        <title>Best Full Body Checkup in Noida at Home – Dr Pathcares</title>
+        <title>Trusted Preventive Healthcare & Diagnostics | DrPathCares</title>
         <meta
           name="description"
-          content="Get the best full body checkup in Noida at home with Dr. PathCares. Enjoy hassle-free doorstep diagnostic services, accurate results, and comprehensive health monitoring."
+          content="Get accurate diagnostic tests, fast e-reports & expert consultations at home. DrPathCares ensures quality healthcare with affordable pricing & precision."
         />
-        <link rel="canonical" href="https://www.drpathcares.com/" />
+        <link rel="canonical" href="https://drpathcares.com/aboutus" />
 
         {/* JSON-LD Structured Data */}
         <script

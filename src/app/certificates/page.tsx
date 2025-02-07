@@ -38,12 +38,12 @@ const Certificates = () => {
   return (
     <>
       <Head>
-        <title>Best Full Body Checkup in Noida at Home – Dr Pathcares</title>
+        <title>Dr. Path Cares & Partner Labs | Healthcare Excellence</title>
         <meta
           name="description"
-          content="Get the best full body checkup in Noida at home with Dr. PathCares. Enjoy hassle-free doorstep diagnostic services, accurate results, and comprehensive health monitoring."
+          content="Dr. Path Cares & associate partner labs celebrate their certified commitment to healthcare excellence, ensuring quality diagnostics & trusted medical services."
         />
-        <link rel="canonical" href="https://www.drpathcares.com/" />
+        <link rel="canonical" href="https://drpathcares.com/certificates" />
 
         {/* JSON-LD Structured Data */}
         <script

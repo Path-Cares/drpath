@@ -37,12 +37,14 @@ const socialActivity = () => {
   return (
     <>
       <Head>
-        <title>Best Full Body Checkup in Noida at Home – Dr Pathcares</title>
+        <title>
+          Health Checkup Camps in Delhi NCR & Meerut | Dr. Path Cares
+        </title>
         <meta
           name="description"
-          content="Get the best full body checkup in Noida at home with Dr. PathCares. Enjoy hassle-free doorstep diagnostic services, accurate results, and comprehensive health monitoring."
+          content="Dr. Path Cares offers health check-up camps in Delhi NCR & Meerut with blood tests, diabetes tests, thyroid tests, and full body checkups for better health."
         />
-        <link rel="canonical" href="https://www.drpathcares.com/" />
+        <link rel="canonical" href="https://drpathcares.com/socialActivity" />
 
         {/* JSON-LD Structured Data */}
         <script

@@ -10,12 +10,12 @@ function Page() {
   return (
     <>
       <Head>
-        <title>Best Full Body Checkup in Noida at Home – Dr Pathcares</title>
+        <title>Dr. Path Cares Registered Labs | 24/7 Healthcare Services</title>
         <meta
           name="description"
-          content="Get the best full body checkup in Noida at home with Dr. PathCares. Enjoy hassle-free doorstep diagnostic services, accurate results, and comprehensive health monitoring."
+          content="Dr. PathCares Wellness Care Laboratory in Noida provides 24/7 lab tests, diagnostics & health checkups. Contact +0120-4157-233 or Info@Drpathcares.com."
         />
-        <link rel="canonical" href="https://www.drpathcares.com/" />
+        <link rel="canonical" href=" https://drpathcares.com/contact" />
 
         {/* JSON-LD Structured Data */}
         <script
