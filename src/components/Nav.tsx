@@ -203,7 +203,7 @@ const Nav: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    href="/healthPackage"
+                    href="/full-body-health-checkup-packages"
                     className="py-2 px-3 text-gray-900 whitespace-nowrap"
                   >
                     Health Package

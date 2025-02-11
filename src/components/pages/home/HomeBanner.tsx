@@ -24,9 +24,9 @@ const HomeBanner = () => {
               "@context": "https://schema.org",
               "@type": "Organization",
               "@id": "https://www.drpathcares.com/#organization",
+              name: "Dr. Path Cares",
               url: "https://www.drpathcares.com/",
               logo: "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
-              name: "Dr. Path Cares",
               sameAs: [
                 "https://www.facebook.com/drpathcares1",
                 "https://www.instagram.com/drpathcares",
@@ -37,10 +37,12 @@ const HomeBanner = () => {
                 {
                   "@type": "ContactPoint",
                   telephone: "+91-8929062906",
-                  contactType: "customer support",
-                  email: "info@drpathcares.com",
+                  contactType: "customer service",
+                  areaServed: "IN",
+                  availableLanguage: ["Hindi", "English"],
                 },
               ],
+              email: "Info@Drpathcares.com",
             }),
           }}
         />
@@ -76,9 +78,9 @@ const HomeBanner = () => {
           <div className="content lg:w-1/2">
             <h1 className="text-4xl lg:text-5xl font-semibold">
               Welcome To <br />
-              <span className="lg:text-[5rem] text-[#1F2259] font-bold">
+              <h1 className="lg:text-[5rem] text-[#1F2259] font-bold">
                 Dr. Path Cares
-              </span>
+              </h1>
             </h1>
             <h1 className="text-2xl font-semibold mt-4">
               “Best Full Body Check up in Noida At Home”

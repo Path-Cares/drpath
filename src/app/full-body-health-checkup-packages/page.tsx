@@ -126,10 +126,10 @@ const HealthCheckup = () => {
   return (
     <>
       <Head>
-        <title>Best Full Body Checkup in Noida at Home – Dr Pathcares</title>
+        <title>Comprehensive Full Body Checkup Packages | Dr. Path Cares</title>
         <meta
           name="description"
-          content="Get the best full body checkup in Noida at home with Dr. PathCares. Enjoy hassle-free doorstep diagnostic services, accurate results, and comprehensive health monitoring."
+          content="Get Full Body Health Checkup Packages at Dr. Path Cares. Ensure early detection of health issues with comprehensive tests, screenings, and expert analysis."
         />
         <link rel="canonical" href="https://www.drpathcares.com/" />
 
@@ -203,10 +203,14 @@ const HealthCheckup = () => {
             Dr. Path Cares Comprehensive Health Checkup Packages
           </h2>
           <p className="text-gray-600">
-            These packages are designed to ensure your overall well-being by
-            incorporating imaging, blood work, and screenings. Detect early
-            warning signs for potential health issues and get effective
-            treatments to ensure long-term benefits.
+            Our Full Body Health Checkup Packages are designed to provide a
+            complete assessment of your health. These health screening packages
+            include essential blood test packages, imaging tests, and other
+            preventive health checkups to detect early warning signs of
+            potential health issues. With Dr. Path Cares wellness packages, you
+            get accurate reports and expert guidance for effective treatments,
+            ensuring long-term well-being. Book your Complete Health Checkup
+            Package today and take the first step towards a healthier life!
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-8 max-w-7xl mx-auto">
