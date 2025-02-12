@@ -5,6 +5,7 @@ import { CartProvider } from "@/hooks/cart/CartContext";
 import "swiper/swiper-bundle.css";
 import "../lib/fontawesome";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import Head from "next/head";
 
 config.autoAddCss = false;
 
@@ -20,80 +21,72 @@ const roboto = Roboto({
   display: "swap",
 });
 
-export const metadata = {
-  title: "DrPathCares - Your Trusted Pathology Lab",
-  description:
-    "DrPathCares provides comprehensive diagnostic services for all your health checkup needs.",
-  icons: {
-    icon: "/favicon.ico?v=4",
-    apple: "/apple-touch-icon.png?v=4",
-  },
-  manifest: "/site.webmanifest",
-  openGraph: {
-    title: "Full Body Checkup | Blood Test | Pathology Lab - DrPathCares",
-    description:
-      "Dr. Path Cares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs.",
-    type: "website",
-    url: "https://drpathcares.com/",
-    images: [
-      {
-        url: "/images/mainlogo.png",
-        width: 256,
-        height: 256,
-        alt: "DrPathCares Logo",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary",
-    site: "@Dr.pathcares",
-    title: "Full Body Checkup | Blood Test | Pathology Lab - DrPathCares",
-    description:
-      "Dr. Path Cares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs.",
-    images: ["/images/mainlogo.png"],
-  },
-};
-
 export default function RootLayout({
   children,
+  pageMetadata,
 }: {
   children: React.ReactNode;
+  pageMetadata?: { title?: string; description?: string };
 }) {
+  const title = pageMetadata?.title;
+  const description = pageMetadata?.description;
+
   return (
     <html lang="en">
-      <head>
-        {/* Favicon and Manifest */}
+      <Head>
+        {/* Dynamic Metadata */}
+        <title key="dynamic-title">{title}</title>
+        <meta
+          key="dynamic-description"
+          name="description"
+          content={description}
+        />
         <link rel="icon" href="/favicon.ico?v=4" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=4" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {/* Google Analytics */}
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-TXDJ1TF0E3"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-TXDJ1TF0E3');
-          `}
-        </Script>
+        {/* Open Graph Metadata */}
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://drpathcares.com/" />
+        <meta property="og:image" content="/images/mainlogo.png" />
 
-        {/* Google Tag Manager */}
-        <Script id="google-tag-manager" strategy="afterInteractive">
-          {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5ZVV8F74');
-          `}
-        </Script>
-      </head>
+        {/* Twitter Metadata */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@Dr.pathcares" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content="/images/mainlogo.png" />
+      </Head>
+
+      {/* Google Analytics */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-TXDJ1TF0E3"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TXDJ1TF0E3');
+        `}
+      </Script>
+
+      {/* Google Tag Manager */}
+      <Script id="google-tag-manager" strategy="afterInteractive">
+        {`
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-5ZVV8F74');
+        `}
+      </Script>
+
       <body className={inter.className}>
         <noscript>
           <iframe

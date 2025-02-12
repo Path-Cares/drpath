@@ -4,8 +4,15 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
+import RootLayout from "../layout";
 
 const HealthCheckup = () => {
+  const pageMetadata = {
+    title: "Comprehensive Full Body Checkup Packages | Dr. Path Cares",
+    description:
+      "Get Full Body Health Checkup Packages at Dr. Path Cares. Ensure early detection of health issues with comprehensive tests, screenings, and expert analysis.",
+  };
+
   const packages = [
     {
       img: "/images/Fitindia.jpeg",
@@ -109,29 +116,32 @@ const HealthCheckup = () => {
   ];
 
   const sortedPackages = packages.sort((a, b) => {
-    // Place "Multiple Myoloma" at the last position
     if (a.title === "Multiple Myoloma") return 1;
     if (b.title === "Multiple Myoloma") return -1;
 
-    // Place "Allergy Package" at the second last position
     if (a.title === "Allergy Package") return 1;
     if (b.title === "Allergy Package") return -1;
 
-    // Default sorting by price for the rest
     const priceA = a.price || Infinity;
     const priceB = b.price || Infinity;
     return priceA - priceB;
   });
 
   return (
-    <>
+    <RootLayout pageMetadata={pageMetadata}>
       <Head>
-        <title>Comprehensive Full Body Checkup Packages | Dr. Path Cares</title>
+        <title key="page-title">
+          Comprehensive Full Body Checkup Packages | Dr. Path Cares
+        </title>
         <meta
+          key="description"
           name="description"
           content="Get Full Body Health Checkup Packages at Dr. Path Cares. Ensure early detection of health issues with comprehensive tests, screenings, and expert analysis."
         />
-        <link rel="canonical" href="https://www.drpathcares.com/" />
+        <link
+          rel="canonical"
+          href="https://www.drpathcares.com/full-body-health-checkup-packages"
+        />
 
         {/* JSON-LD Structured Data */}
         <script
@@ -194,7 +204,7 @@ const HealthCheckup = () => {
         >
           <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-2xl md:text-4xl font-bold text-[#002D62]">
-              Health Checkup Packages
+              Full Body Health Checkup Packages
             </h1>
           </div>
         </div>
@@ -251,7 +261,7 @@ const HealthCheckup = () => {
         </div>
         <Footer />
       </div>
-    </>
+    </RootLayout>
   );
 };
 
