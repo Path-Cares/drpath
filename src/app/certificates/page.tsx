@@ -1,12 +1,36 @@
-"use client";
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
-import Head from "next/head";
 import { FaAward } from "react-icons/fa";
 import Image from "next/image";
 import AddressPage from "@/components/Address";
 import Script from "next/script";
+
+// Metadata for SEO (App Router way)
+export const metadata = {
+  title: "Dr. Path Cares & Partner Labs | Healthcare Excellence",
+  description:
+    " Dr. Path Cares & associate partner labs celebrate their certified commitment to healthcare excellence, ensuring quality diagnostics & trusted medical services.",
+  alternates: {
+    canonical: "https://drpathcares.com/certificates",
+  },
+  openGraph: {
+    title: "Dr. Path Cares & Partner Labs | Healthcare Excellence",
+    description:
+      " Dr. Path Cares & associate partner labs celebrate their certified commitment to healthcare excellence, ensuring quality diagnostics & trusted medical services.",
+    url: "https://drpathcares.com/certificates",
+    siteName: "Dr. Path Cares",
+    images: [
+      {
+        url: "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
+        width: 800,
+        height: 600,
+        alt: "Dr. Path Cares Logo",
+      },
+    ],
+    type: "website",
+  },
+};
 
 const Certificates = () => {
   const certificates = [
@@ -30,52 +54,44 @@ const Certificates = () => {
     },
   ];
 
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  // const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  const openModal = (url: string) => setSelectedImage(url);
-  const closeModal = () => setSelectedImage(null);
+  // const openModal = (url: string) => setSelectedImage(url);
+  // const closeModal = () => setSelectedImage(null);
 
   return (
     <>
-      <Head>
-        <title>Dr. Path Cares & Partner Labs | Healthcare Excellence</title>
-        <meta
-          name="description"
-          content="Dr. Path Cares & associate partner labs celebrate their certified commitment to healthcare excellence, ensuring quality diagnostics & trusted medical services."
-        />
-        <link rel="canonical" href="https://drpathcares.com/certificates" />
+      {/* JSON-LD Structured Data */}
+      <Script
+        id="json-ld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.drpathcares.com/#organization",
+            url: "https://www.drpathcares.com/",
+            logo: "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
+            name: "Dr. Path Cares",
+            sameAs: [
+              "https://www.facebook.com/drpathcares1",
+              "https://www.instagram.com/drpathcares",
+              "https://www.linkedin.com/company/dr-path-cares/",
+              "https://www.youtube.com/@dr.pathcares",
+            ],
+            contactPoint: [
+              {
+                "@type": "ContactPoint",
+                telephone: "+91-8929062906",
+                contactType: "customer support",
+                email: "info@drpathcares.com",
+              },
+            ],
+          }),
+        }}
+      />
 
-        {/* JSON-LD Structured Data */}
-        <script
-          key="structured-data"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "@id": "https://www.drpathcares.com/#organization",
-              url: "https://www.drpathcares.com/",
-              logo: "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
-              name: "Dr. Path Cares",
-              sameAs: [
-                "https://www.facebook.com/drpathcares1",
-                "https://www.instagram.com/drpathcares",
-                "https://www.linkedin.com/company/dr-path-cares/",
-                "https://www.youtube.com/@dr.pathcares",
-              ],
-              contactPoint: [
-                {
-                  "@type": "ContactPoint",
-                  telephone: "+91-8929062906",
-                  contactType: "customer support",
-                  email: "info@drpathcares.com",
-                },
-              ],
-            }),
-          }}
-        />
-      </Head>
-
+      {/* Google Tag Manager */}
       <Script
         id="google-tag-manager"
         strategy="afterInteractive"
@@ -98,6 +114,7 @@ const Certificates = () => {
           style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
+
       <Nav />
 
       <div
@@ -118,14 +135,14 @@ const Certificates = () => {
             </div>
           </div>
 
-          {/* Certificates Lists*/}
+          {/* Certificates List */}
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold mb-6">Our Certificates</h2>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {certificates.map((cert, index) => (
                 <li key={index} className="text-center">
                   <div
-                    onClick={() => openModal(cert.url)}
+                    // onClick={() => openModal(cert.url)}
                     className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer"
                   >
                     <Image
@@ -144,8 +161,8 @@ const Certificates = () => {
         </div>
       </div>
 
-      {/* Zoomed Image */}
-      {selectedImage && (
+      {/* Zoomed Image Modal */}
+      {/* {selectedImage && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
           onClick={closeModal}
@@ -171,7 +188,8 @@ const Certificates = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
+
       <AddressPage />
       <Footer />
     </>
@@ -179,132 +197,3 @@ const Certificates = () => {
 };
 
 export default Certificates;
-
-// import { FaTrophy } from "react-icons/fa";
-
-// const Awards = () => {
-//   return (
-//   <div>
-//     <Nav/>
-
-//     <div
-//       className="w-full min-h-screen bg-cover bg-center bg-no-repeat py-3"
-//       style={{ backgroundImage: `url('/images/banner-background.webp')` }}
-//     >
-//       <div className="bg-opacity-80 rounded-lg max-w-8xl mx-auto h-[200px]">
-//         <div className="flex items-center mb-10 bg-[#5F9EA0] p-6 rounded-lg">
-//           <FaTrophy size={120} className="text-yellow-500 mr-6" />
-//           <div>
-//             <p className="text-4xl font-bold">Our Awards</p>
-//             <p className="text-black mt-2 text-2xl">
-//               This shows our hard work and dedication towards healthcare.
-//             </p>
-//           </div>
-//         </div>
-
-//         <div className="grid grid-cols-3 gap-4]">
-//           {/* Award 1 */}
-//           <div className="border rounded-lg p-4 bg-white shadow-md">
-//             <img
-//               src="/images/award1.png"
-//               alt="Award 1"
-//               className="w-full h-auto object-cover"
-//             />
-//           </div>
-
-//           {/* Award 2 */}
-//           <div className="border rounded-lg p-4 bg-white shadow-md">
-//             <img
-//               src="/images/award3.png"
-//               alt="Award 2"
-//               className="w-full h-auto object-cover"
-//             />
-//           </div>
-
-//           {/* Award 3 */}
-//           <div className="border rounded-lg p-4 bg-white shadow-md">
-//             <img
-//               src="/images/award4.png"
-//               alt="Award 3"
-//               className="w-full h-auto object-cover"
-//             />
-//           </div>
-
-//           {/* Award 4 */}
-//           <div className="border rounded-lg p-4 bg-white shadow-md">
-//             <img
-//               src="/images/award3.png"
-//               alt="Award 4"
-//               className="w-full h-auto object-cover"
-//             />
-//           </div>
-
-//           {/* Award 5 */}
-//           <div className="border rounded-lg p-4 bg-white shadow-md">
-//             <img
-//               src="/images/award1.png"
-//               alt="Award 5"
-//               className="w-full h-auto object-cover"
-//             />
-//           </div>
-
-//           {/* Award 6 */}
-//           <div className="border rounded-lg p-4 bg-white shadow-md">
-//             <img
-//               src="/images/award4.png"
-//               alt="Award 6"
-//               className="w-full h-auto object-cover"
-//             />
-//           </div>
-//         </div>
-//       </div>
-//       </div>
-//      </div>
-
-//   );
-// };
-
-// export default Awards;
-
-// import Nav from "@/components/Nav";
-// import { FaTrophy } from "react-icons/fa";
-
-// const Awards = () => {
-//   return (
-//     <div>
-//       <Nav />
-
-//       <div
-//         className="w-full min-h-screen bg-cover bg-center bg-no-repeat py-10"
-//         style={{ backgroundImage: `url('/images/banner-background.webp')` }}
-//       >
-//         <div className="max-w-7xl mx-auto px-4">
-//           <div className="flex flex-col items-center justify-center mb-10">
-//             <FaTrophy size={100} className="text-yellow-500" />
-//             <h1 className="text-5xl font-bold mt-4">Our Awards</h1>
-//             <p className="text-gray-600 mt-2 text-lg text-center">
-//               This shows our hard work and dedication towards healthcare.
-//             </p>
-//           </div>
-
-//           <div className="grid grid-cols-3 gap-8">
-//             {[1, 3, 4, 3, 4, 1].map((award) => (
-//               <div
-//                 key={award}
-//                 className="border rounded-lg p-6 bg-white shadow-lg transition-transform transform hover:scale-105"
-//               >
-//                 <img
-//                   src={`/images/award${award}.png`}
-//                   alt={`Award ${award}`}
-//                   className="w-full h-60 object-cover rounded-md"
-//                 />
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Awards;

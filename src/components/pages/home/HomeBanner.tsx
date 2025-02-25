@@ -76,12 +76,12 @@ const HomeBanner = () => {
           style={{ backgroundImage: "url('/images/banner-background.webp')" }}
         >
           <div className="content lg:w-1/2">
-            <h1 className="text-4xl lg:text-5xl font-semibold">
+            <h2 className="text-4xl lg:text-5xl font-semibold">
               Welcome To <br />
-              <h1 className="lg:text-[5rem] text-[#1F2259] font-bold">
+              <h2 className="lg:text-[5rem] text-[#1F2259] font-bold">
                 Dr. Path Cares
-              </h1>
-            </h1>
+              </h2>
+            </h2>
             <h1 className="text-2xl font-semibold mt-4">
               “Best Full Body Check up in Noida At Home”
             </h1>

@@ -1,18 +1,37 @@
-import Footer from "@/components/Footer";
+import React from "react";
 import Nav from "@/components/Nav";
-import Head from "next/head";
+import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
-import RootLayout from "../layout";
+
+// Metadata for SEO
+export const metadata = {
+  title: "Complete Full Body Health Checkup Packages | Dr. Path Cares",
+  description:
+    "Dr. Path Cares offers comprehensive and affordable Full Body Health Checkup Packages with essential tests and expert guidance for long-term well-being.",
+  alternates: {
+    canonical: "https://drpathcares.com/full-body-health-checkup-packages",
+  },
+  openGraph: {
+    title: "Complete Full Body Health Checkup Packages | Dr. Path Cares",
+    description:
+      "Dr. Path Cares offers comprehensive and affordable Full Body Health Checkup Packages with essential tests and expert guidance for long-term well-being.",
+    url: "https://drpathcares.com/full-body-health-checkup-packages",
+    siteName: "Dr. Path Cares",
+    images: [
+      {
+        url: "https://drpathcares.com/images/mainlogo.png",
+        width: 800,
+        height: 600,
+        alt: "Dr. Path Cares Logo",
+      },
+    ],
+    type: "website",
+  },
+};
 
 const HealthCheckup = () => {
-  const pageMetadata = {
-    title: "Comprehensive Full Body Checkup Packages | Dr. Path Cares",
-    description:
-      "Get Full Body Health Checkup Packages at Dr. Path Cares. Ensure early detection of health issues with comprehensive tests, screenings, and expert analysis.",
-  };
-
   const packages = [
     {
       img: "/images/Fitindia.jpeg",
@@ -100,7 +119,7 @@ const HealthCheckup = () => {
     },
     {
       img: "/images/hepititisPanel1.jpeg",
-      title: "Hepititis Panel",
+      title: "Hepatitis Panel",
       price: 4499,
       originalPrice: "₹4999",
       link: "#",
@@ -108,72 +127,26 @@ const HealthCheckup = () => {
     { img: "/images/allergy.jpeg", title: "Allergy Package", link: "/allergy" },
     {
       img: "/images/hepititisPanel1.jpeg",
-      title: "Multiple Myoloma",
+      title: "Multiple Myeloma",
       price: 7000,
       originalPrice: "₹8000",
-      link: "/multiple-myoloma",
+      link: "/multiple-myeloma",
     },
   ];
 
   const sortedPackages = packages.sort((a, b) => {
-    if (a.title === "Multiple Myoloma") return 1;
-    if (b.title === "Multiple Myoloma") return -1;
-
+    if (a.title === "Multiple Myeloma") return 1;
+    if (b.title === "Multiple Myeloma") return -1;
     if (a.title === "Allergy Package") return 1;
     if (b.title === "Allergy Package") return -1;
-
     const priceA = a.price || Infinity;
     const priceB = b.price || Infinity;
     return priceA - priceB;
   });
 
   return (
-    <RootLayout pageMetadata={pageMetadata}>
-      <Head>
-        <title key="page-title">
-          Comprehensive Full Body Checkup Packages | Dr. Path Cares
-        </title>
-        <meta
-          key="description"
-          name="description"
-          content="Get Full Body Health Checkup Packages at Dr. Path Cares. Ensure early detection of health issues with comprehensive tests, screenings, and expert analysis."
-        />
-        <link
-          rel="canonical"
-          href="https://www.drpathcares.com/full-body-health-checkup-packages"
-        />
-
-        {/* JSON-LD Structured Data */}
-        <script
-          key="structured-data"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "@id": "https://www.drpathcares.com/#organization",
-              url: "https://www.drpathcares.com/",
-              logo: "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
-              name: "Dr. Path Cares",
-              sameAs: [
-                "https://www.facebook.com/drpathcares1",
-                "https://www.instagram.com/drpathcares",
-                "https://www.linkedin.com/company/dr-path-cares/",
-                "https://www.youtube.com/@dr.pathcares",
-              ],
-              contactPoint: [
-                {
-                  "@type": "ContactPoint",
-                  telephone: "+91-8929062906",
-                  contactType: "customer support",
-                  email: "info@drpathcares.com",
-                },
-              ],
-            }),
-          }}
-        />
-      </Head>
-
+    <>
+      {/* Google Tag Manager */}
       <Script
         id="google-tag-manager"
         strategy="afterInteractive"
@@ -196,7 +169,9 @@ const HealthCheckup = () => {
           style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
+
       <Nav />
+
       <div className="flex flex-col items-center">
         <div
           className="w-full h-64 bg-cover bg-center relative"
@@ -208,6 +183,7 @@ const HealthCheckup = () => {
             </h1>
           </div>
         </div>
+
         <div className="max-w-5xl mx-auto p-6 text-center space-y-4">
           <h2 className="text-3xl font-semibold text-gray-800">
             Dr. Path Cares Comprehensive Health Checkup Packages
@@ -223,6 +199,7 @@ const HealthCheckup = () => {
             Package today and take the first step towards a healthier life!
           </p>
         </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-8 max-w-7xl mx-auto">
           {sortedPackages.map((item, index) => (
             <div
@@ -259,9 +236,10 @@ const HealthCheckup = () => {
             </div>
           ))}
         </div>
+
         <Footer />
       </div>
-    </RootLayout>
+    </>
   );
 };
 

@@ -50,12 +50,12 @@ const ContactContent = () => {
   return (
     <>
       <Head>
-        <title>Full Body Checkup | DrPathCares</title>
+        <title>Dr. Path Cares Registered Labs | 24/7 Healthcare Services</title>
         <meta
           name="description"
-          content="DrPathCares offers comprehensive health solutions with complete blood tests, full body checkup packages, and affordable options for all your pathology needs."
+          content="Dr. Path Cares Wellness Care Lab offers expert, reliable 24/7 lab tests, diagnostics, and health checkups with advanced technology and personalized care. "
         />
-        <link rel="canonical" href="https://drpathcares.com/contact" />
+        <link rel="canonical" href=" https://drpathcares.com/contact" />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{

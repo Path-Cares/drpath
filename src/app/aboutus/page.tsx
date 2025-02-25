@@ -2,52 +2,38 @@ import React from "react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Contents from "@/components/pages/About/AboutBanner";
-import Cities from "@/components/pages/Cities";
-import Head from "next/head";
 import Script from "next/script";
+
+// Metadata for SEO (App Router way)
+export const metadata = {
+  title: "Trusted Preventive Healthcare & Diagnostics | DrPathCares",
+  description:
+    "Get accurate diagnostic tests, fast e-reports & expert consultations at home. DrPathCares ensures quality healthcare with affordable pricing & precision.",
+  alternates: {
+    canonical: "https://drpathcares.com/aboutus",
+  },
+  openGraph: {
+    title: "Trusted Preventive Healthcare & Diagnostics | DrPathCares",
+    description:
+      "Get accurate diagnostic tests, fast e-reports & expert consultations at home. DrPathCares ensures quality healthcare with affordable pricing & precision.",
+    url: "https://drpathcares.com/aboutus",
+    siteName: "Dr. Path Cares",
+    images: [
+      {
+        url: "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
+        width: 800,
+        height: 600,
+        alt: "Dr. Path Cares Logo",
+      },
+    ],
+    type: "website",
+  },
+};
 
 function Page() {
   return (
     <>
-      <Head>
-        <title>Trusted Preventive Healthcare & Diagnostics | DrPathCares</title>
-        <meta
-          name="description"
-          content="Get accurate diagnostic tests, fast e-reports & expert consultations at home. DrPathCares ensures quality healthcare with affordable pricing & precision."
-        />
-        <link rel="canonical" href="https://drpathcares.com/aboutus" />
-
-        {/* JSON-LD Structured Data */}
-        <script
-          key="structured-data"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "@id": "https://www.drpathcares.com/#organization",
-              url: "https://www.drpathcares.com/",
-              logo: "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
-              name: "Dr. Path Cares",
-              sameAs: [
-                "https://www.facebook.com/drpathcares1",
-                "https://www.instagram.com/drpathcares",
-                "https://www.linkedin.com/company/dr-path-cares/",
-                "https://www.youtube.com/@dr.pathcares",
-              ],
-              contactPoint: [
-                {
-                  "@type": "ContactPoint",
-                  telephone: "+91-8929062906",
-                  contactType: "customer support",
-                  email: "info@drpathcares.com",
-                },
-              ],
-            }),
-          }}
-        />
-      </Head>
-
+      {/* Google Tag Manager */}
       <Script
         id="google-tag-manager"
         strategy="afterInteractive"
@@ -70,8 +56,9 @@ function Page() {
           style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
+
       <Nav />
-      <main className="">
+      <main>
         <Contents />
         {/* <Cities /> */}
       </main>

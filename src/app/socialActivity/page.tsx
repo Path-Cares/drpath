@@ -1,10 +1,35 @@
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
-import Head from "next/head";
 import Image from "next/image";
 import Script from "next/script";
 
-const socialActivity = () => {
+// Metadata for SEO (App Router way)
+export const metadata = {
+  title: "Health Checkup Camps in Delhi NCR & Meerut | Dr. Path Cares",
+  description:
+    "Dr. Path Cares offers health check-up camps in Delhi NCR & Meerut with blood tests, diabetes tests, thyroid tests, and full body checkups for better health.",
+  alternates: {
+    canonical: "https://drpathcares.com/socialActivity",
+  },
+  openGraph: {
+    title: "Health Checkup Camps in Delhi NCR & Meerut | Dr. Path Cares",
+    description:
+      "Dr. Path Cares offers health check-up camps in Delhi NCR & Meerut with blood tests, diabetes tests, thyroid tests, and full body checkups for better health.",
+    url: "https://drpathcares.com/socialActivity",
+    siteName: "Dr. Path Cares",
+    images: [
+      {
+        url: "https://drpathcares.com/images/mainlogo.png",
+        width: 800,
+        height: 600,
+        alt: "Dr. Path Cares Logo",
+      },
+    ],
+    type: "website",
+  },
+};
+
+const SocialActivity = () => {
   const galleryImages = [
     "/images/sa1.jpeg",
     "/images/sa2.jpeg",
@@ -30,53 +55,12 @@ const socialActivity = () => {
     "/images/sa22.jpeg",
     "/images/sa23.jpeg",
     "/images/sa24.jpeg",
-    // '/images/sa25.jpeg',
     "/images/sa26.jpeg",
   ];
 
   return (
     <>
-      <Head>
-        <title>
-          Health Checkup Camps in Delhi NCR & Meerut | Dr. Path Cares
-        </title>
-        <meta
-          name="description"
-          content="Dr. Path Cares offers health check-up camps in Delhi NCR & Meerut with blood tests, diabetes tests, thyroid tests, and full body checkups for better health."
-        />
-        <link rel="canonical" href="https://drpathcares.com/socialActivity" />
-
-        {/* JSON-LD Structured Data */}
-        <script
-          key="structured-data"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "@id": "https://www.drpathcares.com/#organization",
-              url: "https://www.drpathcares.com/",
-              logo: "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
-              name: "Dr. Path Cares",
-              sameAs: [
-                "https://www.facebook.com/drpathcares1",
-                "https://www.instagram.com/drpathcares",
-                "https://www.linkedin.com/company/dr-path-cares/",
-                "https://www.youtube.com/@dr.pathcares",
-              ],
-              contactPoint: [
-                {
-                  "@type": "ContactPoint",
-                  telephone: "+91-8929062906",
-                  contactType: "customer support",
-                  email: "info@drpathcares.com",
-                },
-              ],
-            }),
-          }}
-        />
-      </Head>
-
+      {/* Google Tag Manager */}
       <Script
         id="google-tag-manager"
         strategy="afterInteractive"
@@ -99,12 +83,14 @@ const socialActivity = () => {
           style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
+
       <Nav />
+
       <div
         className="bg-cover bg-center md:p-8 h-auto"
         style={{ backgroundImage: "url('/images/banner-background.webp')" }}
       >
-        <div className="container mx-auto flex flex-col md:flex-row items-start p-8  md:p-16 justify-between">
+        <div className="container mx-auto flex flex-col md:flex-row items-start p-8 md:p-16 justify-between">
           <div className="text-left md:w-1/2">
             <h1 className="text-4xl font-bold mb-4 py-4">Social Activities</h1>
             <p className="mb-4 text-xl pb-4">
@@ -117,6 +103,8 @@ const socialActivity = () => {
               the coming year.
             </p>
           </div>
+
+          {/* Health Camp Form */}
           <div className="bg-white p-6 rounded-lg shadow-lg md:w-1/3">
             <h2 className="text-2xl font-bold mb-4">
               Organise Health camp in your area
@@ -177,9 +165,10 @@ const socialActivity = () => {
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );
 };
 
-export default socialActivity;
+export default SocialActivity;

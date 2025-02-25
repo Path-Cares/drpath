@@ -1,53 +1,69 @@
 import React from "react";
 import Nav from "@/components/Nav";
-import Head from "next/head";
 import Footer from "@/components/Footer";
 import ContactContent from "@/components/pages/contact/contact";
 import AddressPage from "@/components/Address";
 import Script from "next/script";
 
+// Metadata for SEO (App Router way)
+export const metadata = {
+  title: "Dr. Path Cares Registered Labs | 24/7 Healthcare Services",
+  description:
+    "Dr. Path Cares Wellness Care Lab offers expert, reliable 24/7 lab tests, diagnostics, and health checkups with advanced technology and personalized care.",
+  alternates: {
+    canonical: "https://drpathcares.com/contact",
+  },
+  openGraph: {
+    title: "Dr. Path Cares Registered Labs | 24/7 Healthcare Services",
+    description:
+      "Dr. Path Cares Wellness Care Lab offers expert, reliable 24/7 lab tests, diagnostics, and health checkups with advanced technology and personalized care.",
+    url: "https://drpathcares.com/contact",
+    siteName: "Dr. Path Cares",
+    images: [
+      {
+        url: "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
+        width: 800,
+        height: 600,
+        alt: "Dr. Path Cares Logo",
+      },
+    ],
+    type: "website",
+  },
+};
+
 function Page() {
   return (
     <>
-      <Head>
-        <title>Dr. Path Cares Registered Labs | 24/7 Healthcare Services</title>
-        <meta
-          name="description"
-          content="Dr. PathCares Wellness Care Laboratory in Noida provides 24/7 lab tests, diagnostics & health checkups. Contact +0120-4157-233 or Info@Drpathcares.com."
-        />
-        <link rel="canonical" href=" https://drpathcares.com/contact" />
-
-        {/* JSON-LD Structured Data */}
-        <script
-          key="structured-data"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "@id": "https://www.drpathcares.com/#organization",
-              url: "https://www.drpathcares.com/",
-              logo: "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
-              name: "Dr. Path Cares",
-              sameAs: [
-                "https://www.facebook.com/drpathcares1",
-                "https://www.instagram.com/drpathcares",
-                "https://www.linkedin.com/company/dr-path-cares/",
-                "https://www.youtube.com/@dr.pathcares",
-              ],
-              contactPoint: [
-                {
-                  "@type": "ContactPoint",
-                  telephone: "+91-8929062906",
-                  contactType: "customer support",
-                  email: "info@drpathcares.com",
-                },
-              ],
-            }),
-          }}
-        />
-      </Head>
-
+      {/* JSON-LD Structured Data */}
+      <script
+        key="structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.drpathcares.com/#organization",
+            url: "https://www.drpathcares.com/",
+            logo: "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
+            name: "Dr. Path Cares",
+            sameAs: [
+              "https://www.facebook.com/drpathcares1",
+              "https://www.instagram.com/drpathcares",
+              "https://www.linkedin.com/company/dr-path-cares/",
+              "https://www.youtube.com/@dr.pathcares",
+            ],
+            contactPoint: [
+              {
+                "@type": "ContactPoint",
+                telephone: "+91-8929062906",
+                contactType: "customer support",
+                email: "info@drpathcares.com",
+              },
+            ],
+          }),
+        }}
+      />
+      {/* Google Tag Manager */}
       <Script
         id="google-tag-manager"
         strategy="afterInteractive"
@@ -71,8 +87,9 @@ function Page() {
         ></iframe>
       </noscript>
 
+      {/* Page Content */}
       <Nav />
-      <main className="">
+      <main>
         <ContactContent />
       </main>
       <AddressPage />
