@@ -14,7 +14,7 @@ const ThirdSection = () => {
           <video
             className="w-full rounded-lg shadow-lg h-[60vh] bg-gray-100"
             controls
-            poster="/images/video-poster.png" // Ensure this image exists
+            poster="/images/video-poster.png"
             autoPlay
             muted
           >
@@ -27,9 +27,13 @@ const ThirdSection = () => {
         <div className="flex flex-col grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20">
           <div className="grid">
             <div className="flex flex-col justify-center items-center mb-5 lg:mb-0">
-              <H3GradientText textalign="text-left" text="Most Booked Checkups" />
+              <H3GradientText
+                textalign="text-left"
+                text="Most Booked Checkups"
+              />
               <p className="mt-4">
-                India’s fast AI-powered & temperature-controlled supply chain to collect and test your blood in the freshest state.
+                India’s fast AI-powered & temperature-controlled supply chain to
+                collect and test your blood in the freshest state.
               </p>
             </div>
           </div>
@@ -65,7 +69,9 @@ const ThirdSection = () => {
                 className="rounded-lg p-4 bg-cover bg-center h-full"
                 style={{ backgroundImage: "url('/images/checkup-green.png')" }}
               >
-                <p className="font-semibold text-white text-lg">STANDARD PACKAGE</p>
+                <p className="font-semibold text-white text-lg">
+                  STANDARD PACKAGE
+                </p>
                 <div className="flex justify-between items-center">
                   <Image
                     src="/images/fullbody-checkup.png"
@@ -89,7 +95,9 @@ const ThirdSection = () => {
                 className="rounded-lg p-4 bg-cover bg-center h-full"
                 style={{ backgroundImage: "url('/images/checkup-dark.png')" }}
               >
-                <p className="font-semibold text-white text-lg">CLASSIC MEN PACKAGE</p>
+                <p className="font-semibold text-white text-lg">
+                  CLASSIC MEN PACKAGE
+                </p>
                 <div className="flex justify-between items-center">
                   <Image
                     src="/images/sexual-health-checkup.png"
@@ -113,7 +121,9 @@ const ThirdSection = () => {
                 className="rounded-lg p-4 bg-cover bg-center h-full"
                 style={{ backgroundImage: "url('/images/checkup-dark.png')" }}
               >
-                <p className="font-semibold text-white text-lg">Platinum Package</p>
+                <p className="font-semibold text-white text-lg">
+                  Platinum Package
+                </p>
                 <div className="flex justify-between items-center">
                   <Image
                     src="/images/dermatology-checkup.png"
@@ -137,7 +147,9 @@ const ThirdSection = () => {
                 className="rounded-lg p-4 bg-cover bg-center h-full"
                 style={{ backgroundImage: "url('/images/checkup-green.png')" }}
               >
-                <p className="font-semibold text-white text-lg">CLASSIC WOMEN PACKAGE</p>
+                <p className="font-semibold text-white text-lg">
+                  CLASSIC WOMEN PACKAGE
+                </p>
                 <div className="flex justify-between items-center mt-2">
                   <Image
                     src="/images/women-health-checkup.png"

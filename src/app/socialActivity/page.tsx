@@ -145,6 +145,20 @@ const SocialActivity = () => {
           </div>
         </div>
 
+        {/* Video Section */}
+        <div className="w-full mb-10">
+          <video
+            className="w-full rounded-lg shadow-lg h-[60vh] bg-gray-100"
+            controls
+            poster="/images/video-poster.png"
+            autoPlay
+            muted
+          >
+            <source src="/images/social-activity-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
         {/* Image Gallery Section */}
         <div className="container mx-auto my-12">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
