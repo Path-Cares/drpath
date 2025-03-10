@@ -11,6 +11,7 @@ import { FaCartArrowDown } from "react-icons/fa";
 const Nav: React.FC = () => {
   const [isNavMenuVisible, setIsNavMenuVisible] = useState(false);
   const [isCartOpen, toggleCart] = SidebarToggle(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   // State to handle the appointment modal visibility
   const [isAppointmentModalOpen, setAppointmentModalOpen] = useState(false);
@@ -234,8 +235,58 @@ const Nav: React.FC = () => {
           >
             Book Appointment
           </button>
+
+          {/* Cart Icon Button */}
           <div className="ml-4">
-            <FaCartArrowDown className="w-7 h-7 text-[#00B7AB] cursor-pointer" />
+            <FaCartArrowDown
+              className="w-7 h-7 text-[#00B7AB] cursor-pointer"
+              onClick={() => setIsOpen(true)} // Opens Sidebar
+            />
+          </div>
+
+          {/* Overlay (Background Dim Effect) */}
+          {isOpen && (
+            <div
+              className="fixed inset-0 bg-black bg-opacity-40 transition-opacity"
+              onClick={() => setIsOpen(false)} // Click outside to close
+            ></div>
+          )}
+
+          {/* Cart Sidebar */}
+          <div
+            className={`fixed top-0 right-0 h-full w-[30%] bg-white shadow-xl transition-transform ${
+              isOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+          >
+            <div className="p-5">
+              {/* Close Button */}
+              <button
+                className="text-gray-500 hover:text-gray-700"
+                onClick={() => setIsOpen(false)}
+              >
+                &larr; Back to home
+              </button>
+
+              {/* Empty Cart UI */}
+              <div className="flex flex-col items-center justify-center h-full text-center">
+                <div className="w-24 h-24 mb-4 mt-20">
+                  <img
+                    src="/images/empty-cart.png"
+                    alt="Empty Cart"
+                    className="w-full h-full"
+                  />
+                </div>
+                <h2 className="text-lg font-semibold mt-10">
+                  Your cart is empty.
+                </h2>
+                <p className="text-sm text-gray-500">
+                  Looks like you haven’t added any test/checkup to your cart.
+                </p>
+                <button className="mt-10 px-5 py-2 bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-600">
+                  Add test/checkup
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </header>

@@ -227,6 +227,7 @@ const BasicPackage = () => {
           style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
+
       <section className="px-5 lg:px-28 xl:px-32 2xl:px-72 pb-20">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-center">
           Included Tests

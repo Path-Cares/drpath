@@ -1,5 +1,6 @@
 "use client";
 import Head from "next/head";
+import Script from "next/script";
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 
@@ -80,6 +81,33 @@ const Login: React.FC = () => {
           style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
+      {/* JSON-LD Structured Data */}
+      <Script
+        id="json-ld-organization"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            url: "https://www.drpathcares.com/",
+            logo: "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
+            name: "Dr. Path Cares",
+            sameAs: [
+              "https://www.facebook.com/drpathcares1",
+              "https://www.instagram.com/drpathcares",
+              "https://www.linkedin.com/company/dr-path-cares/",
+              "https://www.youtube.com/@dr.pathcares",
+            ],
+            contactPoint: {
+              "@type": "ContactPoint",
+              telephone: "+91-8929062906",
+              contactType: "Customer service",
+              email: "Info@Drpathcares.com",
+            },
+          }),
+        }}
+      />
       <div className="min-h-screen flex items-center justify-center bg-[#00B7AB]">
         <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
           <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
