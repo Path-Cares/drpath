@@ -7,11 +7,13 @@ import CartSidebar from "./pages/cart/CartSidebar";
 import Image from "next/image";
 import AppointmentContent from "@/app/appointment/page";
 import { FaCartArrowDown } from "react-icons/fa";
+import { useModal } from "@/context/ModalContext";
 
 const Nav: React.FC = () => {
   const [isNavMenuVisible, setIsNavMenuVisible] = useState(false);
   const [isCartOpen, toggleCart] = SidebarToggle(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // State to handle the appointment modal visibility
   const [isAppointmentModalOpen, setAppointmentModalOpen] = useState(false);
@@ -23,6 +25,18 @@ const Nav: React.FC = () => {
   // Functions to open and close the appointment modal
   const openAppointmentModal = () => setAppointmentModalOpen(true);
   const closeAppointmentModal = () => setAppointmentModalOpen(false);
+
+  const { openModal } = useModal();
+  const handleOpenTestModal = () => {
+    if (isCartOpen) {
+      toggleCart(); // ✅ Close Cart Sidebar (no argument required)
+      setTimeout(() => {
+        openModal(); // ✅ Open AddTest Modal After Cart Closes
+      }, 300); // Small delay ensures smooth transition
+    } else {
+      openModal();
+    }
+  };
 
   return (
     <>
@@ -254,7 +268,7 @@ const Nav: React.FC = () => {
 
           {/* Cart Sidebar */}
           <div
-            className={`fixed top-0 right-0 h-full w-[30%] bg-white shadow-xl transition-transform ${
+            className={`fixed top-0 right-0 h-full w-[90%] sm:w-[50%] md:w-[30%] bg-white shadow-xl transition-transform ${
               isOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
@@ -282,7 +296,10 @@ const Nav: React.FC = () => {
                 <p className="text-sm text-gray-500">
                   Looks like you haven’t added any test/checkup to your cart.
                 </p>
-                <button className="mt-10 px-5 py-2 bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-600">
+                <button
+                  className="px-5 py-2 bg-[#00B7AB] text-white rounded-lg shadow-md hover:bg-[#00B7AB]"
+                  onClick={handleOpenTestModal} // ✅ Calls function to open AddTest and close Cart Sidebar
+                >
                   Add test/checkup
                 </button>
               </div>

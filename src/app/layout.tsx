@@ -2,6 +2,8 @@ import Script from "next/script";
 import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/hooks/cart/CartContext";
+import { ModalProvider } from "@/context/ModalContext"; // Import ModalProvider
+import AddTest from "@/components/AddTest";
 import "swiper/swiper-bundle.css";
 import "../lib/fontawesome";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -96,7 +98,12 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        <CartProvider>{children}</CartProvider>
+
+        {/* Wrap the app with ModalProvider */}
+        <ModalProvider>
+          <AddTest />
+          <CartProvider>{children}</CartProvider>
+        </ModalProvider>
       </body>
     </html>
   );

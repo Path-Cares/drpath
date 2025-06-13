@@ -11,7 +11,6 @@ const Footer = () => {
       <footer className="bg-[#1F2259] py-16 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
-            
             <div className="flex flex-col items-center space-y-6 bg-white p-6 rounded-lg">
               <Image
                 src={footerlogo}
@@ -25,7 +24,6 @@ const Footer = () => {
               </p>
             </div>
 
-            
             <div className="flex flex-col items-center  lg:items-start">
               <p className="text-lg font-medium pb-3">Packages</p>
 
@@ -38,7 +36,6 @@ const Footer = () => {
               </div>
             </div>
 
-           
             <div className="flex flex-col items-center lg:items-start">
               <p className="text-lg font-medium pb-3">Quick Links</p>
               <div className="flex flex-col space-y-3 text-sm ml-10 sm:ml-0 ">
@@ -49,7 +46,6 @@ const Footer = () => {
               </div>
             </div>
 
-            
             <div className="flex flex-col items-center lg:items-start">
               <p className="text-lg font-medium pb-3">Follow Us</p>
               <div className="flex gap-2 text-xl">
@@ -68,18 +64,16 @@ const Footer = () => {
               </div>
             </div>
 
-            
             <div className="flex flex-col items-center lg:items-start">
               <p className="text-lg font-medium pb-3">Contact Us</p>
               <div className="flex flex-col space-y-3 text-sm ">
                 <p className="ml-20 sm:ml-0 ">+91 89290 62906</p>
                 <p className="ml-20 sm:ml-0">Info@Drpathcares.com</p>
-                <p>E-30, Sec-3 Noida, Uttar Pradesh, 201301</p>
+                <p>E-45, Sec-3 Noida, Uttar Pradesh, 201301</p>
               </div>
             </div>
           </div>
 
-       
           <div className="mt-10">
             <hr className="bg-white opacity-50 mx-auto w-full sm:w-3/4 lg:w-1/2" />
           </div>

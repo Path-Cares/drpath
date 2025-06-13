@@ -104,7 +104,7 @@ const ContactContent = () => {
                     width={24}
                     height={24}
                   />
-                  <p>E-30, Noida Sector 3, Noida, 201301, Uttar Pradesh</p>
+                  <p>E-45, Noida Sector 3, Noida, 201301, Uttar Pradesh</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <Image

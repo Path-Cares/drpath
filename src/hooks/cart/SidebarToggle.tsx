@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-const SidebarToggle = (initialState: boolean ) => {
+const SidebarToggle = (initialState: boolean) => {
   const [isCartOpen, setIsCartOpen] = useState(initialState);
   const toggleCart = () => {
     setIsCartOpen(!isCartOpen);
