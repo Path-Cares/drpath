@@ -267,13 +267,12 @@ const Nav: React.FC = () => {
           )}
 
           {/* Cart Sidebar */}
-          <div
+          {/* <div
             className={`fixed top-0 right-0 h-full w-[90%] sm:w-[50%] md:w-[30%] bg-white shadow-xl transition-transform ${
               isOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
             <div className="p-5">
-              {/* Close Button */}
               <button
                 className="text-gray-500 hover:text-gray-700"
                 onClick={() => setIsOpen(false)}
@@ -281,7 +280,7 @@ const Nav: React.FC = () => {
                 &larr; Back to home
               </button>
 
-              {/* Empty Cart UI */}
+            
               <div className="flex flex-col items-center justify-center h-full text-center">
                 <div className="w-24 h-24 mb-4 mt-20">
                   <img
@@ -298,13 +297,13 @@ const Nav: React.FC = () => {
                 </p>
                 <button
                   className="px-5 py-2 bg-[#00B7AB] text-white rounded-lg shadow-md hover:bg-[#00B7AB]"
-                  onClick={handleOpenTestModal} // ✅ Calls function to open AddTest and close Cart Sidebar
+                  onClick={handleOpenTestModal}
                 >
                   Add test/checkup
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </header>
 
