@@ -161,7 +161,7 @@ const Nav: React.FC = () => {
         </div>
 
         {/* Main Navigation */}
-        <div className="flex items-center justify-between py-4 gap-3 xl:gap-6 px-6 max-w-screen-lg mx-auto">
+        <div className="flex items-center  py-4   mx-auto">
           <nav className="flex-grow">
             {/* Mobile Menu Toggle */}
             <button
@@ -191,7 +191,7 @@ const Nav: React.FC = () => {
                 isNavMenuVisible ? "block" : "hidden"
               } md:block w-full md:w-auto duration-100 transition-all`}
             >
-              <ul className="flex flex-col md:flex-row md:justify-center md:space-x-8">
+              <ul className="flex flex-col md:flex-row md:justify-center md:space-x-3">
                 <li>
                   <Link
                     href="/"
@@ -232,6 +232,15 @@ const Nav: React.FC = () => {
                     All Certificate
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    href="/our-pricing-plans"
+                    className="py-2 px-3 text-gray-900 whitespace-nowrap"
+                  >
+                    Our Pricing Plans
+                  </Link>
+                </li>
+
                 <li>
                   <Link
                     href="/contact"
