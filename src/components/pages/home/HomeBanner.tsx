@@ -83,7 +83,7 @@ const HomeBanner = () => {
               </h2>
             </h2>
             <h1 className="text-2xl font-semibold mt-4">
-              “Best Full Body Check up in Noida At Home”
+              “Full Body Check up in Noida At Home”
             </h1>
             <p className="text-lg mt-4">
               DrPathCares offers a Best full body checkup in Noida at home with

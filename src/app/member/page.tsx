@@ -19,7 +19,7 @@ export default function MedicalTestBooking() {
   const [members, setMembers] = useState([
     {
       id: 1,
-      name: "Yawar",
+      name: "Alex",
       age: 25,
       gender: "male",
       tests: [{ name: "Complete Blood Count (CBC)", price: 380 }],
