@@ -1,5 +1,9 @@
 "use client";
 import { useState } from "react";
+
+import { FaSearch } from "react-icons/fa";
+import { useRouter } from "next/navigation";
+
 import Head from "next/head";
 import Link from "next/link";
 import SidebarToggle from "@/hooks/cart/SidebarToggle";
@@ -14,6 +18,10 @@ const Nav: React.FC = () => {
   const [isCartOpen, toggleCart] = SidebarToggle(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const router = useRouter();
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
 
   // State to handle the appointment modal visibility
   const [isAppointmentModalOpen, setAppointmentModalOpen] = useState(false);
@@ -36,6 +44,17 @@ const Nav: React.FC = () => {
     } else {
       openModal();
     }
+  };
+  // ADD THIS
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!searchValue.trim()) return;
+
+    setIsSearchOpen(false);
+    router.push(
+      `/our-pricing-plans?search=${encodeURIComponent(searchValue.trim())}`
+    );
+    setSearchValue("");
   };
 
   return (
@@ -260,10 +279,20 @@ const Nav: React.FC = () => {
           </button>
 
           {/* Cart Icon Button */}
-          <div className="ml-4">
+          <div className="ml-4 flex items-center gap-4">
+            {/* SEARCH ICON */}
+            <button
+              onClick={() => setIsSearchOpen(true)}
+              aria-label="Search"
+              className="text-[#00B7AB]"
+            >
+              <FaSearch className="w-5 h-5" />
+            </button>
+
+            {/* CART ICON */}
             <FaCartArrowDown
               className="w-7 h-7 text-[#00B7AB] cursor-pointer"
-              onClick={() => setIsOpen(true)} // Opens Sidebar
+              onClick={() => setIsOpen(true)}
             />
           </div>
 
@@ -325,6 +354,42 @@ const Nav: React.FC = () => {
           <div className="bg-white p-6 rounded-lg w-full max-w-2xl mx-auto relative">
             <AppointmentContent closeModal={closeAppointmentModal} />
           </div>
+        </div>
+      )}
+      {/* SEARCH POPUP MODAL */}
+      {isSearchOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40">
+          <form
+            onSubmit={handleSearchSubmit}
+            className="bg-white p-6 rounded-lg w-full max-w-md"
+          >
+            <h2 className="text-lg font-semibold mb-4">Search Tests</h2>
+
+            <input
+              type="search"
+              autoFocus
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)}
+              placeholder="Search test name, id or price"
+              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#00B7AB]"
+            />
+
+            <div className="flex justify-end gap-3 mt-4">
+              <button
+                type="button"
+                onClick={() => setIsSearchOpen(false)}
+                className="px-4 py-2 border rounded-md"
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                className="px-4 py-2 bg-[#00B7AB] text-white rounded-md"
+              >
+                Search
+              </button>
+            </div>
+          </form>
         </div>
       )}
     </>

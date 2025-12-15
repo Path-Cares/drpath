@@ -1,0 +1,3320 @@
+[
+  {
+    "id": 1,
+    "testDetails": "17-Alpha Hydroxy Progesterone (17-OHP)",
+    "sampleType": "Serum (1 ml)",
+    "method": "CUA/ELISA",
+    "mrp": 1250
+  },
+  {
+    "id": 2,
+    "testDetails": "A4 (Androstenedione)",
+    "sampleType": "Serum (2 ml)",
+    "method": "CLIA",
+    "mrp": 1350
+  },
+  {
+    "id": 3,
+    "testDetails": "ABO Group & RH Type (Blood Group)",
+    "sampleType": "WB-EDTA (3 ml)",
+    "method": "Agglutination",
+    "mrp": 120
+  },
+  {
+    "id": 4,
+    "testDetails": "Absolute Eosinophil Count (AEC)",
+    "sampleType": "WB-EDTA (3 ml)",
+    "method": "Cell Counter & Microscopy",
+    "mrp": 150
+  },
+  {
+    "id": 5,
+    "testDetails": "ACE (Angiotensin Converting Enzyme)",
+    "sampleType": "Serum (2 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 900
+  },
+  {
+    "id": 6,
+    "testDetails": "Acid Fast Bacilli Stain (Z. N. Stain)",
+    "sampleType": "Pulmonary/Extra Pulmonary (Sputum/BAL/Urine/Pus/CSF/Body Fluids/Blood/Tissue)",
+    "method": "Microscopy",
+    "mrp": 180
+  },
+  {
+    "id": 7,
+    "testDetails": "Active Vitamin B-12 (Holotranscobalamin)",
+    "sampleType": "Serum (2 ml)",
+    "method": "CLIA",
+    "mrp": 1400
+  },
+  {
+    "id": 8,
+    "testDetails": "Aldosterone to Renin Activity",
+    "sampleType": "2 ml EDTA & 2 ml Serum",
+    "method": "EINRIA",
+    "mrp": 6500
+  },
+  {
+    "id": 9,
+    "testDetails": "Acid Phosphatase - Total",
+    "sampleType": "Serum (1 ml) add 1 drop (30µl) of 5% acetic acid to serum",
+    "method": "Spectrophotometry",
+    "mrp": 250
+  },
+  {
+    "id": 10,
+    "testDetails": "ACTH (Adreno Cortico Trophic Hormone)",
+    "sampleType": "EDTA Plasma (5 ml)",
+    "method": "CLIA",
+    "mrp": 1100
+  },
+  {
+    "id": 11,
+    "testDetails": "Activated Partial Thromboplastin Time (APTT / PTTK)",
+    "sampleType": "Plasma Citrated (1 ml)",
+    "method": "Clotting (Coagulometry)",
+    "mrp": 350
+  },
+  {
+    "id": 12,
+    "testDetails": "Adenosine Deaminase (ADA) (Ascitic Fluid)",
+    "sampleType": "Ascitic fluid (5 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 500
+  },
+  {
+    "id": 13,
+    "testDetails": "Adenosine Deaminase (ADA) (Body Fluid)",
+    "sampleType": "Any Other Body Fluid",
+    "method": "Spectrophotometry",
+    "mrp": 500
+  },
+  {
+    "id": 14,
+    "testDetails": "Adenosine Deaminase (ADA) (Pericardial Fluid)",
+    "sampleType": "Pericardial Fluid (1 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 500
+  },
+  {
+    "id": 15,
+    "testDetails": "Adenosine Deaminase (ADA) (Pleural Fluid)",
+    "sampleType": "Pleural Fluid (1 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 500
+  },
+  {
+    "id": 16,
+    "testDetails": "Adenosine Deaminase (ADA) (Pus)",
+    "sampleType": "Pus (1 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 500
+  },
+  {
+    "id": 17,
+    "testDetails": "Adenosine Deaminase (ADA) (CSF)",
+    "sampleType": "CSF (1.0 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 500
+  },
+  {
+    "id": 18,
+    "testDetails": "Adenosine Deaminase (ADA) (Serum)",
+    "sampleType": "Serum (1 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 500
+  },
+  {
+    "id": 19,
+    "testDetails": "AFP (Alpha Feto Protein)",
+    "sampleType": "Serum (1 ml)",
+    "method": "CLIA",
+    "mrp": 650
+  },
+  {
+    "id": 20,
+    "testDetails": "Albumin",
+    "sampleType": "Serum (1 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 130
+  },
+  {
+    "id": 21,
+    "testDetails": "Alkaline Phosphatase (ALP)",
+    "sampleType": "Serum (1 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 130
+  },
+  {
+    "id": 22,
+    "testDetails": "Allergy - Food (Non Vegetarian Only)",
+    "sampleType": "Serum (2 ml)",
+    "method": "ELISA",
+    "mrp": 3000
+  },
+  {
+    "id": 23,
+    "testDetails": "Allergy - Food (Vegetarian Only)",
+    "sampleType": "Serum (2 ml)",
+    "method": "ELISA",
+    "mrp": 3000
+  },
+  {
+    "id": 24,
+    "testDetails": "Allergy - Inhalants",
+    "sampleType": "Serum (2 ml)",
+    "method": "ELISA",
+    "mrp": 3000
+  },
+  {
+    "id": 25,
+    "testDetails": "AMA (Anti Mitochondrial Antibodies-M2)",
+    "sampleType": "Serum (1 ml)",
+    "method": "ELISA",
+    "mrp": 1300
+  },
+  {
+    "id": 26,
+    "testDetails": "Amylase, 24 Hr. Urine",
+    "sampleType": "24 hrs Urine (5 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 400
+  },
+  {
+    "id": 27,
+    "testDetails": "Amylase Serum",
+    "sampleType": "Serum (2 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 400
+  },
+  {
+    "id": 28,
+    "testDetails": "ANA (Anti Nuclear Antibodies) by IFA",
+    "sampleType": "Serum (3 ml)",
+    "method": "IFA",
+    "mrp": 890
+  },
+  {
+    "id": 29,
+    "testDetails": "ANA (Anti Nuclear Antibodies) by ELISA",
+    "sampleType": "Serum (2 ml)",
+    "method": "ELISA",
+    "mrp": 550
+  },
+  {
+    "id": 30,
+    "testDetails": "ANCA (Anti Neutrophil Cytoplasmic Antibodies) (P-ANCA, C-ANCA)",
+    "sampleType": "Serum (3 ml)",
+    "method": "ELISA",
+    "mrp": 2000
+  },
+  {
+    "id": 31,
+    "testDetails": "Anti Microsomal Antibodies (Anti Thyroperoxidase) (TPO)",
+    "sampleType": "Serum (2 ml)",
+    "method": "CLIA",
+    "mrp": 900
+  },
+  {
+    "id": 32,
+    "testDetails": "Anti Mullerian Hormone (AMH)",
+    "sampleType": "Serum (2 ml)",
+    "method": "CLIA",
+    "mrp": 1800
+  },
+  {
+    "id": 33,
+    "testDetails": "Anti Sperm Antibodies (ASAB)",
+    "sampleType": "Serum (3 ml)",
+    "method": "ELISA",
+    "mrp": 850
+  },
+  {
+    "id": 34,
+    "testDetails": "Anti Thrombin III (AT-III) (Antigenic)",
+    "sampleType": "Plasma Citrated (2 ml)",
+    "method": "Turbidometry",
+    "mrp": 3000
+  },
+  {
+    "id": 35,
+    "testDetails": "Apolipoprotein A1 (APO-A1)",
+    "sampleType": "Serum (2 ml)",
+    "method": "Nephelometry",
+    "mrp": 480
+  },
+  {
+    "id": 36,
+    "testDetails": "Apolipoprotein B (APO-B)",
+    "sampleType": "Serum (2 ml)",
+    "method": "Nephelometry",
+    "mrp": 480
+  },
+  {
+    "id": 37,
+    "testDetails": "ASMA (Anti Smooth Muscle Antibodies) Elisa",
+    "sampleType": "Serum (2 ml)",
+    "method": "ELISA",
+    "mrp": 1500
+  },
+  {
+    "id": 38,
+    "testDetails": "ASO- Titer (Anti Streptolysin O Titres) Quantative",
+    "sampleType": "Serum (2 ml)",
+    "method": "Agglutination",
+    "mrp": 375
+  },
+  {
+    "id": 39,
+    "testDetails": "Aspergillus IgE",
+    "sampleType": "Serum (2 ml)",
+    "method": "ELISA",
+    "mrp": 1950
+  },
+  {
+    "id": 40,
+    "testDetails": "ATG (Antithyroglobulin Antibodies)",
+    "sampleType": "Serum (2 ml)",
+    "method": "CLIA",
+    "mrp": 1100
+  },
+  {
+    "id": 41,
+    "testDetails": "APO A1 / APO B Ratio",
+    "sampleType": "Serum (2 ml)",
+    "method": "Nephelometry",
+    "mrp": 900
+  },
+  {
+    "id": 42,
+    "testDetails": "Allergy panel-III (Vegeterian+ Inhalants+ Drugs)",
+    "sampleType": "Serum (1 ml)",
+    "method": "ELISA",
+    "mrp": 5200
+  },
+  {
+    "id": 43,
+    "testDetails": "BCR-abl translocation (Philadelphia Chromosome) (Quantitative) (Real Time PCR)",
+    "sampleType": "WB- EDTA (3mL)",
+    "method": "Real Time PCR",
+    "mrp": 6800
+  },
+  {
+    "id": 44,
+    "testDetails": "Beta 2 Microglobulin, Serum",
+    "sampleType": "Serum (1 ml)",
+    "method": "CLIA",
+    "mrp": 1200
+  },
+  {
+    "id": 45,
+    "testDetails": "Beta 2 Microglobulin, Urine",
+    "sampleType": "Urine Spot",
+    "method": "CLIA",
+    "mrp": 1200
+  },
+  {
+    "id": 46,
+    "testDetails": "Beta HCG (Beta Human Chorionic Gonadotropin)",
+    "sampleType": "Serum (1 ml)",
+    "method": "CLIA",
+    "mrp": 550
+  },
+  {
+    "id": 47,
+    "testDetails": "Beta HCG (Beta Human Chorionic Gonadotropin) (Urine)",
+    "sampleType": "Urine (5 ml)",
+    "method": "CLIA",
+    "mrp": 550
+  },
+  {
+    "id": 48,
+    "testDetails": "Beta-2 Glycoprotein-1 IgG",
+    "sampleType": "Serum (2 ml)",
+    "method": "ELISA",
+    "mrp": 1000
+  },
+  {
+    "id": 49,
+    "testDetails": "Beta-2 Glycoprotein-1 IgM",
+    "sampleType": "Serum (2 ml)",
+    "method": "ELISA",
+    "mrp": 1000
+  },
+  {
+    "id": 50,
+    "testDetails": "Beta-2 Glycoprotein-1 IgA",
+    "sampleType": "Serum (2 ml)",
+    "method": "ELISA",
+    "mrp": 1000
+  },
+  {
+    "id": 51,
+    "testDetails": "Bicarbonate (HCO3)",
+    "sampleType": "Serum (2 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 600
+  },
+  {
+    "id": 52,
+    "testDetails": "Bile Acids",
+    "sampleType": "Serum (2 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 2100
+  },
+  {
+    "id": 53,
+    "testDetails": "Bilirubin- Direct",
+    "sampleType": "Serum (1 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 120
+  },
+  {
+    "id": 54,
+    "testDetails": "Bilirubin- Indirect",
+    "sampleType": "Serum (1 ml) 2022",
+    "method": "Calculated",
+    "mrp": 120
+  },
+  {
+    "id": 55,
+    "testDetails": "Bilirubin- Total",
+    "sampleType": "Serum (1 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 120
+  },
+  {
+    "id": 56,
+    "testDetails": "Bilirubin Total + Direct+ Indirect",
+    "sampleType": "Serum (2 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 250
+  },
+  {
+    "id": 57,
+    "testDetails": "Bilirubin Urine",
+    "sampleType": "Urine (5 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 120
+  },
+  {
+    "id": 58,
+    "testDetails": "Biopsy Mastectomy Specimen",
+    "sampleType": "Tissue in formalin",
+    "method": "Histopathology",
+    "mrp": 2000
+  },
+  {
+    "id": 59,
+    "testDetails": "Biopsy Material (Large Size)",
+    "sampleType": "Tissue in 10% buffered formalin with History",
+    "method": "Microscopy",
+    "mrp": 1500
+  },
+  {
+    "id": 60,
+    "testDetails": "Biopsy Material (Kidney)",
+    "sampleType": "Tissue in 10% buffered formalin with History",
+    "method": "Microscopy",
+    "mrp": 2000
+  },
+  {
+    "id": 61,
+    "testDetails": "Biopsy Material (Medium Size)",
+    "sampleType": "Tissue in 10% buffered formalin with History",
+    "method": "Microscopy",
+    "mrp": 1000
+  },
+  {
+    "id": 62,
+    "testDetails": "Biopsy Material (Small Size)",
+    "sampleType": "Tissue in 10% buffered formalin with History",
+    "method": "Microscopy",
+    "mrp": 700
+  },
+  {
+    "id": 63,
+    "testDetails": "BNP, (B- type Neutratic Peptide)",
+    "sampleType": "EDTA Plasma (5 ml)",
+    "method": "CLIA",
+    "mrp": 1800
+  },
+  {
+    "id": 64,
+    "testDetails": "BUN (Blood Urea Nitrogen)",
+    "sampleType": "Serum (1 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 200
+  },
+  {
+    "id": 65,
+    "testDetails": "C Reactive Protein (CRP) Qualitative",
+    "sampleType": "Serum (1 ml)",
+    "method": "Agglutination",
+    "mrp": 300
+  },
+  {
+    "id": 66,
+    "testDetails": "C Reactive Protein (CRP) Quantitative",
+    "sampleType": "Serum (1 ml)",
+    "method": "Immunoturbidimetry",
+    "mrp": 400
+  },
+  {
+    "id": 67,
+    "testDetails": "C Reactive Protein high Sensitive (hSCRP)",
+    "sampleType": "Serum(1 ml) /Plasma EDTA (1ml)",
+    "method": "Immunoturbidimetry",
+    "mrp": 550
+  },
+  {
+    "id": 68,
+    "testDetails": "C3- Complement 3",
+    "sampleType": "Serum (1 ml)",
+    "method": "Nephelometry",
+    "mrp": 480
+  },
+  {
+    "id": 69,
+    "testDetails": "C4- Complement 4",
+    "sampleType": "Serum (1 ml)",
+    "method": "Nephelometry",
+    "mrp": 480
+  },
+  {
+    "id": 70,
+    "testDetails": "CA- 15.3 (Breast Cancer Marker)",
+    "sampleType": "Serum (1 ml)",
+    "method": "CLIA",
+    "mrp": 1000
+  },
+  {
+    "id": 71,
+    "testDetails": "CA- 125 (Ovarian Cancer Marker)",
+    "sampleType": "Serum (1 ml)",
+    "method": "CLIA",
+    "mrp": 1000
+  },
+  {
+    "id": 72,
+    "testDetails": "CA- 19.9 (Pancreatic Cancer Marker)",
+    "sampleType": "Serum (1 ml)",
+    "method": "CLIA",
+    "mrp": 1000
+  },
+  {
+    "id": 73,
+    "testDetails": "Calcitonin (Thyrocalcitonin)",
+    "sampleType": "Serum (2 ml)",
+    "method": "ELISA",
+    "mrp": 2300
+  },
+  {
+    "id": 74,
+    "testDetails": "Calcium Total, Serum",
+    "sampleType": "Serum (1 ml)",
+    "method": "Spectrophotometry",
+    "mrp": 120
+  },
+  {
+    "id": 75,
+    "testDetails": "C-ANCA (Serine Proteinase 3)",
+    "sampleType": "Serum (2 ml)",
+    "method": "ELISA",
+    "mrp": 1400
+  },
+  {
+  "id": 76,
+  "testDetails": "Carbamazepine (Tegretol, Mazetol)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 800
+},
+{
+  "id": 77,
+  "testDetails": "Carcino Embryonic Antigen (CEA)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 650
+},
+{
+  "id": 78,
+  "testDetails": "Cardiolipin Antibodies-IgA",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 650
+},
+{
+  "id": 79,
+  "testDetails": "Cardiolipin Antibodies-IgG",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 650
+},
+{
+  "id": 80,
+  "testDetails": "Cardiolipin Antibodies-IgM",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 650
+},
+{
+  "id": 81,
+  "testDetails": "CCP Antibodies (Anti Cyclic Citrullinated Peptide Antibody)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 1200
+},
+{
+  "id": 82,
+  "testDetails": "CD3/CD4/CD8",
+  "sampleType": "WB EDTA/Bone Marrow/Body Fluids",
+  "method": "Immunophenotyping",
+  "mrp": 2300
+},
+{
+  "id": 83,
+  "testDetails": "Ceruloplasmin",
+  "sampleType": "Serum (2 ml)",
+  "method": "Nephelometry",
+  "mrp": 1000
+},
+{
+  "id": 84,
+  "testDetails": "Chikungunya Virus Antibody, IgM Rapid",
+  "sampleType": "Serum (2ml)",
+  "method": "IC",
+  "mrp": 650
+},
+{
+  "id": 85,
+  "testDetails": "Chloride, Serum",
+  "sampleType": "Serum (1 ml)",
+  "method": "ISE",
+  "mrp": 150
+},
+{
+  "id": 86,
+  "testDetails": "Cholesterol HDL",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 200
+},
+{
+  "id": 87,
+  "testDetails": "Cholesterol LDL",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 200
+},
+{
+  "id": 88,
+  "testDetails": "Cholesterol Total",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 130
+},
+{
+  "id": 89,
+  "testDetails": "Chromosome analysis (WB-Heparin)",
+  "sampleType": "WB-Na Heparin (3 ml)",
+  "method": "Karyotyping",
+  "mrp": 3600
+},
+{
+  "id": 90,
+  "testDetails": "Complete Blood Count (CBC)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Cell Counter & Microscopy",
+  "mrp": 300
+},
+{
+  "id": 91,
+  "testDetails": "Complete Blood Count (CBC)+ESR",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Cell Counter & Microscopy",
+  "mrp": 340
+},
+{
+  "id": 92,
+  "testDetails": "Complete Blood Count (CBC)+PS+ESR",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Cell Counter & Microscopy",
+  "mrp": 380
+},
+{
+  "id": 93,
+  "testDetails": "Coomb's Test (Direct) (DCT)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Gel Microtyping",
+  "mrp": 370
+},
+{
+  "id": 94,
+  "testDetails": "Coomb's Test (Indirect) (ICT)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Gel Microtyping",
+  "mrp": 400
+},
+{
+  "id": 95,
+  "testDetails": "Copper, Blood",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 1000
+},
+{
+  "id": 96,
+  "testDetails": "Cortisol (Evening)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CUA",
+  "mrp": 550
+},
+{
+  "id": 97,
+  "testDetails": "Cortisol (Morning)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CUA",
+  "mrp": 550
+},
+{
+  "id": 98,
+  "testDetails": "C-Peptide Fasting",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 900
+},
+{
+  "id": 99,
+  "testDetails": "C-Peptide PP",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 900
+},
+{
+  "id": 100,
+  "testDetails": "CPK- MB (Creatine Kinase- MB)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 410
+},
+{
+  "id": 101,
+  "testDetails": "CPK- NAC (Creatinine Phospho Kinase)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 370
+},
+{
+  "id": 102,
+  "testDetails": "Creatinine, Random Urine",
+  "sampleType": "Urine Random",
+  "method": "Spectrophotometry",
+  "mrp": 120
+},
+{
+  "id": 103,
+  "testDetails": "Creatinine , Serum",
+  "sampleType": "Serum (2 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 120
+},
+{
+  "id": 104,
+  "testDetails": "Creatinine",
+  "sampleType": "24 hrs Urine (5 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 120
+},
+{
+  "id": 105,
+  "testDetails": "Culture -Acid Fast Bacilli (AFB Bactac Culture)",
+  "sampleType": "Body Fluid/ CSF/ Sputum/ Pus/ Urine (3ml)",
+  "method": "Bactac MGIT",
+  "mrp": 1000
+},
+{
+  "id": 106,
+  "testDetails": "Culture - Bactec/Rapid Blood Culture",
+  "sampleType": "WB- Heparin (5ml)",
+  "method": "Bactec Flurocent Method",
+  "mrp": 950
+},
+{
+  "id": 107,
+  "testDetails": "Culture (Fungal)",
+  "sampleType": "Any Specimen",
+  "method": "Microbiology",
+  "mrp": 660
+},
+{
+  "id": 108,
+  "testDetails": "Culture & Sensitivity (Pus)",
+  "sampleType": "Pus (1 ml)",
+  "method": "Microbiology",
+  "mrp": 450
+},
+{
+  "id": 109,
+  "testDetails": "Culture & Sensitivity (Semen)",
+  "sampleType": "Semen (1ml)",
+  "method": "Microbiology",
+  "mrp": 450
+},
+{
+  "id": 110,
+  "testDetails": "Culture & Sensitivity (Sputum)",
+  "sampleType": "Sputum",
+  "method": "Microbiology",
+  "mrp": 450
+},
+{
+  "id": 111,
+  "testDetails": "Culture & Sensitivity (Stool)",
+  "sampleType": "Stool (2 gm)",
+  "method": "Microbiology",
+  "mrp": 450
+},
+{
+  "id": 112,
+  "testDetails": "Culture & Sensitivity (Urine)",
+  "sampleType": "Urine (5 ml)",
+  "method": "Microbiology",
+  "mrp": 450
+},
+{
+  "id": 113,
+  "testDetails": "Culture & Sensitivity (Blood)",
+  "sampleType": "Whole Blood (5.0 ml) in Culture Bottle",
+  "method": "Microbiology",
+  "mrp": 560
+},
+{
+  "id": 114,
+  "testDetails": "Culture & Sensitivity (High Vaginal Swab- HVS)",
+  "sampleType": "Swab (HVS)",
+  "method": "Microbiology",
+  "mrp": 450
+},
+{
+  "id": 115,
+  "testDetails": "Culture & Sensitivity (Swab)",
+  "sampleType": "Swab (ANY)",
+  "method": "Microbiology",
+  "mrp": 450
+},
+{
+  "id": 116,
+  "testDetails": "Culture & Sensitivity- Fluid (Any)",
+  "sampleType": "Fluid (2 ml), Bone marrow in broth",
+  "method": "Microbiology",
+  "mrp": 450
+},
+{
+  "id": 117,
+  "testDetails": "Cytomegalovirus - IgG Antibodies (CMV-IgG)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 480
+},
+{
+  "id": 118,
+  "testDetails": "Cytomegalovirus - IgM Antibodies (CMV-IgM)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 480
+},
+{
+  "id": 119,
+  "testDetails": "COVID-19 IgG Ab Test",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 1500
+},
+{
+  "id": 120,
+  "testDetails": "Covid-19 Total Ab (Anti SARS Cov2)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 600
+},
+{
+  "id": 121,
+  "testDetails": "D-Dimer",
+  "sampleType": "Plasma- Na Citrated (2 ml)",
+  "method": "Nephelometry",
+  "mrp": 1250
+},
+{
+  "id": 122,
+  "testDetails": "Dengue IgG Rapid",
+  "sampleType": "Serum (2 ml)",
+  "method": "Rapid Test/ IC",
+  "mrp": 600
+},
+{
+  "id": 123,
+  "testDetails": "Dengue IgM Rapid",
+  "sampleType": "Serum (2 ml)",
+  "method": "Rapid Test/ IC",
+  "mrp": 600
+},
+{
+  "id": 124,
+  "testDetails": "Dengue - IgG (ELISA)",
+  "sampleType": "serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 600
+},
+{
+  "id": 125,
+  "testDetails": "Dengue (IgG, IgM) Rapid",
+  "sampleType": "Serum (2 ml)",
+  "method": "Rapid Test/ IC",
+  "mrp": 1000
+},
+{
+  "id": 126,
+  "testDetails": "Dengue - IgM (ELISA)",
+  "sampleType": "serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 600
+},
+{
+  "id": 127,
+  "testDetails": "Dengue Ns 1 Antigen (ELISA)",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 600
+},
+{
+  "id": 128,
+  "testDetails": "Dengue Ns 1 Antigen (Rapid)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Rapid Test/ IC",
+  "mrp": 600
+},
+{
+  "id": 129,
+  "testDetails": "DHEA (Dehydroepiandrosterone)",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 2300
+},
+{
+  "id": 130,
+  "testDetails": "DHEA-So4 (Dehydroepiandrosterone Sulphate)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 850
+},
+{
+  "id": 131,
+  "testDetails": "Digoxin (Lanoxin)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 800
+},
+{
+  "id": 132,
+  "testDetails": "DLC (Differential Leukocyte Count)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Cell Counter",
+  "mrp": 120
+},
+{
+  "id": 133,
+  "testDetails": "DLC (Differential Leukocyte Count) (Fluid)",
+  "sampleType": "Fluids (any, 2 ml)",
+  "method": "Microscopy",
+  "mrp": 120
+},
+{
+  "id": 134,
+  "testDetails": "dsDNA (Anti Double Stranded DNA)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 1100
+},
+{
+  "id": 135,
+  "testDetails": "Dengue Combo Rapid (Dengue IgG, IgM, NS1)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Rapid Test/ IC",
+  "mrp": 1500
+},
+{
+  "id": 136,
+  "testDetails": "Echinococcus IgG Antibodies (Hydatid Serology)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 1500
+},
+{
+  "id": 137,
+  "testDetails": "eGFR (estimated Glomerular Filtration Rate)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 300
+},
+{
+  "id": 138,
+  "testDetails": "Entamoeba Histolytica Antibodies (Amoebic Serology) IgG",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 950
+},
+{
+  "id": 139,
+  "testDetails": "Erythrocyte Sedimentation Rate (ESR)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "WG (Wester Gren) / Capillary Photometry",
+  "mrp": 120
+},
+{
+  "id": 140,
+  "testDetails": "Estradiol (E2)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 520
+},
+{
+  "id": 141,
+  "testDetails": "Ferritin",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 680
+},
+{
+  "id": 142,
+  "testDetails": "Fluid Analysis Comprehensive (Fluid Analysis, AFB Stain, Gram Stain, Cytology, ADA)",
+  "sampleType": "Any Fluid (20 ml)",
+  "method": "Spectrophotometry /Microscopy",
+  "mrp": 1300
+},
+{
+  "id": 143,
+  "testDetails": "FNAC (Fine Needle Aspiration Cytology)",
+  "sampleType": "Slides with History",
+  "method": "Microscopy",
+  "mrp": 650
+},
+{
+  "id": 144,
+  "testDetails": "FolicAcid",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 800
+},
+{
+  "id": 145,
+  "testDetails": "Free Beta HCG, serum",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 1200
+},
+{
+  "id": 146,
+  "testDetails": "FSH (Follicle Stimulating Hormone)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 450
+},
+{
+  "id": 147,
+  "testDetails": "FT3 (Trilodothyronine- Free)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 300
+},
+{
+  "id": 148,
+  "testDetails": "FT4 (Thyroxine- Free)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 300
+},
+{
+  "id": 149,
+  "testDetails": "Fecal Calprotectin",
+  "sampleType": "Stool (20 gms)",
+  "method": "EIA",
+  "mrp": 2800
+},
+{
+  "id": 150,
+  "testDetails": "G6PD Deficiency (Quantitative)",
+  "sampleType": "Whole Blood EDTA (3 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 850
+},
+{
+  "id": 151,
+  "testDetails": "G6PD Qualitative Test",
+  "sampleType": "Whole Blood EDTA (3 ml)",
+  "method": "Visual/Manual",
+  "mrp": 540
+},
+{
+  "id": 152,
+  "testDetails": "Galactomannan (Aspergillus Antigen)",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 5700
+},
+{
+  "id": 153,
+  "testDetails": "GGT (Gamma Glutamyl Transferase)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 240
+},
+{
+  "id": 154,
+  "testDetails": "Globulin",
+  "sampleType": "Serum (1 ml)",
+  "method": "Calculated",
+  "mrp": 120
+},
+{
+  "id": 155,
+  "testDetails": "Glucose Challenge Test (GCT)",
+  "sampleType": "NaF Plasma (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 100
+},
+{
+  "id": 156,
+  "testDetails": "Glucose Fasting (Blood Sugar Fasting)",
+  "sampleType": "NaF Plasma (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 70
+},
+{
+  "id": 157,
+  "testDetails": "Glucose Fating + Post Prandial",
+  "sampleType": "NaF Plasma (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 130
+},
+{
+  "id": 158,
+  "testDetails": "Glucose Post Prandial (Blood Sugar Post Prandial)",
+  "sampleType": "NaF Plasma (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 70
+},
+{
+  "id": 159,
+  "testDetails": "Glucose Random (Blood Sugar Random)",
+  "sampleType": "NaF Plasma (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 70
+},
+{
+  "id": 160,
+  "testDetails": "Glucose Tolerance Test (GTT) 5 Sample",
+  "sampleType": "NaF Plasma (1 ml of each sample)",
+  "method": "Spectrophotometry",
+  "mrp": 350
+},
+{
+  "id": 161,
+  "testDetails": "Gram Stain - Smear",
+  "sampleType": "Any Specimen / Slides",
+  "method": "Microscopy",
+  "mrp": 220
+},
+{
+  "id": 162,
+  "testDetails": "Growth Hormone (HGH)",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 800
+},
+{
+  "id": 163,
+  "testDetails": "HB, TLC, DLC",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Cell Counter",
+  "mrp": 180
+},
+{
+  "id": 164,
+  "testDetails": "HB, TLC, DLC, ESR",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Cell Counter",
+  "mrp": 200
+},
+{
+  "id": 165,
+  "testDetails": "HbA1c (Glycated hemoglobin)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "HPLC",
+  "mrp": 380
+},
+{
+  "id": 166,
+  "testDetails": "Helicobacter Pylori (H.pylori) IgA Antibodies",
+  "sampleType": "Serum (3 ml)",
+  "method": "ELISA",
+  "mrp": 1600
+},
+{
+  "id": 167,
+  "testDetails": "Helicobacter Pylori (H.pylori) IgG Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 1600
+},
+{
+  "id": 168,
+  "testDetails": "Helicobacter Pylori (H.pylori) IgM Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 1600
+},
+{
+  "id": 169,
+  "testDetails": "Hemoglobin",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Cell Counter",
+  "mrp": 100
+},
+{
+  "id": 170,
+  "testDetails": "Hemoglobin HPLC/ Electrophoresis",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "HPLC",
+  "mrp": 800
+},
+{
+  "id": 171,
+  "testDetails": "Hepatitis A virus - IgG Antibodies (HAV IgG)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 900
+},
+{
+  "id": 172,
+  "testDetails": "Hepatitis A virus - IgM Antibodies (HAV IgM)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 900
+},
+{
+  "id": 173,
+  "testDetails": "Hepatitis A virus - Total Antibodies (HAV-Total)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 1000
+},
+{
+  "id": 174,
+  "testDetails": "Hepatitis B core antigen - Total Antibodies (HBC)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CUA",
+  "mrp": 800
+},
+{
+  "id": 175,
+  "testDetails": "Hepatitis B core antigen - IgM Antibodies (HBC-IgM)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 800
+},
+{
+  "id": 176,
+  "testDetails": "Hepatitis B envelope Antibodies (HBe-Ab)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 700
+},
+{
+  "id": 177,
+  "testDetails": "Hepatitis B envelope antigen (HBe-Ag)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 700
+},
+{
+  "id": 178,
+  "testDetails": "Hepatitis B Surface antigen (HBs Ag)/ CUA",
+  "sampleType": "Serum (1 ml)",
+  "method": "CUA",
+  "mrp": 400
+},
+{
+  "id": 179,
+  "testDetails": "Hepatitis B surface antigen (HBs Ag)/ Australia Antigen (Rapid)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Rapid TesU IC",
+  "mrp": 300
+},
+{
+  "id": 180,
+  "testDetails": "Hepatitis B Virus DNA PCR (Quantitative)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Real Time PCR",
+  "mrp": 5800
+},
+{
+  "id": 181,
+  "testDetails": "Hepatitis C virus - Total Antibodies (HCV)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CUA",
+  "mrp": 700
+},
+{
+  "id": 182,
+  "testDetails": "Hepatitis C Virus (HCV Rapid)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Rapid TesU IC",
+  "mrp": 480
+},
+{
+  "id": 183,
+  "testDetails": "Hepatitis C Virus RNA PCR (Quantitative)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Real Time PCR",
+  "mrp": 6700
+},
+{
+  "id": 184,
+  "testDetails": "Hepatitis E virus - IgG Antibodies (HEV IgG)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 1400
+},
+{
+  "id": 185,
+  "testDetails": "Hepatitis E virus - IgM Antibodies (HEV IgM)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 1400
+},
+{
+  "id": 186,
+  "testDetails": "HIV I & II Antibody Quantitative",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA/CUA",
+  "mrp": 400
+},
+{
+  "id": 187,
+  "testDetails": "HIV I & II Serology (Rapid)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Rapid TesU IC",
+  "mrp": 300
+},
+{
+  "id": 188,
+  "testDetails": "HIV RNAPCR (Quantitative Viral Load)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Real Time PCR",
+  "mrp": 5500
+},
+{
+  "id": 189,
+  "testDetails": "HLA-B27 (Flowcytometry)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Flowcytometry",
+  "mrp": 1800
+},
+{
+  "id": 190,
+  "testDetails": "HLA-B27 (PCR)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "PCR",
+  "mrp": 2800
+},
+{
+  "id": 191,
+  "testDetails": "Homocysteine",
+  "sampleType": "Serum (1mL)/ Plasma (1ml)",
+  "method": "CUA",
+  "mrp": 900
+},
+{
+  "id": 192,
+  "testDetails": "HPV DNA Detector With Thin Prep",
+  "sampleType": "LBC Container",
+  "method": "PCR, Liquid Base Cytology",
+  "mrp": 3000
+},
+{
+  "id": 193,
+  "testDetails": "HSV-1 IgG Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 460
+},
+{
+  "id": 194,
+  "testDetails": "HSV-1 IgM Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 460
+},
+{
+  "id": 195,
+  "testDetails": "HSV-1&2 IgG Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 680
+},
+{
+  "id": 196,
+  "testDetails": "HSV-1&2 IgM Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 680
+},
+{
+  "id": 197,
+  "testDetails": "HSV-2 IgG Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 460
+},
+{
+  "id": 198,
+  "testDetails": "HSV-2 IgM Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 460
+},
+{
+  "id": 199,
+  "testDetails": "h-ITG/DGP",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 2500
+},
+{
+  "id": 200,
+  "testDetails": "Homa Index",
+  "sampleType": "Serum (3ml) and 2ml Floride plasma (infasting)",
+  "method": "CMIA",
+  "mrp": 1200
+},
+{
+  "id": 201,
+  "testDetails": "IgE Total, Serum",
+  "sampleType": "Serum (1 ml)",
+  "method": "CUA",
+  "mrp": 650
+},
+{
+  "id": 202,
+  "testDetails": "Immunoglobulin-A (IgA)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Nephelometry",
+  "mrp": 550
+},
+{
+  "id": 203,
+  "testDetails": "Immunoglobulin- G (IgG)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Nephelometry",
+  "mrp": 550
+},
+{
+  "id": 204,
+  "testDetails": "Immunoglobulin- M (IgM)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Nephelometry",
+  "mrp": 550
+},
+{
+  "id": 205,
+  "testDetails": "Insulin Fasting",
+  "sampleType": "Serum (1 ml)",
+  "method": "CUA",
+  "mrp": 650
+},
+{
+  "id": 206,
+  "testDetails": "Insulin Post Prandial",
+  "sampleType": "Serum (1 ml)",
+  "method": "CUA",
+  "mrp": 650
+},
+{
+  "id": 207,
+  "testDetails": "Insulin Random",
+  "sampleType": "Serum (1 ml)",
+  "method": "CUA",
+  "mrp": 650
+},
+{
+  "id": 208,
+  "testDetails": "Ionized Calcium",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 400
+},
+{
+  "id": 209,
+  "testDetails": "Iron",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 250
+},
+{
+  "id": 210,
+  "testDetails": "Iron Panel Basic (Iron, TIBC & Trans.Saturation)",
+  "sampleType": "Serum (2ml)",
+  "method": "Spectrophotometry",
+  "mrp": 500
+},
+{
+  "id": 211,
+  "testDetails": "Interleukin 6 (IL6)",
+  "sampleType": "EDTA Plasma/Serum (2 ml) (Preferable)",
+  "method": "CUA",
+  "mrp": 2500
+},
+{
+  "id": 212,
+  "testDetails": "LDH (Lactate Dehydrogenase)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 300
+},
+{
+  "id": 213,
+  "testDetails": "LH (Leutinising Hormone)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 480
+},
+{
+  "id": 214,
+  "testDetails": "LH FSH Ratio (LH, FSH and Ratio)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 900
+},
+{
+  "id": 215,
+  "testDetails": "Lipase",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 480
+},
+{
+  "id": 216,
+  "testDetails": "Lithium (Li)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ISE",
+  "mrp": 520
+},
+{
+  "id": 217,
+  "testDetails": "LKM-1 Antibodies (Liver Kidney Microsome Antibody)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 1800
+},
+{
+  "id": 218,
+  "testDetails": "Lupus Anticoagulant",
+  "sampleType": "Plasma Citrated (1 ml)",
+  "method": "DRVVT",
+  "mrp": 1200
+},
+{
+  "id": 219,
+  "testDetails": "Magnesium (24 Hr Urine)",
+  "sampleType": "24 hrs Urine (5 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 450
+},
+{
+  "id": 220,
+  "testDetails": "Magnesium (Serum)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 450
+},
+{
+  "id": 221,
+  "testDetails": "Malaria Antigen (PV & PF)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "IC",
+  "mrp": 400
+},
+{
+  "id": 222,
+  "testDetails": "Microalbumin (24 Hour Urine)",
+  "sampleType": "24 Hr Urine (30 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 380
+},
+{
+  "id": 223,
+  "testDetails": "Microalbumin (Urine Random)",
+  "sampleType": "Urine (30 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 380
+},
+{
+  "id": 224,
+  "testDetails": "Mycobacterium tuberculosis (TB)\"DNA PCR (Qualitative)",
+  "sampleType": "Pleural fluid (30 ml)",
+  "method": "PCR",
+  "mrp": 1800
+},
+{
+  "id": 225,
+  "testDetails": "Mycobacterium tuberculosis (TB)\"DNA PCR (Qualitative)",
+  "sampleType": "CSF (10 ml)",
+  "method": "PCR",
+  "mrp": 1800
+},
+{
+  "id": 226,
+  "testDetails": "Mycobacterium tuberculosis (TB)\"DNA PCR (Qualitative)",
+  "sampleType": "Urine (30 ml)",
+  "method": "PCR",
+  "mrp": 1800
+},
+{
+  "id": 227,
+  "testDetails": "Mycobacterium tuberculosis (TB)\"DNA PCR (Qualitative)",
+  "sampleType": "Ascitic fluid (30 ml)",
+  "method": "PCR",
+  "mrp": 1800
+},
+{
+  "id": 228,
+  "testDetails": "Mycobacterium tuberculosis (TB)\"DNA PCR (Qualitative)",
+  "sampleType": "Synovial fluid (30 ml)",
+  "method": "PCR",
+  "mrp": 1800
+},
+{
+  "id": 189,
+  "testDetails": "HLA-B27 (Flowcytometry)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Flowcytometry",
+  "mrp": 1800
+},
+{
+  "id": 190,
+  "testDetails": "HLA-B27 (PCR)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "PCR",
+  "mrp": 2800
+},
+{
+  "id": 191,
+  "testDetails": "Homocysteine",
+  "sampleType": "Serum (1mL)/ Plasma (1ml)",
+  "method": "CUA",
+  "mrp": 900
+},
+{
+  "id": 192,
+  "testDetails": "HPV DNA Detector With Thin Prep",
+  "sampleType": "LBC Container",
+  "method": "PCR, Liquid Base Cytology",
+  "mrp": 3000
+},
+{
+  "id": 193,
+  "testDetails": "HSV-1 IgG Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 460
+},
+{
+  "id": 194,
+  "testDetails": "HSV-1 IgM Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 460
+},
+{
+  "id": 195,
+  "testDetails": "HSV-1&2 IgG Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 680
+},
+{
+  "id": 196,
+  "testDetails": "HSV-1&2 IgM Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 680
+},
+{
+  "id": 197,
+  "testDetails": "HSV-2 IgG Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 460
+},
+{
+  "id": 198,
+  "testDetails": "HSV-2 IgM Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 460
+},
+{
+  "id": 199,
+  "testDetails": "h-ITG/DGP",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 2500
+},
+{
+  "id": 200,
+  "testDetails": "Homa Index",
+  "sampleType": "Serum (3ml) and 2ml Floride plasma (infasting)",
+  "method": "CMIA",
+  "mrp": 1200
+},
+{
+  "id": 201,
+  "testDetails": "IgE Total, Serum",
+  "sampleType": "Serum (1 ml)",
+  "method": "CUA",
+  "mrp": 650
+},
+{
+  "id": 202,
+  "testDetails": "Immunoglobulin-A (IgA)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Nephelometry",
+  "mrp": 550
+},
+{
+  "id": 203,
+  "testDetails": "Immunoglobulin- G (IgG)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Nephelometry",
+  "mrp": 550
+},
+{
+  "id": 204,
+  "testDetails": "Immunoglobulin- M (IgM)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Nephelometry",
+  "mrp": 550
+},
+{
+  "id": 205,
+  "testDetails": "Insulin Fasting",
+  "sampleType": "Serum (1 ml)",
+  "method": "CUA",
+  "mrp": 650
+},
+{
+  "id": 206,
+  "testDetails": "Insulin Post Prandial",
+  "sampleType": "Serum (1 ml)",
+  "method": "CUA",
+  "mrp": 650
+},
+{
+  "id": 207,
+  "testDetails": "Insulin Random",
+  "sampleType": "Serum (1 ml)",
+  "method": "CUA",
+  "mrp": 650
+},
+{
+  "id": 208,
+  "testDetails": "Ionized Calcium",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 400
+},
+{
+  "id": 209,
+  "testDetails": "Iron",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 250
+},
+{
+  "id": 210,
+  "testDetails": "Iron Panel Basic(Iron, TIBC & Trans.Saturation)",
+  "sampleType": "Serum (2ml)",
+  "method": "Spectrophotometry",
+  "mrp": 500
+},
+{
+  "id": 211,
+  "testDetails": "Interleukin 6 (IL6)",
+  "sampleType": "EDTA Plasma/Serum (2 ml) (Preferable)",
+  "method": "CUA",
+  "mrp": 2500
+},
+{
+  "id": 212,
+  "testDetails": "LDH (Lactate Dehydrogenase)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 300
+},
+{
+  "id": 213,
+  "testDetails": "LH (Leutinising Hormone)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 480
+},
+{
+  "id": 214,
+  "testDetails": "LH FSH Ratio (LH, FSH and Ratio)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 900
+},
+{
+  "id": 215,
+  "testDetails": "Lipase",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 480
+},
+{
+  "id": 216,
+  "testDetails": "Lithium (Li)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ISE",
+  "mrp": 520
+},
+{
+  "id": 217,
+  "testDetails": "LKM-1 Antibodies (Liver Kidney Microsome Antibody)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 1800
+},
+{
+  "id": 218,
+  "testDetails": "Lupus Anticoagulant",
+  "sampleType": "Plasma Citrated (1 ml)",
+  "method": "DRVVT",
+  "mrp": 1200
+},
+{
+  "id": 219,
+  "testDetails": "Magnesium (24 Hr Urine)",
+  "sampleType": "24 hrs Urine (5 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 450
+},
+{
+  "id": 220,
+  "testDetails": "Magnesium (Serum)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 450
+},
+{
+  "id": 221,
+  "testDetails": "Malaria Antigen (PV & PF)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "IC",
+  "mrp": 400
+},
+{
+  "id": 222,
+  "testDetails": "Microalbumin (24 Hour Urine)",
+  "sampleType": "24 Hr Urine (30 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 380
+},
+{
+  "id": 223,
+  "testDetails": "Microalbumin (Urine Random)",
+  "sampleType": "Urine (30 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 380
+},
+{
+  "id": 224,
+  "testDetails": "Mycobacterium tuberculosis (TB)\"DNA PCR (Qualitative)",
+  "sampleType": "Pleural fluid (30 ml)",
+  "method": "PCR",
+  "mrp": 1800
+},
+{
+  "id": 225,
+  "testDetails": "Mycobacterium tuberculosis (TB)\"DNA PCR (Qualitative)",
+  "sampleType": "CSF (10 ml)",
+  "method": "PCR",
+  "mrp": 1800
+},
+{
+  "id": 226,
+  "testDetails": "Mycobacterium tuberculosis (TB)\"DNA PCR (Qualitative)",
+  "sampleType": "Urine (30 ml)",
+  "method": "PCR",
+  "mrp": 1800
+},
+{
+  "id": 227,
+  "testDetails": "Mycobacterium tuberculosis (TB)\"DNA PCR (Qualitative)",
+  "sampleType": "Ascitic fluid (30 ml)",
+  "method": "PCR",
+  "mrp": 1800
+},
+{
+  "id": 228,
+  "testDetails": "Mycobacterium tuberculosis (TB)\"DNA PCR (Qualitative)",
+  "sampleType": "Synovial fluid (30 ml)",
+  "method": "PCR",
+  "mrp": 1800
+},
+{
+  "id": 229,
+  "testDetails": "Mycobacterium tuberculosis (TB)\"DNA PCR (Qualitative)",
+  "sampleType": "Sputum",
+  "method": "PCR",
+  "mrp": 1800
+},
+{
+  "id": 230,
+  "testDetails": "Mycobacterium tuberculosis (TB)\"DNA PCR (Qualitative)",
+  "sampleType": "WB-EDTA (3 ml) 698",
+  "method": "PCR",
+  "mrp": 1800
+},
+{
+  "id": 231,
+  "testDetails": "Mycobacterium tuberculosis (TB)\"DNA PCR (Qualitative)",
+  "sampleType": "Positive Culture Isolate",
+  "method": "PCR",
+  "mrp": 1800
+},
+{
+  "id": 232,
+  "testDetails": "Mycobacterium tuberculosis (TB)\"DNA PCR (Qualitative)",
+  "sampleType": "Any Other specimen",
+  "method": "PCR",
+  "mrp": 1800
+},
+{
+  "id": 233,
+  "testDetails": "NT- Pro BNP (N-Terminal Pro B Type Natriuretic Peptide)",
+  "sampleType": "EDTA Plasma (5 ml)/Serum",
+  "method": "CLIA",
+  "mrp": 2300
+},
+{
+  "id": 234,
+  "testDetails": "Osmolality Serum",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 850
+},
+{
+  "id": 235,
+  "testDetails": "P-ANCA (Myeloperoxidase)",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 1300
+},
+{
+  "id": 236,
+  "testDetails": "PAP Smear",
+  "sampleType": "Slides",
+  "method": "Microscopy",
+  "mrp": 400
+},
+{
+  "id": 237,
+  "testDetails": "PAP Smear Cytology LBC",
+  "sampleType": "10 ml in LBC Container",
+  "method": "Liquid Based Cytology by Thin Prep",
+  "mrp": 1200
+},
+{
+  "id": 238,
+  "testDetails": "PAPP-A (Pregnancy Associated Plasma Protein-A)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 1300
+},
+{
+  "id": 239,
+  "testDetails": "Peripheral Blood Smear (PBS OR PBF)",
+  "sampleType": "WB-EDTA(3ml)/Slide",
+  "method": "Microscopy",
+  "mrp": 200
+},
+{
+  "id": 240,
+  "testDetails": "Phospholipid IgG Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 750
+},
+{
+  "id": 241,
+  "testDetails": "Phospholipid IgM Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 750
+},
+{
+  "id": 242,
+  "testDetails": "Phosphorous (24 Hr Urine)",
+  "sampleType": "24 hrs Urine (5 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 250
+},
+{
+  "id": 243,
+  "testDetails": "Phosphorous (Serum)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 220
+},
+{
+  "id": 244,
+  "testDetails": "Platelet Count",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Cell Counter",
+  "mrp": 120
+},
+{
+  "id": 245,
+  "testDetails": "Potassium-24 Hrs Urine",
+  "sampleType": "24 hrs Urine (30 ml)",
+  "method": "ISE",
+  "mrp": 110
+},
+{
+  "id": 246,
+  "testDetails": "Potassium-Serum",
+  "sampleType": "Serum (1 ml)",
+  "method": "ISE",
+  "mrp": 110
+},
+{
+  "id": 247,
+  "testDetails": "Pottasium-Urine Random",
+  "sampleType": "Urine Random (30 ml)",
+  "method": "ISE",
+  "mrp": 110
+},
+{
+  "id": 248,
+  "testDetails": "Pregnancy test",
+  "sampleType": "Urine (30 ml)",
+  "method": "IC",
+  "mrp": 150
+},
+{
+  "id": 249,
+  "testDetails": "Procalcitonin (PCT)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 2200
+},
+{
+  "id": 250,
+  "testDetails": "Progesterone (P4)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 520
+},
+{
+  "id": 251,
+  "testDetails": "Prolactin (PRL)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 480
+},
+{
+  "id": 252,
+  "testDetails": "Protein - Total",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 120
+},
+{
+  "id": 253,
+  "testDetails": "Protein (CSF)",
+  "sampleType": "CSF (1.0 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 150
+},
+{
+  "id": 254,
+  "testDetails": "Protein (Fluid)",
+  "sampleType": "Fluid (10 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 150
+},
+{
+  "id": 255,
+  "testDetails": "Protein / Creal Ratio (Random Urine)",
+  "sampleType": "Urine Random (25 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 300
+},
+{
+  "id": 256,
+  "testDetails": "Protein+ Albumin+ AG Ratio",
+  "sampleType": "Serum-2 ml",
+  "method": "Spectrophotometry",
+  "mrp": 250
+},
+{
+  "id": 257,
+  "testDetails": "Protein Electrophoresis (24 hr Urine)",
+  "sampleType": "24 Hrs Urine (50 ml)",
+  "method": "Electrophoresis",
+  "mrp": 900
+},
+{
+  "id": 258,
+  "testDetails": "Protein Electrophoresis (CSF)",
+  "sampleType": "CSF (1.0 ml)",
+  "method": "Electrophoresis",
+  "mrp": 2100
+},
+{
+  "id": 259,
+  "testDetails": "Protein Electrophoresis (Serum)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Electrophoresis",
+  "mrp": 800
+},
+{
+  "id": 260,
+  "testDetails": "Prothrombin Time (PT)",
+  "sampleType": "Plasma Citrated (1 ml)",
+  "method": "Clotting (Coagulometry)",
+  "mrp": 280
+},
+{
+  "id": 261,
+  "testDetails": "PSA- Free (Prostrate Specific Antigen Free)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 900
+},
+{
+  "id": 262,
+  "testDetails": "PSA-Total (Prostrate Specific Antigen Total)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 640
+},
+{
+  "id": 263,
+  "testDetails": "PTH-Intact (Parathormone)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 950
+},
+{
+  "id": 264,
+  "testDetails": "SAAG(Serum Albumin, Ascitic Albumin Gradient)",
+  "sampleType": "Serum (2 ml), fluid (2 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 250
+},
+{
+  "id": 265,
+  "testDetails": "Quantiferon- TB Gold (Gamma Interferon) (TB Feron) or IGRA",
+  "sampleType": "Blood sample to be collected in 3 TB Feron Tubes (1.0ml in each tube)/ Lithium Heparin(4ml) Whole Blood",
+  "method": "ELISA",
+  "mrp": 2150
+},
+{
+  "id": 266,
+  "testDetails": "Reticulocyte Count",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Microscopy",
+  "mrp": 220
+},
+{
+  "id": 267,
+  "testDetails": "Rheumatoid Factor, RA (Qualitative)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Agglutination",
+  "mrp": 280
+},
+{
+  "id": 268,
+  "testDetails": "Rheumatoid Factor, RA (Quantitative)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Biochemical",
+  "mrp": 350
+},
+{
+  "id": 269,
+  "testDetails": "ROMA index With HE4 (Epithelial Ovarian Cancer) Serum",
+  "sampleType": "Serum (3 ml)",
+  "method": "CMIA",
+  "mrp": 2800
+},
+{
+  "id": 270,
+  "testDetails": "Rubella Virus (German Measles) - IgG Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 500
+},
+{
+  "id": 271,
+  "testDetails": "Rubella Virus (German Measles) - IgM Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 500
+},
+{
+  "id": 272,
+  "testDetails": "Semen Analysis",
+  "sampleType": "Semen (walk in patients)",
+  "method": "Manual/ Microscopy",
+  "mrp": 200
+},
+{
+  "id": 273,
+  "testDetails": "Sex Hormone Binding Globulin (SHBG)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 1800
+},
+{
+  "id": 274,
+  "testDetails": "SGPT (Serum Glutamic Pyruvic Transaminase) (ALT)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 120
+},
+{
+  "id": 275,
+  "testDetails": "Sickling Test",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Microscopy",
+  "mrp": 300
+},
+{
+  "id": 276,
+  "testDetails": "Sodium (24 Hr Urine)",
+  "sampleType": "24 hrs Urine (30 ml)",
+  "method": "ISE",
+  "mrp": 120
+},
+{
+  "id": 277,
+  "testDetails": "Sodium (Serum)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ISE",
+  "mrp": 120
+},
+{
+  "id": 278,
+  "testDetails": "Sodium (Urine Random)",
+  "sampleType": "Urine Random (30 ml)",
+  "method": "ISE",
+  "mrp": 120
+},
+{
+  "id": 279,
+  "testDetails": "SSA-Antibody (Soluble Substance) (Ro)",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 1600
+},
+{
+  "id": 280,
+  "testDetails": "SSB-Antibody (Soluble Substance) (La)",
+  "sampleType": "Serum (2ml)",
+  "method": "ELISA",
+  "mrp": 1600
+},
+{
+  "id": 281,
+  "testDetails": "Stone Analysis",
+  "sampleType": "Stone (1 gm)",
+  "method": "Biochemical",
+  "mrp": 700
+},
+{
+  "id": 282,
+  "testDetails": "Stool Examination for ova & cysts",
+  "sampleType": "Stool (20 gm)",
+  "method": "Microscopy",
+  "mrp": 100
+},
+{
+  "id": 283,
+  "testDetails": "Stool R/M",
+  "sampleType": "Stool (20 gm)",
+  "method": "Microscopy",
+  "mrp": 120
+},
+{
+  "id": 284,
+  "testDetails": "T3 (Trilodothyronine)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 250
+},
+{
+  "id": 285,
+  "testDetails": "T 4 (Thyroxine)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 250
+},
+{
+  "id": 286,
+  "testDetails": "Tacrolimus Levels",
+  "sampleType": "3 ml of EDTA Whole Blood",
+  "method": "CLIA",
+  "mrp": 3400
+},
+{
+  "id": 287,
+  "testDetails": "TB Expert MTB/RIF (Gene Expert) (Pulmonary)",
+  "sampleType": "4 ml Sputum/ BAL Fluid/Pleural Fluid",
+  "method": "PCR",
+  "mrp": 3000
+},
+{
+  "id": 288,
+  "testDetails": "Testosterone- Free",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 1250
+},
+{
+  "id": 289,
+  "testDetails": "Testosterone- Total",
+  "sampleType": "Serum (1 ml)",
+  "method": "CUA",
+  "mrp": 550
+},
+{
+  "id": 290,
+  "testDetails": "Thyroglobulin",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 1400
+},
+{
+  "id": 291,
+  "testDetails": "TIBC (Total Iron Binding Capacity)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 320
+},
+{
+  "id": 292,
+  "testDetails": "TLC (Fluid)",
+  "sampleType": "Fluids (any. 2 ml)",
+  "method": "Microscopy",
+  "mrp": 120
+},
+{
+  "id": 293,
+  "testDetails": "TLC (Total Leukocyte Count) (Blood)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Cell Counter & Microscopy",
+  "mrp": 120
+},
+{
+  "id": 294,
+  "testDetails": "TLC, DLC, ESR",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Cell Counter & Microscopy",
+  "mrp": 180
+},
+{
+  "id": 295,
+  "testDetails": "Total Count & Differential Count (TLC & DLC)",
+  "sampleType": "WB-EDTA (3 ml)",
+  "method": "Cell Counter & Microscopy",
+  "mrp": 140
+},
+{
+  "id": 296,
+  "testDetails": "Toxoplasma gondii - IgG Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLINELISA",
+  "mrp": 500
+},
+{
+  "id": 297,
+  "testDetails": "Toxoplasma gondii - IgM Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLINELISA",
+  "mrp": 500
+},
+{
+  "id": 298,
+  "testDetails": "Toxoplasma IgG & IgM Antibodies",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 920
+},
+{
+  "id": 299,
+  "testDetails": "TPHA (Treponema Pallidum Hemagglutination)",
+  "sampleType": "Serum (2 ml)",
+  "method": "IC",
+  "mrp": 500
+},
+{
+  "id": 300,
+  "testDetails": "Triglycerides (TG)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 210
+},
+{
+  "id": 301,
+  "testDetails": "Troponin - I (QUALITATIVE)",
+  "sampleType": "Serum (2ml)",
+  "method": "Rapid Chromatography",
+  "mrp": 1400
+},
+{
+  "id": 302,
+  "testDetails": "Troponin- T (QUALITATIVE)",
+  "sampleType": "EDTA Whole Blood (2 ml)",
+  "method": "Rapid Chromatography",
+  "mrp": 1400
+},
+{
+  "id": 303,
+  "testDetails": "TSH (Thyroid Stimulating Hormone)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 280
+},
+{
+  "id": 304,
+  "testDetails": "TTG- IgA (Tissue Transglutaminase IgA Antibody)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ELISA",
+  "mrp": 1100
+},
+{
+  "id": 305,
+  "testDetails": "TTG- IgG (Tissue Transglutaminase IgG Antibody)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 1500
+},
+{
+  "id": 306,
+  "testDetails": "Typhi Dot (Salmonella Typhi) (IgG, IgM) (Rapid)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Rapid TesU IC",
+  "mrp": 550
+},
+{
+  "id": 307,
+  "testDetails": "Typhi Dot (Salmonella Typhi) IgG",
+  "sampleType": "Serum (2 ml)",
+  "method": "IC",
+  "mrp": 350
+},
+{
+  "id": 308,
+  "testDetails": "Typhi Dot (Salmonella Typhi) IgM",
+  "sampleType": "Serum (2 ml)",
+  "method": "IC",
+  "mrp": 350
+},
+{
+  "id": 309,
+  "testDetails": "Urea (24 Hr Urine)",
+  "sampleType": "24 hrs Urine (5 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 120
+},
+{
+  "id": 310,
+  "testDetails": "Urea (Blood)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 120
+},
+{
+  "id": 311,
+  "testDetails": "Uric Acid",
+  "sampleType": "Serum (2 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 120
+},
+{
+  "id": 312,
+  "testDetails": "Uric Acid, 24 Hr Urine",
+  "sampleType": "24 hrs Urine (30 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 120
+},
+{
+  "id": 313,
+  "testDetails": "Urine Bile Salt & Bile Pigment",
+  "sampleType": "Urine (50 ml)",
+  "method": "Visual",
+  "mrp": 140
+},
+{
+  "id": 314,
+  "testDetails": "Urine R/M (Urine Analysis)",
+  "sampleType": "Urine (50 ml)",
+  "method": "Strip & Microscopy",
+  "mrp": 100
+},
+{
+  "id": 315,
+  "testDetails": "Valproic Acid (Valproate, Valparin, Epilex)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CUA",
+  "mrp": 750
+},
+{
+  "id": 316,
+  "testDetails": "VDRL Test (RPR)",
+  "sampleType": "Serum (1 ml)",
+  "method": "IC",
+  "mrp": 120
+},
+{
+  "id": 317,
+  "testDetails": "Vitamin B12 (Cynocobalamin)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 700
+},
+{
+  "id": 318,
+  "testDetails": "Vitamin D (25-hydroxycholecalciferol)",
+  "sampleType": "Serum (1 ml)",
+  "method": "CLIA",
+  "mrp": 1300
+},
+{
+  "id": 319,
+  "testDetails": "Vitamin D3 (1, 25 Dihydroxyvitamin D3)",
+  "sampleType": "Serum (3 ml) (Specimen to be protected from light, wrap tube in aluminium foil)",
+  "method": "CLIA",
+  "mrp": 2900
+},
+{
+  "id": 320,
+  "testDetails": "VLDL",
+  "sampleType": "Serum (1 ml)",
+  "method": "Calculated",
+  "mrp": 180
+},
+{
+  "id": 321,
+  "testDetails": "VMA (Vanil Mandelic Acid)",
+  "sampleType": "24hrs Urine (50 ml)",
+  "method": "Column Chromatography",
+  "mrp": 2900
+},
+{
+  "id": 322,
+  "testDetails": "Western Blot test for HIV",
+  "sampleType": "Serum (1 ml)",
+  "method": "Western Blot",
+  "mrp": 2700
+},
+{
+  "id": 323,
+  "testDetails": "Widal Test (Slide Test)",
+  "sampleType": "Serum (1 ml)",
+  "method": "Slide Agglutination",
+  "mrp": 120
+},
+{
+  "id": 324,
+  "testDetails": "Zinc Serum",
+  "sampleType": "Serum (1 ml)",
+  "method": "AAS",
+  "mrp": 1900
+},
+{
+  "id": 325,
+  "testDetails": "Allergy 3 Panel (VPC)",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 3000
+},
+{
+  "id": 326,
+  "testDetails": "Allergy Panel 5 (Without Drugs)",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 4500
+},
+{
+  "id": 327,
+  "testDetails": "Allergy-Allergen Panel I (Vegetarian + Non Vegetarian+ Inhalants+ Drugs)",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 5950
+},
+{
+  "id": 328,
+  "testDetails": "Allergy Total, AEC, S. IgE Total, CBC, Urine R/M",
+  "sampleType": "Serum (2 ml) + WB- EDTA (3 ml)+ Urine",
+  "method": "CLIA, Spectrophotometry, CC, Microscopy",
+  "mrp": 1100
+},
+{
+  "id": 329,
+  "testDetails": "Anemia Profile I (Ferritin, FolicAcid, Vit B12, Iron, TIBC, CBC,PS)",
+  "sampleType": "Serum (2 ml), EDTA (3 ml)",
+  "method": "Spectrophotometry, CLIA, CC",
+  "mrp": 2500
+},
+{
+  "id": 330,
+  "testDetails": "Anemia Profile II (Ferritin, FolicAcid, Vit B12, Iron, TIBC, CBC, PS, TSH)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml)",
+  "method": "Spectrophotometry, CLIA/Microscopy, CC",
+  "mrp": 2600
+},
+{
+  "id": 331,
+  "testDetails": "Anemia Study (CBC, Peripheral Blood Smear, ESR, Iron, TIBC, Iron Saturation Index, Ferritin, Folate, Vitamin- B12, Reticulocyte Count)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml)",
+  "method": "Spectrophotometry, CLIA/Microscopy, CC",
+  "mrp": 3200
+},
+{
+  "id": 332,
+  "testDetails": "Anti Cardiolipin Panel (IgA, IgG, IgM)-ACLA",
+  "sampleType": "Serum (3mL)",
+  "method": "ELISA",
+  "mrp": 1650
+},
+{
+  "id": 333,
+  "testDetails": "Ante Natal Panel I (ABO & RH, CBC, RBS, HIV, HBsAg, Urine Routine, VDRL, HCV Rapid)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml), NaF Plasma (2 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Agglutination, CC, Microscopic",
+  "mrp": 850
+},
+{
+  "id": 334,
+  "testDetails": "Ante Natal Panel II (ABO & RH, CBC, RBS, HIV, HBsAg, Urine R/M, VDRL, TSH)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml), NaF Plasma (1 ml), Urine (30 ml)",
+  "method": "CLIA, Spectrophotometry, Agglutination, CC, Microscopic",
+  "mrp": 940
+},
+{
+  "id": 335,
+  "testDetails": "Ante Natal Panel III (HB, ABO & RH, RBS, VDRL, Urine R/M)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml), NaF Plasma (1 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Agglutination, CC, Microscopic",
+  "mrp": 430
+},
+{
+  "id": 336,
+  "testDetails": "Ante Natal Panel IV (HB, ABO & RH, RBS, HIV 1&2, HBsAg, VDRL, Urine R/M)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml), NaF Plasma (1 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Agglutination, CC, Microscopic",
+  "mrp": 740
+},
+{
+  "id": 337,
+  "testDetails": "Anti Natal Panel V (ABO & RH, CBC, RBS, HIV, HBsAg, Urine RIM, VDRL, TSH, HCV Rapid)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml), NaF Plasma (1 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Agglutination, CC, Microscopic, ECLIA",
+  "mrp": 1100
+},
+{
+  "id": 338,
+  "testDetails": "Anti Thyroid Antibodies (AMA + ATG) Panel",
+  "sampleType": "Serum (2 ml)",
+  "method": "ECLIA",
+  "mrp": 2100
+},
+{
+  "id": 339,
+  "testDetails": "ENA Profile / ANA Blot (22 Para) Extented",
+  "sampleType": "Serum (5 ml)",
+  "method": "ELISA",
+  "mrp": 5850
+},
+{
+  "id": 340,
+  "testDetails": "Arthritis Panel I (ANA, C4, CRP, Ca, RF, ASO, Urine RIM)",
+  "sampleType": "Serum (2 ml), Urine (5 ml)",
+  "method": "Spectrophotometry, CC, Agglutination, Microscopy, ELISA",
+  "mrp": 1700
+},
+{
+  "id": 341,
+  "testDetails": "Arthritis Panel II (CBC+ ESR, RA Factor, CRP, ANA, Uric Acid, Urine Routine, Anti CCP Antibody)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, CC, Agglutination, Microscopy, ELISA, ECLIA",
+  "mrp": 2400
+},
+{
+  "id": 342,
+  "testDetails": "Arthritis Panel (Mini) ANA, RA Factor, CRP, ASO, Uric Acid, Urine R/M",
+  "sampleType": "Serum (2 ml), Urine (5 ml)",
+  "method": "ELISA, Agglutination, Spectrophotometry",
+  "mrp": 1400
+},
+{
+  "id": 343,
+  "testDetails": "Bad Obstetric History Profile (ANA, Anti Phospholipid IgG, IgM, Anti Cardiolipin Ab IgG & IgM, Lupus Anticoagulant, TSH, TORCH 8)",
+  "sampleType": "Serum (2 ml), Plasma Citrated (1 ml)",
+  "method": "ELISA, CLIA, Cloting",
+  "mrp": 6200
+},
+{
+  "id": 344,
+  "testDetails": "Cancer Screening For Female (CEA, CA 19.9, CA 125, CA 15.3)",
+  "sampleType": "Serum (3 ml)",
+  "method": "CLIA/ELISA",
+  "mrp": 3100
+},
+{
+  "id": 345,
+  "testDetails": "Cancer Screening For Male (PSA, CEA, CA 19.9)",
+  "sampleType": "Serum (3 ml)",
+  "method": "CLIA/ELISA",
+  "mrp": 2100
+},
+{
+  "id": 346,
+  "testDetails": "Cardiac Panel - I (SGOT, CPK-MB, LOH)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 650
+},
+{
+  "id": 347,
+  "testDetails": "Diabetic Panel (Mini) (Lipid Profile, Uric Acid, Creatinine, BS (Fast+PP), HbA1c, Microalbumin, Urine Routine, Urea)",
+  "sampleType": "WB EDTA (3 ml), Serum (2 ml), NaF Plasma (1 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Microscopy",
+  "mrp": 1350
+},
+{
+  "id": 348,
+  "testDetails": "Diabetic Panel (Maxi) (Glucose F/PP, HbA1c, Lipid Profile, Microalbumin, Creatinine, Electrolytes, Insulin, C-Peptide, Urea)",
+  "sampleType": "Serum (2 ml), NaF Plasma (1 ml), Urine (30 ml), WB EDTA (5 ml)",
+  "method": "Spectrophotometry, CC, CLIA, Microscopy",
+  "mrp": 2600
+},
+{
+  "id": 349,
+  "testDetails": "Diabetic Panel Screening (Glucose Fi PP, HbA1c, Urine Routine)",
+  "sampleType": "WB EDTA (3 ml), NaF Plasma (1 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Microscopy",
+  "mrp": 600
+},
+{
+  "id": 350,
+  "testDetails": "Diabetic Screening Basic (HbA1c, Blood Sugar Fi PP/R)",
+  "sampleType": "NaF Plasma (1 ml), WB EDTA",
+  "method": "Sepetometry",
+  "mrp": 480
+},
+{
+  "id": 351,
+  "testDetails": "Dialysis Panel - I (CBC, FBS, KFT, Protein, Alkaline Phosphatase, Phosphorus, Calcium)",
+  "sampleType": "Serum (2 ml), NaF Plasma (1 ml), WB EDTA (5 ml)",
+  "method": "Spectrophotometry, CC, Microscopy",
+  "mrp": 1100
+},
+{
+  "id": 352,
+  "testDetails": "Dialysis Panel - II (Protein, Albumin, Alkaline Phosphatase, Calcium, Phosphate, Uric Acid, Creatinine, BUN, Electrolytes, GLU, CBC, SGOT, SGPT, Bil-T, Urin RIM)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml), NaF Plasma (1 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, CC, Microscopy",
+  "mrp": 1600
+},
+{
+  "id": 353,
+  "testDetails": "Electrolytes Panel I (Na, K, Cl)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ISE",
+  "mrp": 350
+},
+{
+  "id": 354,
+  "testDetails": "Electrolytes Panel II (Na, K)",
+  "sampleType": "Serum (1 ml)",
+  "method": "ISE",
+  "mrp": 250
+},
+{
+  "id": 355,
+  "testDetails": "Fever Panel Accuprobe Panel I (CBC, ESR, TYPHI IgM, Malaria Antigen, Urine R/M)",
+  "sampleType": "EDTA (3 ml), Serum (1 ml), Urine (30 ml)",
+  "method": "Cell Counter, Microscopy, CC, WG, IC",
+  "mrp": 1100
+},
+{
+  "id": 356,
+  "testDetails": "Fever Panel Accuprobe Panel II (CBC, ESR, TYPHI DOT IgG IgM, Malaria Antigen, Urine R/M)",
+  "sampleType": "EDTA (3 ml), Serum (1 ml), Urine (30 ml)",
+  "method": "Cell Counter, Microscopy, CC, WG, IC",
+  "mrp": 1250
+},
+{
+  "id": 357,
+  "testDetails": "Fever Panel I (CBC, ESR, Widal, Blood Smear for MP, Urine R/M)",
+  "sampleType": "WB EDTA (3 ml), Serum (2 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Microscopy, Agglutination, CC",
+  "mrp": 550
+},
+{
+  "id": 358,
+  "testDetails": "Fever Panel II (CBC, Urine, Widal, MP, CRP, Blood Culture)",
+  "sampleType": "WB-EDTA (3 ml), Urine (30 ml), Serum (1 ml), Glucose broth",
+  "method": "Spectrophotometry, Microscopy, CC, Agglutination",
+  "mrp": 1400
+},
+{
+  "id": 359,
+  "testDetails": "Fever Panel III (CBC, ESR, Widal, Blood Smear for MP, Total Bilirubin, SGPT, Urine R/M)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, CC, Agglutination",
+  "mrp": 650
+},
+{
+  "id": 360,
+  "testDetails": "Fever Panel IV (CBC, ESR, Urine Routine, Blood Culture, Typhi Dot IgG, IgM)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml), Urine (30 ml), Whole blood (5.0 ml) in Culture Bottle",
+  "method": "CC, Microscopy, Microbiology, IC",
+  "mrp": 1600
+},
+{
+  "id": 361,
+  "testDetails": "Health Check Profile: Complete Health Check Up (CBC, BSF, LFT, KFT, LIPID Profile, T3, T4, TSH, Urine RIM, Iron)",
+  "sampleType": "Serum (2 ml), Fluoride (1 ml), EDTA (3 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Cell Counter, Microscopy",
+  "mrp": 2400
+},
+{
+  "id": 362,
+  "testDetails": "Health Check Profile: Complete Health Check Up 1 (CBC, BSF, LFT, KFT, LIPID Profile, T3, T4, TSH, Urine R/M, Vitamin D 25-hydroxycholecalciferol, Vitamin B12)",
+  "sampleType": "Serum (2 ml), Fluoride (1 ml), EDTA (3 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Cell Counter, Microscopy, CLIA",
+  "mrp": 3700
+},
+{
+  "id": 363,
+  "testDetails": "Health Check Profile: Complete Health Check Up with Hb1c (CBC, BSF, LFT, KFT, LIPID Profile, T3, T4, TSH, Urine R/M, Iron, Hb1c)",
+  "sampleType": "Serum (2 ml), Fluoride (1 ml), EDTA (3 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Cell Counter, Microscopy, HPLC",
+  "mrp": 2600
+},
+{
+  "id": 364,
+  "testDetails": "Health Check Profile: Complete Health Check Up with Vitamin D 25 OH, Hb1c (CBC, BSF, LFT, KFT, LIPID Profile, T3, T4, TSH, Urine R/M, Iron, Hb1c, Vitamin D 25-hydroxycholecalciferol)",
+  "sampleType": "Serum (2 ml), Fluoride (1 ml), EDTA (3 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Cell Counter, Microscopy, CLIA",
+  "mrp": 3600
+},
+{
+  "id": 365,
+  "testDetails": "Health Check Profile: Comprehensive Health Checkup Female (Anemia screening (CBC, PS, FBS, PPBS), Lipid Profile, Thyroid Profile, Liver Profile, Kidney Profile, Urine Analysis, Bone Strength Calcium, Phosphorus, Alkaline Phosphatase)",
+  "sampleType": "Serum (3 ml), WB EDTA (2 ml), Na-F PP (2 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Microscopy, CC, WG",
+  "mrp": 2400
+},
+{
+  "id": 366,
+  "testDetails": "Health Check Profile: Comprehensive Health Checkup Male (Anemia Screening (CBC, PS, FBS, PPBS), Lipid Profile, Thyroid Profile, Liver Profile, Kidney Profile, Urine Analysis, PSA)",
+  "sampleType": "Serum (3 ml), WB EDTA (2 ml), Na-F (2 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Microscopy, CC, WG",
+  "mrp": 2600
+},
+{
+  "id": 367,
+  "testDetails": "Health Check Profile: Executive Health Check Profile I (CBC+ ESR, FBS, TSH, Liver Function Test, Kidney Function Test, Lipid Profile, Urine R/M)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml), NaF Plasma (1 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, CLIA, CC, Microscopy",
+  "mrp": 1900
+},
+{
+  "id": 368,
+  "testDetails": "Health Check Profile: Executive Health Check Profile II (CBC+ ESR, FBS, Liver Function Test, Kidney Function Test, Lipid Profile, Urine R/M)",
+  "sampleType": "WB EDTA (3 ml), Slides, Urine (30 ml), Serum (1 ml)",
+  "method": "Spectrophotometry, Microscopy, CC, WG",
+  "mrp": 1780
+},
+{
+  "id": 369,
+  "testDetails": "Health Check Profile: Executive Health Check Profile III (CBC, ESR, Kidney Function Test, Lipid Profile, Liver Function Test, Thyroid Function Test, Urine R/M, Blood Sugar Fasting, Calcium)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml), Plasma F, Urine (30 ml)",
+  "method": "Spectrophotometry, Microscopy, CC, WG",
+  "mrp": 2150
+},
+{
+  "id": 370,
+  "testDetails": "Health Check Profile: Healthy Child Profile (CBC, PS, Bilirubin Total, Direct, Indirect, Urea, Creatinine, Uric Acid, SGOT, SGPT, Calcium, Phosphorus, HBsAg, Urine Examination)",
+  "sampleType": "Serum (3 ml), WB EDTA (2 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Microscopy, CC, WG",
+  "mrp": 1500
+},
+{
+  "id": 371,
+  "testDetails": "Health Check Profile: Regular Health Check Up Comprehensive (CBC, ESR, BSF, LFT, KFT, LIPID Profile, T3, T4, TSH, Amylase, HbA1C, CRP, Urine RIM)",
+  "sampleType": "WB EDTA (3 ml), NaF Plasma (1 ml), Serum (2 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, CLIA, CC, Microscopy, Agglutination, HPLC",
+  "mrp": 3400
+},
+{
+  "id": 372,
+  "testDetails": "Health Check Profile: Regular Health Check Up Profile (CBC, ESR, BSF, LFT, KFT, LIPID Profile, Calcium, Phosphorus, T3, T4, TSH, Amylase, GGT, HbA1C, hsCRP, Urine R/M)",
+  "sampleType": "WB EDTA (3 ml), NaF Plasma (1 ml), Serum (2 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, CLIA, CC, Microscopy, Agglutination",
+  "mrp": 3680
+},
+{
+  "id": 373,
+  "testDetails": "Health Check Profile: Regular Health Check Up Basic (CBC, ESR, BSF, LFT, KFT, Lipid Profile, Calcium, T3, T4, TSH, Amylase, GGT)",
+  "sampleType": "WB EDTA (3 ml), NaF Plasma (1 ml), Serum (1 ml), Urine (30 ml)",
+  "method": "CC, Agglutination, Microscopy, Spectrophotometry",
+  "mrp": 2520
+},
+{
+  "id": 374,
+  "testDetails": "Health Check Profile: Regular Health Check Up Screening (CBC, ESR, UR, ABO & RH, RBS, CHOL-CHOL-T)",
+  "sampleType": "WB EDTA (3 ml), NaF Plasma, Serum (2 ml), Urine (30 ml)",
+  "method": "CC, WG, Microscopy, Agglutination, Spectrophotometry",
+  "mrp": 590
+},
+{
+  "id": 375,
+  "testDetails": "Health Check Profile: Senior Citizen Package Female (Lipid Profile, Diabetic Screening (Sugar Fasting, Sugar Postprandial), Bone Strength (Calcium, Phosphorus, Alkaline Phosphatase), Liver Screening (SGOT, SGPT, Bilirubin-Total), Kidney Screening (Urea, Creatinine), Urine Analysis, Anemia Screening (Complete Blood Count, Peripheral Blood Smear), Arthritis - Joint Pain (RA Factor), T3, T4, TSH)",
+  "sampleType": "Serum (3 ml), WB EDTA (2 ml), Na-F (2 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Microscopy, CC, WG",
+  "mrp": 2700
+},
+{
+  "id": 376,
+  "testDetails": "Health Check Profile: Senior Citizen Package Male (Lipid Profile, Diabetic Screening (Sugar Fasting, Sugar Postprandial), Bone Strength (Calcium, Phosphorus, Alkaline Phosphatase), Liver Screening (SGOT, SGPT, Bilirubin-Total), Kidney Screening (Urea, Creatinine), Urine Analysis, Anemia Screening (Complete Blood Count, Peripheral Blood Smear), Arthritis - Joint Pain (RA Factor), PSA)",
+  "sampleType": "Serum (3 ml), WB EDTA (2 ml), Na-F (2 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Microscopy, CC, WG",
+  "mrp": 2700
+},
+{
+  "id": 377,
+  "testDetails": "Hemophilia Panel (APTT, Factor VIII and IX)",
+  "sampleType": "Plasma Citrate (2 ml)",
+  "method": "Clotting",
+  "mrp": 3400
+},
+{
+  "id": 378,
+  "testDetails": "Hepatitis Panel - I (HAV IgM, HBs Ag, HBc IgM, HBc T, HBeAb, HBs T, HCV T, HBeAg, HEV IgM)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA, ELISA",
+  "mrp": 4500
+},
+{
+  "id": 379,
+  "testDetails": "Hirsutism Panel (LH, FSH, PRL, DHEAS, Testosterone T)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 1750
+},
+{
+  "id": 380,
+  "testDetails": "Immunoglobin Panel (IgG, IgM, IgA)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Nephelometry",
+  "mrp": 1400
+},
+{
+  "id": 381,
+  "testDetails": "Infertility - Female Profile - I (LH, FSH, PRL)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 990
+},
+{
+  "id": 382,
+  "testDetails": "Infertility - Female Profile - II (LH, FSH, PRL, E2, TSH)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 1350
+},
+{
+  "id": 383,
+  "testDetails": "Infertility - Female Profile-III (AFP, ASAB, bHCG, DHEAS, E2, FSH, LH, PROG, PRL)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CUA/ELISA",
+  "mrp": 4100
+},
+{
+  "id": 384,
+  "testDetails": "Infertility - Female Profile-IV (LH, FSH, PRL, Testosterone T)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 1280
+},
+{
+  "id": 385,
+  "testDetails": "Infertility Female Profile-V (FSH, LH, PRL, TSH)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 1100
+},
+{
+  "id": 386,
+  "testDetails": "Infertility - Male Profile- IV (LH, FSH, PRL, Testosterone T)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 1280
+},
+{
+  "id": 387,
+  "testDetails": "Iron Panel With Ferritin (Iron, TIBC, Ferritin, Iron saturation Index)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 950
+},
+{
+  "id": 388,
+  "testDetails": "KFT NEW (Kidney Profile-1) (Urea, Creatinine, Uric Acid, Na, K, Cl)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Spectrophotometry, ISE",
+  "mrp": 580
+},
+{
+  "id": 389,
+  "testDetails": "Kidney Profile Mini (Urea, Creatinine, Uric Acid, Calcium)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Sepetophotometry",
+  "mrp": 350
+},
+{
+  "id": 390,
+  "testDetails": "Lipid Profile",
+  "sampleType": "Serum (2 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 530
+},
+{
+  "id": 391,
+  "testDetails": "Liver Panel (Bilirubin (Total, Direct, Indirect), AST/SGOT, ALT/SGPT, GGT, Total Protein, Globulin, Albumin, A/G ratio)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 650
+},
+{
+  "id": 392,
+  "testDetails": "Liver Panel Mini (Bilirubin T/D/ID, SGOT, SGPT, ALP)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Spectrophotometry",
+  "mrp": 470
+},
+{
+  "id": 393,
+  "testDetails": "Lupa Care (Anti Phospholipid Ab IgG & IgM, Anti Cardiolipin Ab IgG & IgM, Lupus Anticoagulant)",
+  "sampleType": "Plasma Citrated (2 ml), Serum (2 ml)",
+  "method": "DRVVT, ELISA",
+  "mrp": 3500
+},
+{
+  "id": 394,
+  "testDetails": "Maternal Screen: Double Marker (Papp-A, Beta-HCG Free) First trimester test (10 to 13.6 weeks)",
+  "sampleType": "Serum (3 ml)",
+  "method": "CLIA",
+  "mrp": 2250
+},
+{
+  "id": 395,
+  "testDetails": "Maternal Screen: Quadruple Test (AFP, hCG, uE3, Inhibin A) 2nd trimester test (15 to 21.6 weeks)",
+  "sampleType": "Serum (3 ml)",
+  "method": "CLIA",
+  "mrp": 3450
+},
+{
+  "id": 396,
+  "testDetails": "Maternal Screen: Triple Marker Panel (b-HCG, AFP, E3) 2nd trimester test (15 to 21.6 weeks)",
+  "sampleType": "Serum (3 ml)",
+  "method": "CLIA",
+  "mrp": 2000
+},
+{
+  "id": 397,
+  "testDetails": "Menarche - I (LH, FSH, PRL, T3, T4, TSH, E2, Testosterone-Free, Testosterone Total)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA, ELISA",
+  "mrp": 2500
+},
+{
+  "id": 398,
+  "testDetails": "Menarche - II (LH, FSH, PRL, TSH, T3, T4, E2, Progesterone)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 1810
+},
+{
+  "id": 399,
+  "testDetails": "Menarche - III (LH, FSH, PRL, TSH, T3, T4, E2, Testosterone Total, Progesterone)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 2200
+},
+{
+  "id": 400,
+  "testDetails": "Metabolic Screen (FBS, HbA1c, Lipid Profile, LFT, Calcium, Uric Acid, BUN, S. Creatinine, BUN/Creatinine Ratio, Iron, TIBC, Transferrin Saturation, T3, T4, TSH, Vitamin D-25)",
+  "sampleType": "Serum (2 ml), Fluoride (1 ml), EDTA (3 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Cell Counter, Microscopy",
+  "mrp": 3870
+},
+{
+  "id": 401,
+  "testDetails": "Nirogyam Accuprobe Profile I (CBC+ESR, LFT, KFT, Lipid Profile, Blood Sugar Fasting, Iron Panel, Microalbumin, Urine R/M, Calcium Total, HbA1c, Thyroid Profile-I, Vitamin D-25)",
+  "sampleType": "Serum (2 ml), Fluoride (1 ml), EDTA (3 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Cell Counter, Microscopy, HPLC",
+  "mrp": 2500
+},
+{
+  "id": 402,
+  "testDetails": "Nirogyam Accuprobe Profile II (CBC+ESR, LFT, KFT, Lipid Profile, Blood Sugar Fasting, Iron Panel, Vitamin B12, Urine R/M, Calcium Total, HbA1c, Thyroid Profile-I, Vitamin D-25)",
+  "sampleType": "Serum (2 ml), Fluoride (1 ml), EDTA (3 ml), Urine (30 ml)",
+  "method": "Spectrophotometry, Cell Counter, Microscopy, HPLC",
+  "mrp": 2500
+},
+{
+  "id": 403,
+  "testDetails": "Obesity Panel-I (T3, T4, TSH, Lipid Profile, Electrolytes, Calcium, Creatinine, Phosphorus, Uric Acid)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA, Spectrophotometry",
+  "mrp": 1600
+},
+{
+  "id": 404,
+  "testDetails": "Ovarian Cancer Marker (Beta-HCG Total, CA-125, AFP, CA 19.9)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 2500
+},
+{
+  "id": 405,
+  "testDetails": "Polycystic Ovarian Syndrome (PCOS/PCOD) (LH, FSH, PRL, DHEAs, SO4, Testosterone, Insulin F)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 1900
+},
+{
+  "id": 406,
+  "testDetails": "Pre Operative Panel - I (PT, APTT, Platelet Count)",
+  "sampleType": "EDTA, Citrated Plasma (1 ml)",
+  "method": "CC, Clotting",
+  "mrp": 580
+},
+{
+  "id": 407,
+  "testDetails": "Pre-Operative Panel - III (CBC, Blood Grouping, Creatinine, FBS, HIV 1 & 2, HBsAg, Anti HCV Ab)",
+  "sampleType": "Serum (2 ml), NaF Plasma (2 ml), WB EDTA (3 ml)",
+  "method": "Spectrophotometry, CC, Agglutination, Microscopy, Rapid",
+  "mrp": 1480
+},
+{
+  "id": 408,
+  "testDetails": "Thalassemia Profile (CBC, PS, ESR, Total Iron, TIBC, Ferritin, Hb Electrophoresis)",
+  "sampleType": "WB EDTA (3 ml), Serum (1 ml)",
+  "method": "Electrophoresis, CC, Spectrophotometry",
+  "mrp": 1900
+},
+{
+  "id": 409,
+  "testDetails": "Thyroid Profile - I (T3, T4, TSH)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 600
+},
+{
+  "id": 410,
+  "testDetails": "Thyroid Profile - II (T3, T4, TSH, PRL)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 820
+},
+{
+  "id": 411,
+  "testDetails": "Thyroid Profile - III (T3, T4, TSH, FT3, FT4)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 880
+},
+{
+  "id": 412,
+  "testDetails": "Thyroid Profile - IV (T3, T4, TSH, LH, FSH, PRL)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 1200
+},
+{
+  "id": 413,
+  "testDetails": "Thyroid Profile - V (FT3, FT4, TSH)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 680
+},
+{
+  "id": 414,
+  "testDetails": "TORCH Panel - 4 IgG",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 960
+},
+{
+  "id": 415,
+  "testDetails": "TORCH Panel - 4 IgM",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 960
+},
+{
+  "id": 416,
+  "testDetails": "TORCH Panel - 8 (IgG & IgM)",
+  "sampleType": "Serum (2 ml)",
+  "method": "ELISA",
+  "mrp": 1800
+},
+{
+  "id": 417,
+  "testDetails": "Triple Infection (HIV, HBsAg, Anti HCV)",
+  "sampleType": "Serum (2 ml)",
+  "method": "Rapid / IC",
+  "mrp": 990
+},
+{
+  "id": 418,
+  "testDetails": "Tuberculosis Panel II (MTB DNA PCR, Culture AFB, Bactec)",
+  "sampleType": "Any Specimen (WB-EDTA / Serum / Fluid / Urine / CSF) (3 ml)",
+  "method": "PCR, Bactec",
+  "mrp": 3300
+},
+{
+  "id": 419,
+  "testDetails": "Ovarian Reserve Panel (AMH, FSH, E2)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 2350
+},
+{
+  "id": 420,
+  "testDetails": "Ovarian Reserve Panel - II (LH, FSH, Prolactin, E2, TSH, AMH)",
+  "sampleType": "Serum (3 ml)",
+  "method": "CLIA",
+  "mrp": 2800
+},
+{
+  "id": 426,
+  "testDetails": "ANG Comprehensive Panel (Anti Natal Panel V + Hb Electrophoresis)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml), NaF Plasma (1 ml), Urine (5 ml)",
+  "method": "Spectrophotometry, Agglutination, CC, Microscopic, HPLC",
+  "mrp": 2000
+},
+{
+  "id": 427,
+  "testDetails": "Arthritis Profile Total (ANA Elisa, Anti CCP, CRP Quant, Calcium, Phosphorous, Uric Acid, ASO Titre, CBC, HLA B-27 Flow, RA Factor Quant, Vit D 25 Hyd)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml)",
+  "method": "Spectrophotometry, CC, Agglutination, Microscopy, ELISA, CLIA, Flowcytometry",
+  "mrp": 3500
+},
+{
+  "id": 428,
+  "testDetails": "PCOD GOLD (LH, FSH, Prolactin, Insulin (F), Testosterone Total, DHEA-SO4, AMH)",
+  "sampleType": "Serum (3 ml)",
+  "method": "CLIA",
+  "mrp": 3500
+},
+{
+  "id": 429,
+  "testDetails": "PCOD Platinum (LH, FSH, Prolactin, E2, TSH, Insulin (F), Testosterone Total, Progesterone, DHEA-SO4, AMH)",
+  "sampleType": "Serum (3 ml)",
+  "method": "CLIA",
+  "mrp": 4000
+},
+{
+  "id": 430,
+  "testDetails": "Ovarian Reserve Panel III (LH, FSH, Prolactin, E2, TSH, Testosterone Total & Free, Progesterone, AMH)",
+  "sampleType": "Serum (3 ml)",
+  "method": "CLIA, ELISA",
+  "mrp": 3400
+},
+{
+  "id": 431,
+  "testDetails": "AMH PLUS (LH, FSH, PRL, TSH, E2, PROG, AMH)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 2800
+},
+{
+  "id": 432,
+  "testDetails": "AMH PLUS 2 (LH, FSH, PRL, TSH, Testosterone Total, E2, AMH)",
+  "sampleType": "Serum (2 ml)",
+  "method": "CLIA",
+  "mrp": 2900
+},
+{
+  "id": 433,
+  "testDetails": "Arthritis Mega Profile (CBC+ESR, LFT, KFT, LIPID, TFT, IRON PANEL BASIC, Vit B12, Vit D, RA Qualitative, CRP Qualitative, ASO Qualitative, ANA ELISA, Anti CCP, HbA1c, HLAB27)",
+  "sampleType": "Serum (2 ml), WB EDTA (3 ml)",
+  "method": "Spectrophotometry, CC, Agglutination, Microscopy, ELISA, CLIA, Flowcytometry",
+  "mrp": 4400
+},
+{
+  "id": 434,
+  "testDetails": "AMH PLUS 3 (Glucose F, PP, LH, FSH, PRL, Testo T, Free, Insulin F, PP, DHEAS)",
+  "sampleType": "Serum Fasting, Serum PP (2 ml Each), NaF Plasma (2 ml Fasting, PP)",
+  "method": "CLIA, Spectrophotometry",
+  "mrp": 2900
+},
+{
+  "id": 435,
+  "testDetails": "AMH PLUS 4 (Glucose F, PP, LH, FSH, PRL, AMH, Testo T, Free, Insulin F, PP, DHEAS)",
+  "sampleType": "Serum Fasting, Serum PP (2 ml Each), NaF Plasma (2 ml Fasting, PP)",
+  "method": "CLIA",
+  "mrp": 2803
+},
+{
+  "id": 439,
+  "testDetails": "Immunity Check Plus (CBC, CRP Quantitative, Kidney Panel, Liver Panel, Vit D-25 Hy, Covid-19 IgG Ab, Iron Panel Basic)",
+  "sampleType": "WB EDTA (3 ml), Serum (1 ml)",
+  "method": "Cell Counter, Biochemistry, CLIA",
+  "mrp": 2500
+},
+{
+  "id": 440,
+  "testDetails": "Covid Severity Profile (CBC+ESR, D-Dimer, Interleukin 6, LDH, SGPT, CRP Quantitative, Ferritin)",
+  "sampleType": "WB EDTA (3 ml), Serum (1 ml), Citrate (2 ml)",
+  "method": "Cell Counter, Biochemistry, CLIA",
+  "mrp": 3200
+},
+{
+  "id": 441,
+  "testDetails": "Fever Plus Profile (CBC, Dengue IgG, IgM, Malaria Ag, Typhi Dot IgG, IgM, Chikungunya IgM, Leptospirosis IgM)",
+  "sampleType": "WB EDTA (3 ml), Serum (1 ml)",
+  "method": "Cell Counter, Rapid Test, IC",
+  "mrp": 2200
+},
+{
+  "id": 442,
+  "testDetails": "Routine Investigation II (ABO Group & RH Type, HBsAg (Rapid), HIV I & II Serology (Rapid), Liver Panel, Urine RIM, CBC, Hepatitis C Virus, Kidney Panel - I, TSH, VDRL Test, Glucose Random)",
+  "sampleType": "WB EDTA (3 ml), Serum (1 ml), Fluoride (2 ml), Urine (30 ml)",
+  "method": "Cell Counter, Biochemistry, CLIA, IC",
+  "mrp": 1800
+}
+]
