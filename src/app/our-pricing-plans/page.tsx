@@ -20,7 +20,7 @@ export default function Page() {
 // import Nav from "@/components/Nav";
 // import Footer from "@/components/Footer";
 
-// // ✅ IMPORT DATA FROM JSON
+// //  IMPORT DATA FROM JSON
 // import pricingTests from "@/data/pricing-tests.json";
 
 // type TestItem = {
@@ -42,10 +42,10 @@ export default function Page() {
 //   const searchParams = useSearchParams();
 //   const urlSearch = searchParams.get("search");
 
-//   // ✅ ROW REFS FOR AUTO-SCROLL
+//   //  ROW REFS FOR AUTO-SCROLL
 //   const rowRefs = useRef<Record<number, HTMLTableRowElement | null>>({});
 
-//   // ✅ LOAD JSON DATA
+//   //  LOAD JSON DATA
 //   useEffect(() => {
 //     setItems(pricingTests as TestItem[]);
 //   }, []);
@@ -70,7 +70,7 @@ export default function Page() {
 //     }
 //   }, [urlSearch, items]);
 
-//   // ✅ FILTERED DATA (FOR DISPLAY)
+//   //  FILTERED DATA (FOR DISPLAY)
 //   // const filtered = useMemo(() => {
 //   //   if (!query.trim()) return items;
 //   //   const q = query.toLowerCase();
@@ -83,7 +83,7 @@ export default function Page() {
 //   //   );
 //   // }, [items, query]);
 
-//   // ✅ PAGINATION
+//   //  PAGINATION
 //   const totalPages = Math.max(1, Math.ceil(items.length / ITEMS_PER_PAGE));
 //   const startIndex = (page - 1) * ITEMS_PER_PAGE;
 //   const currentPageItems = items.slice(startIndex, startIndex + ITEMS_PER_PAGE);

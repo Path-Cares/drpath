@@ -37,9 +37,9 @@ const Nav: React.FC = () => {
   const { openModal } = useModal();
   const handleOpenTestModal = () => {
     if (isCartOpen) {
-      toggleCart(); // ✅ Close Cart Sidebar (no argument required)
+      toggleCart(); //  Close Cart Sidebar (no argument required)
       setTimeout(() => {
-        openModal(); // ✅ Open AddTest Modal After Cart Closes
+        openModal(); //  Open AddTest Modal After Cart Closes
       }, 300); // Small delay ensures smooth transition
     } else {
       openModal();

@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-// ✅ IMPORT DATA FROM JSON
+//  IMPORT DATA FROM JSON
 import pricingTests from "@/data/pricing-tests.json";
 
 type TestItem = {
@@ -28,15 +28,15 @@ export default function PricingClient() {
   const searchParams = useSearchParams();
   const urlSearch = searchParams.get("search");
 
-  // ✅ ROW REFS FOR AUTO-SCROLL
+  //  ROW REFS FOR AUTO-SCROLL
   const rowRefs = useRef<Record<number, HTMLTableRowElement | null>>({});
 
-  // ✅ LOAD JSON DATA
+  //  LOAD JSON DATA
   useEffect(() => {
     setItems(pricingTests as TestItem[]);
   }, []);
 
-  // ✅ APPLY URL SEARCH
+  //  APPLY URL SEARCH
   useEffect(() => {
     if (!urlSearch || items.length === 0) return;
 
@@ -57,7 +57,7 @@ export default function PricingClient() {
     }
   }, [urlSearch, items]);
 
-  // ✅ PAGINATION
+  //  PAGINATION
   const totalPages = Math.max(1, Math.ceil(items.length / ITEMS_PER_PAGE));
   const startIndex = (page - 1) * ITEMS_PER_PAGE;
   const currentPageItems = items.slice(startIndex, startIndex + ITEMS_PER_PAGE);
@@ -66,7 +66,7 @@ export default function PricingClient() {
     if (page > totalPages) setPage(totalPages);
   }, [page, totalPages]);
 
-  // ✅ SCROLL + HIGHLIGHT
+  //  SCROLL + HIGHLIGHT
   useEffect(() => {
     if (highlightId == null) return;
 
@@ -187,14 +187,15 @@ export default function PricingClient() {
           </div>
 
           {/* PAGINATION */}
-          <div className="px-6 py-4 border-t flex justify-between items-center">
-            <span className="text-sm text-gray-600">
+
+          <div className="px-6 py-4 border-t flex flex-col gap-3 sm:flex-row sm:justify-between sm:items-center">
+            <span className="text-sm text-gray-600 text-center sm:text-left">
               Showing {Math.min(startIndex + 1, items.length)} –{" "}
               {Math.min(startIndex + ITEMS_PER_PAGE, items.length)} of{" "}
               {items.length}
             </span>
 
-            <div className="flex gap-2">
+            <div className="flex gap-2 overflow-x-auto whitespace-nowrap justify-center sm:justify-end">
               <button
                 onClick={() => setPage(1)}
                 disabled={page === 1}
@@ -202,6 +203,7 @@ export default function PricingClient() {
               >
                 First
               </button>
+
               <button
                 onClick={() => setPage((p) => Math.max(1, p - 1))}
                 disabled={page === 1}
@@ -219,6 +221,7 @@ export default function PricingClient() {
               >
                 Next
               </button>
+
               <button
                 onClick={() => setPage(totalPages)}
                 disabled={page === totalPages}
