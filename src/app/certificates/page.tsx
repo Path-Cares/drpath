@@ -1,4 +1,3 @@
-// import React, { useState } from "react";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import { FaAward } from "react-icons/fa";
@@ -6,7 +5,6 @@ import Image from "next/image";
 import AddressPage from "@/components/Address";
 import Script from "next/script";
 
-// Metadata for SEO (App Router way)
 export const metadata = {
   title: "Dr. Path Cares & Partner Labs | Healthcare Excellence",
   description:
@@ -35,33 +33,40 @@ export const metadata = {
 const Certificates = () => {
   const certificates = [
     {
-      name: "Certificate MC-Augomentum",
-      url: "/images/Certificate MC-Augomentum1.jpeg",
+      name: "National Accreditation Board for Testing and Calibration",
+      pdf: "/pdfs/National Accreditation Board for Testing and Calibration.pdf",
+      thumbnail:
+        "/images/National Accreditation Board for Testing and Calibration.png",
     },
-    { name: "Certificate RDPL", url: "/images/Certificate RDPL1.jpeg" },
+    {
+      name: "Certificate RDPL",
+      pdf: "",
+      thumbnail: "/images/Certificate RDPL1.jpeg",
+    },
     {
       name: "ISO 14001 DR PATHCARES",
-      url: "/images/ISO 14001 DR PATHCARES1.jpeg",
+      pdf: "",
+      thumbnail: "/images/ISO 14001 DR PATHCARES1.jpeg",
     },
     {
       name: "ISO 45001 DR PATH CARE",
-      url: "/images/ISO 45001 DR PATH CARE1.jpeg",
+      pdf: "",
+      thumbnail: "/images/ISO 45001 DR PATH CARE1.jpeg",
     },
-    { name: "Lucknow Certificate", url: "/images/Lucknow Certificate1.jpeg" },
+    {
+      name: "Lucknow Certificate",
+      pdf: "",
+      thumbnail: "/images/Lucknow Certificate1.jpeg",
+    },
     {
       name: "Udyam Registration Certificate",
-      url: "/images/Print _ Udyam Registration Certificate1.jpeg",
+      pdf: "",
+      thumbnail: "/images/Print _ Udyam Registration Certificate1.jpeg",
     },
   ];
 
-  // const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
-  // const openModal = (url: string) => setSelectedImage(url);
-  // const closeModal = () => setSelectedImage(null);
-
   return (
     <>
-      {/* JSON-LD Structured Data */}
       <Script
         id="json-ld"
         type="application/ld+json"
@@ -91,58 +96,6 @@ const Certificates = () => {
         }}
       />
 
-      {/* Google Tag Manager */}
-      <Script
-        id="google-tag-manager"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5ZVV8F74');
-          `,
-        }}
-      />
-
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-5ZVV8F74"
-          height="0"
-          width="0"
-          style={{ display: "none", visibility: "hidden" }}
-        ></iframe>
-      </noscript>
-
-      {/* JSON-LD Structured Data */}
-      <Script
-        id="json-ld-organization"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "http://schema.org",
-            "@type": "Organization",
-            url: "https://www.drpathcares.com/",
-            logo: "https://drpathcares.com/_next/image?url=%2Fimages%2Fmainlogo.png&w=256&q=75",
-            name: "Dr. Path Cares",
-            sameAs: [
-              "https://www.facebook.com/drpathcares1",
-              "https://www.instagram.com/drpathcares",
-              "https://www.linkedin.com/company/dr-path-cares/",
-              "https://www.youtube.com/@dr.pathcares",
-            ],
-            contactPoint: {
-              "@type": "ContactPoint",
-              telephone: "+91-8929062906",
-              contactType: "Customer service",
-              email: "Info@Drpathcares.com",
-            },
-          }),
-        }}
-      />
-
       <Nav />
 
       <div
@@ -163,60 +116,35 @@ const Certificates = () => {
             </div>
           </div>
 
-          {/* Certificates List */}
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold mb-6">Our Certificates</h2>
+
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {certificates.map((cert, index) => (
                 <li key={index} className="text-center">
-                  <div
-                    // onClick={() => openModal(cert.url)}
-                    className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+                  <a
+                    href={cert.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-col justify-between h-[420px] bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer"
                   >
                     <Image
-                      src={cert.url}
+                      src={cert.thumbnail}
                       alt={cert.name}
                       width={300}
                       height={400}
-                      className="w-full h-64 object-cover mb-4 rounded-lg"
+                      className="w-full h-64 object-cover mb-4 rounded-lg p-2"
                     />
-                    <p className="text-lg font-semibold">{cert.name}</p>
-                  </div>
+                    <p className="text-lg font-semibold text-center line-clamp-2">
+                      {cert.name}
+                    </p>
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
         </div>
       </div>
-
-      {/* Zoomed Image Modal */}
-      {/* {selectedImage && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-          onClick={closeModal}
-        >
-          <div
-            className="bg-white p-4 rounded-lg relative max-w-sm w-full h-auto mx-4"
-            style={{ maxHeight: "90%" }}
-          >
-            <button
-              onClick={closeModal}
-              className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 text-xl"
-            >
-              ✕
-            </button>
-            <div className="flex justify-center items-center h-full">
-              <Image
-                src={selectedImage}
-                alt="Zoomed Certificate"
-                width={800}
-                height={600}
-                className="object-contain max-h-[80vh] max-w-full"
-              />
-            </div>
-          </div>
-        </div>
-      )} */}
 
       <AddressPage />
       <Footer />
