@@ -104,8 +104,8 @@ function Page() {
         <BasicPackageBanner
           testname={"DRP082 Healthy India (Thyroid & Diabetic)"}
           totaltest={"Includes 80 Tests"}
-          originalprice={"₹1599"}
-          saleprice={"₹999"}
+          originalprice={"₹1799"}
+          saleprice={"₹1199"}
           image={"/images/Thyroid&Diabetic.jpeg"}
         />
         <ThroidDiabeticPackage />

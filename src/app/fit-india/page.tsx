@@ -104,8 +104,8 @@ function Page() {
         <BasicPackageBanner
           testname={"DRP055 Fit India"}
           totaltest={"Includes 80 Tests"}
-          originalprice={"₹999"}
-          saleprice={"₹599"}
+          originalprice={"₹1199"}
+          saleprice={"₹799"}
           image={"/images/Fitindia.jpeg"}
         />
         <FitIndiaPackage />

@@ -102,8 +102,8 @@ function page() {
         <BasicPackageBanner
           testname={"Classic Women Package"}
           totaltest={"Includes 95 Tests"}
-          originalprice={"₹4500"}
-          saleprice={"₹2250"}
+          originalprice={"₹4700"}
+          saleprice={"₹2450"}
           image={"/images/Classic-Package-Women.jpeg"}
         />
         <ClassicWomenPackage />

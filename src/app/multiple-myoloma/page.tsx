@@ -10,8 +10,8 @@ function Page() {
     {
       title: "Multiple Myoloma",
       pdfSrc: "/images/Multiple-Myloma-new.pdf",
-      price: "₹8000/-",
-      discountPrice: "₹7000/-",
+      price: "₹8200/-",
+      discountPrice: "₹7200/-",
     },
     // {
     //   title: "Allergy Drugs Panel",

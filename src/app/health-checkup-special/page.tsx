@@ -107,8 +107,8 @@ function Page() {
         <BasicPackageBanner
           testname={"Standard Care"}
           totaltest={"Includes 90+ Tests"}
-          originalprice={"₹4500"}
-          saleprice={"₹2999"}
+          originalprice={"₹5199"}
+          saleprice={"₹3199"}
           image={"/images/Health-Checkup-Special-Combo-Package.jpeg"}
         />
         <Healthcheckupspecialpackage />

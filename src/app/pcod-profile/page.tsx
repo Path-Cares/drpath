@@ -103,8 +103,8 @@ function Page() {
         <BasicPackageBanner
           testname={"Pcod Profile"}
           totaltest={"Includes 32 Tests"}
-          originalprice={"₹4200"}
-          saleprice={"₹2800"}
+          originalprice={"₹4400"}
+          saleprice={"₹3000"}
           image={"/images/pcodprofile1.jpeg"}
         />
         <PcodPackage />
