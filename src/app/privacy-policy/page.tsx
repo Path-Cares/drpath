@@ -44,7 +44,7 @@ const PrivacyPolicy: React.FC = () => {
 
       <Nav />
 
-      <div className="px-28 pt-10 bg-white">
+      <div className="px-10 pt-10 bg-white">
         <section className="mb-8">
           <h1 className="text-3xl font-bold text-black mb-6">Privacy Policy</h1>
         </section>

@@ -96,7 +96,7 @@ const Disclaimer: React.FC = () => {
         }}
       />
       <Nav />
-      <div className="px-28 pt-10 bg-white">
+      <div className="px-10 pt-10 bg-white">
         {/* Section 1: Disclaimer for DrPathCares */}
         <section className="mb-8">
           <h1 className="text-2xl font-bold text-black mb-4">

@@ -39,8 +39,8 @@ const Footer = () => {
             <div className="flex flex-col items-center lg:items-start">
               <p className="text-lg font-medium pb-3">Quick Links</p>
               <div className="flex flex-col space-y-3 text-sm ml-10 sm:ml-0 ">
-                <Link href="#">About Us</Link>
-                <Link href="#">Contact Us</Link>
+                <Link href="/aboutus">About Us</Link>
+                <Link href="/contact">Contact Us</Link>
                 <Link href="/disclaimer">Disclaimer</Link>
                 <Link href="/terms&condition">Terms & Condition</Link>
                 <Link href="/privacy-policy">Privacy Policy</Link>
