@@ -105,7 +105,7 @@ function Page() {
           testname={"DRP082 Healthy India (Thyroid & Diabetic)"}
           totaltest={"Includes 80 Tests"}
           originalprice={"₹1799"}
-          saleprice={"₹1199"}
+          saleprice={"₹1099"}
           image={"/images/Thyroid&Diabetic.jpeg"}
         />
         <ThroidDiabeticPackage />

@@ -57,7 +57,7 @@ const HealthCheckup = () => {
     {
       img: "/images/Thyroid&Diabetic.jpeg",
       title: "DRP082 Healthy India (Thyroid & Diabetic)",
-      price: 1199,
+      price: 1099,
       originalPrice: "₹1799",
       link: "/thyroid&diabetic",
     },
