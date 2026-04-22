@@ -61,8 +61,8 @@ const Plans = () => {
           <TestView
             testname={"Standard Package"}
             totaltest={"90 parameters included"}
-            originalprice={"₹4500"}
-            saleprice={"₹1650"}
+            originalprice={"₹4700"}
+            saleprice={"₹1850"}
             estimatetime={"Report Within 24 Hours"}
             url={"/standard-package"}
           />
@@ -97,28 +97,6 @@ const Plans = () => {
 };
 
 export default Plans;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import Link from "next/link";
 // import TestView from "@/components/pages/common/TestView";
@@ -178,7 +156,7 @@ export default Plans;
 //         </div>
 //       </div>
 //       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-2 lg:px-10 xl:px-14 2xl:px-62 py-20 gap-12 lg:mb-12">
-      
+
 //         <TestView
 //           testname={"Basic Package"}
 //           totaltest={"80 parameters included"}
@@ -217,7 +195,6 @@ export default Plans;
 //         />
 //       </div>
 
-      
 //     </>
 //   );
 // };

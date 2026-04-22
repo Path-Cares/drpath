@@ -9,7 +9,7 @@ const Footer = () => {
     <>
       <Cities />
       <footer className="bg-[#1F2259] py-16 text-white">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto ">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
             <div className="flex flex-col items-center space-y-6 bg-white p-6 rounded-lg">
               <Image
