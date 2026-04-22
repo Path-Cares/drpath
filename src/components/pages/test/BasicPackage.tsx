@@ -37,7 +37,6 @@ const BasicPackage = () => {
           <li>Absolute Monocyte Count</li>
           <li>Absolute Basophil Count</li>
           <li>Absolute Eosinophil Count</li>
-          <li>ESR</li>
         </ul>
       ),
     },

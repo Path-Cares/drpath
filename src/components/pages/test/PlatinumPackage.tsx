@@ -35,7 +35,6 @@ const PlatinumPackage = () => {
           <li>Absolute Monocyte Count</li>
           <li>Absolute Basophil Count</li>
           <li>Absolute Eosinophil Count</li>
-          <li>ESR</li>
         </ul>
       ),
     },
@@ -174,44 +173,44 @@ const PlatinumPackage = () => {
       ),
     },
     {
-        title: "CANCER PROFILE ( 1 TEST )",
-        description: (
-            <ul className="list-disc pl-5">
+      title: "CANCER PROFILE ( 1 TEST )",
+      description: (
+        <ul className="list-disc pl-5">
           <li>PSA Total / CA-125</li>
         </ul>
       ),
-      },
-        {
-          title: "HORMONES PROFILE ( 4 TEST )",
-          description: (
-            <ul className="list-disc pl-5">
-              <li>Testosterone Total</li>
-              <li>LH</li>
-              <li>FSH</li>
-              <li>PRL</li>
-            </ul>
-          ),
-        },
-        {
-          title: "ARTHRITIS PROFILE (2 TEST)",
-          description: (
-            <ul className="list-disc pl-5">
-              <li>RA Factor</li>
-              <li>CPR</li>
-            </ul>
-          ),
-        },
-        {
-          title: "HIV PROFILE 1-2 (4 TEST)",
-          description: (
-            <ul className="list-disc pl-5">
-              <li>HBSAG</li>
-              <li>VDRL</li>
-              <li>HCV</li>
-              <li>IGE</li>
-            </ul>
-          ),
-        },
+    },
+    {
+      title: "HORMONES PROFILE ( 4 TEST )",
+      description: (
+        <ul className="list-disc pl-5">
+          <li>Testosterone Total</li>
+          <li>LH</li>
+          <li>FSH</li>
+          <li>PRL</li>
+        </ul>
+      ),
+    },
+    {
+      title: "ARTHRITIS PROFILE (2 TEST)",
+      description: (
+        <ul className="list-disc pl-5">
+          <li>RA Factor</li>
+          <li>CPR</li>
+        </ul>
+      ),
+    },
+    {
+      title: "HIV PROFILE 1-2 (4 TEST)",
+      description: (
+        <ul className="list-disc pl-5">
+          <li>HBSAG</li>
+          <li>VDRL</li>
+          <li>HCV</li>
+          <li>IGE</li>
+        </ul>
+      ),
+    },
   ];
 
   const toggleService = (index: any) => {
@@ -220,7 +219,9 @@ const PlatinumPackage = () => {
 
   return (
     <section className="px-5 lg:px-28 xl:px-32 2xl:px-72 pb-20">
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-center">Included Tests</h2>
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-center">
+        Included Tests
+      </h2>
       {services.map((service, index) => (
         <div key={index} className="mb-4 border-b border-gray-200">
           <button

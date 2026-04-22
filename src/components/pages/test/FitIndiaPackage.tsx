@@ -33,7 +33,6 @@ const FitIndiaPackage = () => {
           <li>Absolute Monocyte Count</li>
           <li>Absolute Basophil Count</li>
           <li>Absolute Eosinophil Count</li>
-          <li>ESR</li>
         </ul>
       ),
     },
@@ -100,7 +99,6 @@ const FitIndiaPackage = () => {
         </ul>
       ),
     },
-    
   ];
 
   const toggleService = (index: any) => {
@@ -109,7 +107,9 @@ const FitIndiaPackage = () => {
 
   return (
     <section className="px-5 lg:px-28 xl:px-32 2xl:px-72 pb-20">
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-center">Included Tests</h2>
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-center">
+        Included Tests
+      </h2>
       {services.map((service, index) => (
         <div key={index} className="mb-4 border-b border-gray-200">
           <button
