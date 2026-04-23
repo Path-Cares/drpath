@@ -6,7 +6,7 @@ const FeverPanel = () => {
 
   const services = [
     {
-      title: "Complete Blood Count with ESR",
+      title: "Complete Blood Count ",
     },
     {
       title: "Typhi Dot IGG",

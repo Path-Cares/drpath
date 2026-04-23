@@ -136,7 +136,7 @@ const HealthCheckup = () => {
       title: "Multiple Myeloma",
       price: 7200,
       originalPrice: "₹8200",
-      link: "/multiple-myeloma",
+      link: "#",
     },
   ];
 
