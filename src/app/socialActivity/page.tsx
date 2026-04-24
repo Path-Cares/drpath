@@ -176,7 +176,7 @@ const SocialActivity = () => {
         <div className="w-full mb-10 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <video
-              className="w-full rounded-lg shadow-lg h-[60vh] bg-gray-100 object-cover"
+              className="w-full rounded-lg shadow-lg h-[80vh] bg-gray-100 object-cover"
               controls
               poster="/images/video-poster.png"
               autoPlay
@@ -192,7 +192,7 @@ const SocialActivity = () => {
 
           <div>
             <video
-              className="w-full rounded-lg shadow-lg h-[60vh] bg-gray-100 object-cover"
+              className="w-full rounded-lg shadow-lg h-[80vh] bg-gray-100 object-cover"
               controls
               poster="/images/video-poster.png"
               autoPlay
